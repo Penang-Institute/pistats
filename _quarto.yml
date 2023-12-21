@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Statistics"
+  search: false
+  navbar:
+    logo: img/cropped-penang-institute-logo.png
+    left:
+      - about.qmd
+    tools:
+    - icon: house
+      href: https://www.penanginstitute.org
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
