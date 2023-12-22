@@ -2,10 +2,12 @@ project:
   type: website
 
 website:
-  title: "Statistics - Penang Institute"
+  title: "Statistics: Penang Institute"
   search: false
   navbar:
+    title: Statistics
     logo: img/cropped-penang-institute-logo.png
+    logo-alt: Penang Institute logo
     left:
       - about.qmd
     tools:
