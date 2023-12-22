@@ -3,7 +3,17 @@
     "listing": "/index.html",
     "items": [
       "/posts/manf.html",
-      "/posts/gdp.html"
+      "/posts/cpi.html",
+      "/posts/trade.html",
+      "/posts/gender.html",
+      "/posts/grad.html",
+      "/posts/gdp.html",
+      "/posts/health.html",
+      "/posts/hhinc.html",
+      "/posts/labour.html",
+      "/posts/finance.html",
+      "/posts/pop.html",
+      "/posts/prop.html"
     ]
   }
 ]
