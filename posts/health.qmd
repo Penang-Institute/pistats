@@ -1,6 +1,8 @@
 ---
 title: "Healthcare"
 image: 'https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1.png'
+categories: 
+- Social indicators
 ---
 
 ```{=html}

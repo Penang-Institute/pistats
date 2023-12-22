@@ -4,6 +4,8 @@ listing:
   - id: main-listing
     contents: posts
     type: grid
+    grid-columns: 4
+    categories: true
   - id: penang-monthly
     contents: penang-monthly-stats.yaml
     date-format: "MMMM YYYY"

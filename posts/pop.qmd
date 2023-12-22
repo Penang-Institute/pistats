@@ -1,6 +1,8 @@
 ---
 title: "Population and Demographics"
 image: 'https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png'
+categories: 
+- Social indicators
 ---
 
 ```{=html}

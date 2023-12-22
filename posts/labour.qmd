@@ -1,6 +1,8 @@
 ---
 title: "Labour Force"
 image: 'https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1.png'
+categories: 
+- Social indicators
 ---
 
 ```{=html}
