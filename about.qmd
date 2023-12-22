@@ -1,6 +1,19 @@
 ---
-title: "About"
+title: "Resources"
 ---
 
-About this site
+For further data resources:
 
+1. [Penang in Numbers](http://archive.data.gov.my/data/ms_MY/dataset?q=kerajaan+negeri+pulau+pinang)
+
+2. [Bank Negara Malaysia](http://www.bnm.gov.my/index.php?ch=en_publication&&pub=msbarc)
+
+3. [Ministry of Economy](https://www.ekonomi.gov.my)
+
+4. [Department of Statistics Malaysia](https://www.dosm.gov.my/)
+
+5. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
+
+6. [Malaysia Geoportal](http://www.mygeoportal.gov.my/node/61)
+
+7.  [Quarterly Penang Statistics](https://penanginstitute.org/resources/key-penang-statistics/97-quarterly-penang-statistics/)

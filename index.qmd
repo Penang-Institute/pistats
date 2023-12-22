@@ -21,7 +21,7 @@ title-block-banner: true
 :::
 
 
-## New in Penang Monthly
+# New in Penang Monthly
 
 ::: {#penang-monthly}
 :::
