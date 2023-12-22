@@ -11,6 +11,9 @@ website:
     tools:
     - icon: house
       href: https://www.penanginstitute.org
+  page-footer:
+    left: "Copyright © Penang Institute"
+    right: enquiry@penanginstitute.org
 format:
   html:
     theme: cosmo
