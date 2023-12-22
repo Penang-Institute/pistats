@@ -1,5 +1,6 @@
 ---
 title: "Approved Manufacturing Investments"
+image: 'https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1.png'
 ---
 
 ```{=html}

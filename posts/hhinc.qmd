@@ -1,5 +1,6 @@
 ---
 title: "Household Income"
+image: 'https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1.png'
 ---
 
 ```{=html}

@@ -1,21 +1,38 @@
 ---
 title: "Key Penang Statistics"
 listing:
-  id: main-listing
-  contents: posts
-  type: grid
+  - id: main-listing
+    contents: posts
+    type: grid
+  - id: penang-monthly
+    contents: penang-monthly-stats.yaml
+    date-format: "MMMM YYYY"
+    type: grid
 title-block-banner: true
-# include-after-body: 
+# navbar: false
+# include-after-body:
 #   text: |
-#     <script src="https://cdn.jsdelivr.net/gh/55sketch/simple-rss/simple-rss.js"></script>
+#     <script src="simple-rss.js"></script>
 ---
 
 ::: {#main-listing}
 :::
 
-<!-- <div  -->
-<!--     data-rss-feed="http://binonabin.tumblr.com/rss"  -->
-<!--     data-rss-link-titles="true"  -->
-<!--     data-rss-title-wrapper="h3"  -->
+
+## New in Penang Monthly
+
+::: {#penang-monthly}
+:::
+
+
+<!-- <div -->
+
+<!--     data-rss-feed="https://www.theguardian.com/international/rss" -->
+
+<!--     data-rss-link-titles="true" -->
+
+<!--     data-rss-title-wrapper="h3" -->
+
 <!--     data-rss-max="3"> -->
+
 <!-- </div> -->

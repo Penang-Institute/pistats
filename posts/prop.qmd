@@ -1,5 +1,6 @@
 ---
 title: "Residential Property"
+image: 'https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png'
 ---
 
 ```{=html}

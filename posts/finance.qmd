@@ -1,5 +1,6 @@
 ---
 title: "Penang State Finance"
+image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png'
 ---
 
 ```{=html}
