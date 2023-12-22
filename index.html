@@ -61,9 +61,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -89,9 +89,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-path','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-path','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-path","listing-image"],
+      searchColumns: ["listing-title","listing-date","listing-path","listing-image","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Key Penang Statistics</h1>
                       </div>
   </div>
@@ -163,19 +163,21 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="Economic sectors">Economic sectors <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Macroeconomic indicators">Macroeconomic indicators <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Social indicators">Social indicators <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 <div id="listing-main-listing" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="Economic sectors" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/manf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -185,8 +187,13 @@ ul.task-list li input[type="checkbox"] {
 <h5 class="no-anchor card-title listing-title">
 Approved Manufacturing Investments
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Economic sectors'); return false;">
+Economic sectors
+</div>
+</div>
 <div class="card-text listing-description">
-
+Explore the landscape and composition of manufacturing investment in Penang
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -197,7 +204,7 @@ Approved Manufacturing Investments
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="1" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/cpi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -207,6 +214,11 @@ Approved Manufacturing Investments
 <h5 class="no-anchor card-title listing-title">
 Consumer Price Index
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
+Macroeconomic indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -219,7 +231,7 @@ Consumer Price Index
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="2" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/trade.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -229,6 +241,11 @@ Consumer Price Index
 <h5 class="no-anchor card-title listing-title">
 External Trade
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
+Macroeconomic indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -241,7 +258,7 @@ External Trade
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="3" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/gender.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -251,6 +268,11 @@ External Trade
 <h5 class="no-anchor card-title listing-title">
 Gender
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -263,7 +285,7 @@ Gender
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="4" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/grad.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -273,6 +295,11 @@ Gender
 <h5 class="no-anchor card-title listing-title">
 Graduate Employability
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -285,7 +312,7 @@ Graduate Employability
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="5" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/gdp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -295,6 +322,11 @@ Graduate Employability
 <h5 class="no-anchor card-title listing-title">
 Gross Domestic Product
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
+Macroeconomic indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -307,7 +339,7 @@ Gross Domestic Product
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="6" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/health.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -317,6 +349,11 @@ Gross Domestic Product
 <h5 class="no-anchor card-title listing-title">
 Healthcare
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -329,7 +366,7 @@ Healthcare
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="7" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/hhinc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -339,6 +376,11 @@ Healthcare
 <h5 class="no-anchor card-title listing-title">
 Household Income
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -351,7 +393,7 @@ Household Income
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="8" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/labour.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -361,6 +403,11 @@ Household Income
 <h5 class="no-anchor card-title listing-title">
 Labour Force
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -373,7 +420,7 @@ Labour Force
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/finance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -395,7 +442,7 @@ Penang State Finance
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="10" data-categories="Social indicators" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/pop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -405,6 +452,11 @@ Penang State Finance
 <h5 class="no-anchor card-title listing-title">
 Population and Demographics
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
+Social indicators
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
@@ -417,7 +469,7 @@ Population and Demographics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="11" data-categories="Economic sectors" data-listing-file-modified-sort="1703249611312" data-listing-reading-time-sort="2">
 <a href="./posts/prop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -427,6 +479,11 @@ Population and Demographics
 <h5 class="no-anchor card-title listing-title">
 Residential Property
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Economic sectors'); return false;">
+Economic sectors
+</div>
+</div>
 <div class="card-text listing-description">
 
 </div>
