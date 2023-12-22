@@ -79,6 +79,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-penang-monthly .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-date','listing-path','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-date","listing-path","listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-penang-monthly'] = new List('listing-penang-monthly', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -87,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,9 +166,7 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -149,10 +175,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="listing-main-listing" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1703234846664" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/manf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Approved Manufacturing Investments
@@ -169,10 +197,12 @@ Approved Manufacturing Investments
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/cpi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Co/ConsumerPriceIndex_16506163722350/ConsumerPriceIndex/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Co/ConsumerPriceIndex_16506163722350/ConsumerPriceIndex/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Consumer Price Index
@@ -189,10 +219,12 @@ Consumer Price Index
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1703234846664" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/trade.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Externaltradebystate/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Externaltradebystate/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 External Trade
@@ -209,10 +241,12 @@ External Trade
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/gender.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Gender
@@ -229,10 +263,12 @@ Gender
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/grad.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Graduate Employability
@@ -249,10 +285,12 @@ Graduate Employability
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/gdp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Gross Domestic Product
@@ -269,10 +307,12 @@ Gross Domestic Product
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/health.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Healthcare
@@ -289,10 +329,12 @@ Healthcare
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/hhinc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Household Income
@@ -309,10 +351,12 @@ Household Income
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1703234846664" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/labour.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Labour Force
@@ -329,10 +373,12 @@ Labour Force
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703234846660" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/finance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Penang State Finance
@@ -349,10 +395,12 @@ Penang State Finance
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1703234846664" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/pop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Population and Demographics
@@ -369,10 +417,12 @@ Population and Demographics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1703234846664" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1703248230145" data-listing-reading-time-sort="2">
 <a href="./posts/prop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1_rss.png" alt=" " style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Residential Property
@@ -394,15 +444,118 @@ Residential Property
 No matching items
 </div>
 </div>
-<!-- <div  -->
-<!--     data-rss-feed="http://binonabin.tumblr.com/rss"  -->
-<!--     data-rss-link-titles="true"  -->
-<!--     data-rss-title-wrapper="h3"  -->
+<section id="new-in-penang-monthly" class="level2">
+<h2 class="anchored" data-anchor-id="new-in-penang-monthly">New in Penang Monthly</h2>
+<div id="listing-penang-monthly" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1701388800000">
+<a href="https://penangmonthly.com/article/21058/how-food-price-increases-are-affecting-malaysians.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://penangmonthly.com/storage/19278/Website-%2835%29.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How Food Price Increases Are Affecting Malaysians
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+December 2023
+</div>
+</div>
+
+<table class="card-other-values">
+<tbody><tr>
+<td>
+path
+</td>
+<td class="path">
+https://penangmonthly.com/article/21058/how-food-price-increases-are-affecting-malaysians.html
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1698796800000">
+<a href="https://penangmonthly.com/article/21029/artificial-intelligence-in-numbers.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://penangmonthly.com/storage/19162/Website-%2811%29.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Artificial Intelligence In Numbers
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+November 2023
+</div>
+</div>
+
+<table class="card-other-values">
+<tbody><tr>
+<td>
+path
+</td>
+<td class="path">
+https://penangmonthly.com/article/21029/artificial-intelligence-in-numbers.html
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1696118400000">
+<a href="https://penangmonthly.com/article/21021/the-state-of-penangs-modes-of-transport.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://penangmonthly.com/storage/19078/statsoct3.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The State of Penang’s Modes of Transport
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+October 2023
+</div>
+</div>
+
+<table class="card-other-values">
+<tbody><tr>
+<td>
+path
+</td>
+<td class="path">
+https://penangmonthly.com/article/21021/the-state-of-penangs-modes-of-transport.html
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<!-- <div -->
+<!--     data-rss-feed="https://www.theguardian.com/international/rss" -->
+<!--     data-rss-link-titles="true" -->
+<!--     data-rss-title-wrapper="h3" -->
 <!--     data-rss-max="3"> -->
 <!-- </div> -->
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
