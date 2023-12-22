@@ -5,12 +5,12 @@ listing:
     contents: penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
     type: grid
-    categories: false
+    # categories: false
   - id: main-listing
     contents: posts
     type: grid
     grid-columns: 4
-    categories: true    
+    # categories: true    
 title-block-banner: true
 # navbar: false
 # include-after-body:
