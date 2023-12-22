@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistics - Penang Institute - Key Penang Statistics</title>
+<title>Statistics: Penang Institute - Key Penang Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,20 +55,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-main-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-penang-monthly .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-date","listing-image"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-main-listing'] = new List('listing-main-listing', options);
+    window['quarto-listings']['listing-penang-monthly'] = new List('listing-penang-monthly', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -83,20 +83,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-penang-monthly .list');
+    const listingTargetEl = window.document.querySelector('#listing-main-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-image","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-penang-monthly'] = new List('listing-penang-monthly', options);
+    window['quarto-listings']['listing-main-listing'] = new List('listing-main-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -151,10 +151,10 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/cropped-penang-institute-logo.png" alt="" class="navbar-logo">
+    <img src="./img/cropped-penang-institute-logo.png" alt="Penang Institute logo" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Statistics - Penang Institute</span>
+    <span class="navbar-title">Statistics</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -177,13 +177,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Key Penang Statistics</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -194,11 +194,9 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="Economic sectors">Economic sectors <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Macroeconomic indicators">Macroeconomic indicators <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Social indicators">Social indicators <span class="quarto-category-count">(6)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -206,7 +204,7 @@ window.Quarto = {
 
 <div id="listing-main-listing" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="Economic sectors" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="g-col-1" data-index="0" data-categories="Economic sectors" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
 <a href="./posts/manf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -216,11 +214,6 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Approved Manufacturing Investments
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Economic sectors'); return false;">
-Economic sectors
-</div>
-</div>
 <div class="card-text listing-description">
 Explore the landscape and composition of manufacturing investment in Penang
 </div>
@@ -233,7 +226,7 @@ Explore the landscape and composition of manufacturing investment in Penang
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
+<div class="g-col-1" data-index="1" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
 <a href="./posts/cpi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -243,11 +236,6 @@ Explore the landscape and composition of manufacturing investment in Penang
 <h5 class="no-anchor card-title listing-title">
 Consumer Price Index
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
-Macroeconomic indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="ConsumerPriceIndex_16506163722350/ConsumerPriceIndex"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Co/ConsumerPriceIndex_16506163722350/ConsumerPriceIndex/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en-US"></object>
 </div>
@@ -260,7 +248,7 @@ Macroeconomic indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="g-col-1" data-index="2" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
 <a href="./posts/trade.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -270,11 +258,6 @@ Macroeconomic indicators
 <h5 class="no-anchor card-title listing-title">
 External Trade
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
-Macroeconomic indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="PenangsTradeStatistics/Externaltradebystate"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Externaltradebystate/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en-US"></object>
 </div>
@@ -287,7 +270,7 @@ Macroeconomic indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
+<div class="g-col-1" data-index="3" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
 <a href="./posts/gender.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -297,11 +280,6 @@ Macroeconomic indicators
 <h5 class="no-anchor card-title listing-title">
 Gender
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="Genderstatistics_16161467959570/Labourforceparticipation"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en-US"></object>
 </div>
@@ -314,7 +292,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="4" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="./posts/grad.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -324,11 +302,6 @@ Social indicators
 <h5 class="no-anchor card-title listing-title">
 Graduate Employability
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="PenangsGraduateEmployability/Graduatedistribution"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"></object>
 </div>
@@ -341,7 +314,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+<div class="g-col-1" data-index="5" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
 <a href="./posts/gdp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -351,11 +324,6 @@ Social indicators
 <h5 class="no-anchor card-title listing-title">
 Gross Domestic Product
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Macroeconomic indicators'); return false;">
-Macroeconomic indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="PenangsGrossDomesticProduct/GDPbyeconomicsector"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"></object>
 </div>
@@ -368,7 +336,7 @@ Macroeconomic indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="6" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="./posts/health.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -378,11 +346,6 @@ Macroeconomic indicators
 <h5 class="no-anchor card-title listing-title">
 Healthcare
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="PenangsHealthStatistics/Facilities"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"></object>
 </div>
@@ -395,7 +358,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="g-col-1" data-index="7" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
 <a href="./posts/hhinc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -405,11 +368,6 @@ Social indicators
 <h5 class="no-anchor card-title listing-title">
 Household Income
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="Penangshouseholdincome/Householdincome"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en-US"></object>
 </div>
@@ -422,7 +380,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="8" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="./posts/labour.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -432,11 +390,6 @@ Social indicators
 <h5 class="no-anchor card-title listing-title">
 Labour Force
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="PenangsLabourForce/Principalstatistics"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"></object>
 </div>
@@ -449,7 +402,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
 <a href="./posts/finance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -471,7 +424,7 @@ Penang State Finance
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Social indicators" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="10" data-categories="Social indicators" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="./posts/pop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -481,11 +434,6 @@ Penang State Finance
 <h5 class="no-anchor card-title listing-title">
 Population and Demographics
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Social indicators'); return false;">
-Social indicators
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="Penangspopulationanddemographics/Overalltrend"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"></object>
 </div>
@@ -498,7 +446,7 @@ Social indicators
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Economic sectors" data-listing-file-modified-sort="1703251891631" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="g-col-1" data-index="11" data-categories="Economic sectors" data-listing-file-modified-sort="1703252093045" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
 <a href="./posts/prop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -508,11 +456,6 @@ Social indicators
 <h5 class="no-anchor card-title listing-title">
 Residential Property
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Economic sectors'); return false;">
-Economic sectors
-</div>
-</div>
 <div class="card-text listing-description">
 <noscript></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value=""><param name="name" value="Penangsresidentialproperty/Supply-demand"><param name="tabs" value="yes"><param name="toolbar" value="yes"><param name="static_image" value="https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="language" value="en"></object>
 </div>
