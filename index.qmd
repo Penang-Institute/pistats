@@ -11,8 +11,10 @@ listing:
     contents: posts
     type: grid
     grid-columns: 4
+    image-height: "5"
     # categories: true    
-title-block-banner: true
+title-block-banner: '#c3353c'
+title-block-banner-color: 'white'
 # navbar: false
 # include-after-body:
 #   text: |
