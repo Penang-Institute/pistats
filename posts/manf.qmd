@@ -11,10 +11,12 @@ categories:
 ```
 
 </br> 
-
-<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-
-<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv"><button class="btn btn-primary"><i class="bi bi-download"></i> Approved investments by state</button></a>
-
-<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=513382511&single=true&output=csv"><button class="btn btn-primary"><i class="bi bi-download"></i> Approved investments by industry, Penang</button></a>
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi bi-download"></i> Download
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv">Approved investments by state</a></li>
+    <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=513382511&single=true&output=csv">Approved investments by industry, Penang</a></li>
+  </ul>
 </div>
