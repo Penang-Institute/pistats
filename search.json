@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "posts/gdp.html",
+    "href": "posts/gdp.html",
+    "title": "Gross Domestic Product",
+    "section": "",
+    "text": "Download data\n\n\n\nGDP by economic activity, Malaysia\n\n\nGDP per capita by state, current prices\n\n\nGDP by state and economic activity, constant prices\n\n\nGDP by state and sub-economic activity, constant prices"
+  },
+  {
     "objectID": "posts/trade.html",
     "href": "posts/trade.html",
     "title": "External Trade",
@@ -25,7 +32,7 @@
     "href": "index.html",
     "title": "Key Penang Statistics",
     "section": "",
-    "text": "Approved Manufacturing Investments\n\n\nExplore the landscape and composition of manufacturing investment in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Price Index\n\n\nTrack Penang’s cost of living with visualizations of inflation trends across food, housing, and more\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExternal Trade\n\n\nGauge Penang’s trade performance at a glance, exploring export and import trends by product and partner nation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGender\n\n\nExplore Penang’s gender landscape through interactive insights, revealing education, employment and leadership disparities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraduate Employability\n\n\nAnalyze employment rates for Penang’s graduates, field of study trends, and career paths by field with Graduate Tracer Study data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGross Domestic Product\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHousehold Income\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabour Force\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPenang State Finance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation and Demographics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResidential Property\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nNew in Penang Monthly\n\n\n\n\n\n\n\n\n\n\nYear in Review: Penang Key Economic Statistics\n\n\n\nJanuary 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Food Price Increases Are Affecting Malaysians\n\n\n\nDecember 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtificial Intelligence In Numbers\n\n\n\nNovember 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Approved Manufacturing Investments\n\n\nExplore the landscape and composition of manufacturing investment in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsumer Price Index\n\n\nTrack Penang’s cost of living with visualizations of inflation trends across food, housing, and more\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExternal Trade\n\n\nGauge Penang’s trade performance at a glance, exploring export and import trends by product and partner nation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGender\n\n\nExplore Penang’s gender landscape through interactive insights, revealing education, employment and leadership disparities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraduate Employability\n\n\nAnalyze employment rates for Penang’s graduates, field of study trends, and career paths by field with Graduate Tracer Study data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGross Domestic Product\n\n\nChart Penang’s economic trajectory with GDP insights, revealing sector contributions and key trends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare\n\n\nUncover trends in healthcare access, utilisation and disease prevalence through interactive data visualizations.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHousehold Income\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabour Force\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPenang State Finance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation and Demographics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResidential Property\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nNew in Penang Monthly\n\n\n\n\n\n\n\n\n\n\nYear in Review: Penang Key Economic Statistics\n\n\n\nJanuary 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow Food Price Increases Are Affecting Malaysians\n\n\n\nDecember 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtificial Intelligence In Numbers\n\n\n\nNovember 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -33,6 +40,13 @@
     "title": "Resources",
     "section": "",
     "text": "For further data resources:\n\nPenang in Numbers\nBank Negara Malaysia\nMinistry of Economy\nDepartment of Statistics Malaysia\nPenang Geographic Information Centre (PeGIS)\nMalaysia Geoportal\nQuarterly Penang Statistics"
+  },
+  {
+    "objectID": "posts/health.html",
+    "href": "posts/health.html",
+    "title": "Healthcare",
+    "section": "",
+    "text": "Download data\n\n\n\nHealthcare facilities (hospitals, beds) by state\n\n\nHealthcare facilities by district\n\n\nHealthcare utilisation by state\n\n\nHealthcare utilisation by hospital\n\n\nHealthcare personnel by state\n\n\nCommunicable disease cases and deaths"
   },
   {
     "objectID": "posts/gender.html",
