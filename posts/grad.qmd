@@ -1,6 +1,10 @@
 ---
 title: "Graduate Employability"
 image: 'https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1.png'
+description: |
+  Analyze employment rates for Penang's graduates,
+  field of study trends, and career paths by field with
+  Graduate Tracer Study data
 categories: 
 - Social indicators
 ---
@@ -9,4 +13,16 @@ categories:
 
 <div class='tableauPlaceholder' id='viz1703205396049' style='position: relative'><noscript><a href='https:&#47;&#47;penanginstitute.org&#47;resources&#47;key-penang-statistics&#47;visualisations-of-key-indicators&#47;penang-graduate-employability&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PenangsGraduateEmployability&#47;Graduatedistribution&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PenangsGraduateEmployability&#47;Graduatedistribution' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PenangsGraduateEmployability&#47;Graduatedistribution&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1703205396049');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 ```
+</br>
 
+::: {.btn-group role="group"}
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bi bi-download"></i> Download data </button>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=0&single=true&output=csv">Graduates by field of study and employment status, Penang</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=1853330143&single=true&output=csv">Employed graduates by field of study and industry of work, Penang</a></li>
+
+</ul>
+:::

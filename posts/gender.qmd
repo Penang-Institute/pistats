@@ -3,7 +3,7 @@ title: "Gender"
 image: 'https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1.png'
 description: |
   Explore Penang's gender landscape through interactive insights, 
-  revealing education, employment and leadership disparities.
+  revealing education, employment and leadership disparities
 categories: 
 - Social indicators
 ---
