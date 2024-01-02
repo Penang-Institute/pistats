@@ -24,12 +24,10 @@ title-block-banner-color: 'white'
 ::: {#main-listing}
 :::
 
-
 # New in Penang Monthly
 
 ::: {#penang-monthly}
 :::
-
 
 <!-- <div -->
 

@@ -1,6 +1,9 @@
 ---
 title: "Population and Demographics"
 image: 'https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png'
+description: |
+  Explore population and migration trends, ethnic composition, and age 
+  distribution of Penang's people
 categories: 
 - Social indicators
 ---
@@ -8,3 +11,34 @@ categories:
 ```{=html}
 <div class='tableauPlaceholder' id='viz1703205236746' style='position: relative'><noscript><a href='https:&#47;&#47;penanginstitute.org&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Penangspopulationanddemographics&#47;Overalltrend&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Penangspopulationanddemographics&#47;Overalltrend' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Penangspopulationanddemographics&#47;Overalltrend&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1703205236746');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 ```
+
+
+</br>
+
+::: {.btn-group role="group"}
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+<i class="bi bi-download"></i> Download data</button>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=1977271985&single=true&output=csv">Malaysia population by age, sex and ethnicity</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=1214011858&single=true&output=csv">Penang population by age, sex, ethnicity, nationality</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=1633204781&single=true&output=csv">Penang population by district and sex</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=771529500&single=true&output=csv">Penang’s population by district and ethnicity</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTMnhuIFhVotk0DgOYui9xpydR-pi9eavuNSMrofvWouhi1zd7a_6pTYc5ePBVxVA/pub?gid=1684777835&single=true&output=csv">Land area by district, Penang</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=1160286180&single=true&output=csv">Fertility rate by state</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTMfASHgcadYpr3D06Cixw7ll8j3AG5L4h96UpW_dQHc-qFZ1HSqZ162vHmIWew5cn5U6Z5VtXpqtoj/pub?gid=448670159&single=true&output=csv">Gross migration by state</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-bOUZoFusJ96iNM9abwbip9e9rBXeIsPFlRJnwH7zObee8ZUiNmg-ppzz17N3sw/pub?gid=682110531&single=true&output=csv">Intra-state migration</a></li>
+
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTywDv-XFV18VMdNPtaikhCSfjWbEbhR8GcCOojbxlNzkt7nKmwem567XPa3onr-mdg_4f5inj7wthR/pub?gid=599265474&single=true&output=csv">Internal migrants by state of origin and state of destination, Malaysia</a></li>
+
+</ul>
+:::
