@@ -5,6 +5,7 @@ listing:
     contents: penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
     type: grid
+    max-items: 3
     # categories: false
   - id: main-listing
     contents: posts
