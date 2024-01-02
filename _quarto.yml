@@ -22,6 +22,11 @@ website:
   page-footer:
     left: "Copyright © Penang Institute"
     right: enquiry@penanginstitute.org
+  twitter-card:
+    site: "@penanginstitute"
+  open-graph:
+    title: "Statistics at Penang Institute"
+  google-analytics: "G-WTRQJLDY3E"
 format:
   html:
     theme:
