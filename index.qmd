@@ -1,5 +1,14 @@
 ---
 title: "Key Penang Statistics"
+description: |
+  Key Penang Statistics presents a set of dashboards that visualize key socioeconomic 
+  data about Penang. Led by the Institute's Socioeconomics & Statistics Programme, 
+  it provides insights into Penang's cost of living, trade
+  performance, gender landscape, graduate employability, economic trajectory, 
+  income disparities, labor force statistics, state finance, and population trends 
+  from official government sources. 
+  
+
 listing:
   - id: penang-monthly
     contents: penang-monthly-stats.yaml
