@@ -27,6 +27,8 @@ website:
   open-graph:
     title: "Statistics at Penang Institute"
   google-analytics: "G-WTRQJLDY3E"
+  repo-url: https://github.com/Penang-Institute/pistats
+  repo-actions: [issue]
 format:
   html:
     theme:
