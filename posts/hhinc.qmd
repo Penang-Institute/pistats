@@ -9,7 +9,11 @@ categories:
 ---
 
 ```{=html}
-<div class='tableauPlaceholder' id='viz1703205726597' style='position: relative'><noscript><a href='https:&#47;&#47;penanginstitute.org&#47;resources&#47;key-penang-statistics&#47;visualisations-of-key-indicators&#47;penang-household-income&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Penangshouseholdincome&#47;Householdincome&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Penangshouseholdincome&#47;Householdincome' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Penangshouseholdincome&#47;Householdincome&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1703205726597');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+<tableau-viz id='tableau-viz' 
+    src='https://public.tableau.com/views/Penangshouseholdincome/Householdincome' 
+    width='1000' height='851' toolbar='bottom' >
+</tableau-viz>
 ```
 </br>
 
@@ -22,23 +26,11 @@ categories:
 
 <ul class="dropdown-menu">
 
-<li>
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv">Household income, inequality and poverty metrics by state and district</a></li>
 
-<a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv">Household income, inequality and poverty metrics by state and district</a>
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-_HsvzUxvcYnZ95e8MJE8lXZI0JYlSx_gK2JepjnVHTzBrQuB1cgN3kOIeAkBY_aq7dSaH6ThIs9H/pub?gid=480929340&single=true&output=csv">Mean/median income and income share by household income group</a></li>
 
-</li>
-
-<li>
-
-<a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-_HsvzUxvcYnZ95e8MJE8lXZI0JYlSx_gK2JepjnVHTzBrQuB1cgN3kOIeAkBY_aq7dSaH6ThIs9H/pub?gid=480929340&single=true&output=csv">Mean/median income and income share by household income group</a>
-
-</li>
-
-<li>
-
-<a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWtNz-IQ39PQkxQQx8ezuEIO4JGnqqksHFMmdXeT0HJsME26ZnJpRgoahAq4Km5Soe9gD8_SxpZkM1/pub?gid=1294274604&single=true&output=csv">Household income share by district and income class</a>
-
-</li>
+<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWtNz-IQ39PQkxQQx8ezuEIO4JGnqqksHFMmdXeT0HJsME26ZnJpRgoahAq4Km5Soe9gD8_SxpZkM1/pub?gid=1294274604&single=true&output=csv">Household income share by district and income class</a></li>
 
 </ul>
 :::
