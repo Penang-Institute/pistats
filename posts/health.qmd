@@ -13,6 +13,7 @@ categories:
 <tableau-viz id='tableau-viz' 
     src='https://public.tableau.com/views/PenangsHealthStatistics/Facilities' 
     width='1000' height='851' toolbar='bottom' >
+  <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
 </br>
