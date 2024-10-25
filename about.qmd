@@ -6,7 +6,7 @@ For further data resources:
 
 1. [Penang in Numbers](http://archive.data.gov.my/data/ms_MY/dataset?q=kerajaan+negeri+pulau+pinang)
 
-2. [Bank Negara Malaysia](http://www.bnm.gov.my/index.php?ch=en_publication&&pub=msbarc)
+2. [Bank Negara Malaysia](https://www.bnm.gov.my/rates-statistics)
 
 3. [Ministry of Economy](https://www.ekonomi.gov.my)
 
