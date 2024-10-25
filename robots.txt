@@ -1,1 +1,1 @@
-Sitemap: https://statistics.penanginstitute.org/sitemap.xml
+Sitemap: https://stats.penanginstitute.org/sitemap.xml
