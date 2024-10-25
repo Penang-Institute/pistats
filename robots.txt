@@ -1,1 +1,1 @@
-Sitemap: https://Penang-Institute.github.io/pistats/sitemap.xml
+Sitemap: https://statistics.penanginstitute.org/sitemap.xml
