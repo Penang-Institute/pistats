@@ -12,10 +12,12 @@ website:
       - text: Resources
         menu:
           - about.qmd
-          - text: Metadata
-            href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
-          - text: Data sources
-            href: https://hollow-locket-922.notion.site/4079047156cf441398595107f688a30f?v=75577be15da545219fcaff695b4d7c96&pvs=4
+          - text: Socioeconomics and Statistics Programme
+            href: https://penanginstitute.org/programmes/socioeconomics-and-statistics-programme/
+          # - text: Metadata
+          #   href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
+          # - text: Data sources
+          #   href: https://hollow-locket-922.notion.site/4079047156cf441398595107f688a30f?v=75577be15da545219fcaff695b4d7c96&pvs=4
     tools:
     - icon: house
       href: https://www.penanginstitute.org

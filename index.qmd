@@ -8,6 +8,10 @@ description: |
   income disparities, labour force statistics, state finance, and population trends 
   from official government sources. 
 listing:
+  - id: metrics
+    contents: metrics_grid.yaml
+    grid-columns: 5
+    type: grid
   - id: penang-monthly
     contents: penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
@@ -22,11 +26,16 @@ listing:
     # categories: true    
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
-# navbar: false
-# include-after-body:
-#   text: |
-#     <script src="simple-rss.js"></script>
 ---
+
+# Penang at a glance
+::: {.metrics}
+::: {#metrics}
+:::
+:::
+
+
+# Dashboards
 
 ::: {#main-listing}
 :::
@@ -35,15 +44,3 @@ title-block-banner-color: 'white'
 
 ::: {#penang-monthly}
 :::
-
-<!-- <div -->
-
-<!--     data-rss-feed="https://www.theguardian.com/international/rss" -->
-
-<!--     data-rss-link-titles="true" -->
-
-<!--     data-rss-title-wrapper="h3" -->
-
-<!--     data-rss-max="3"> -->
-
-<!-- </div> -->
