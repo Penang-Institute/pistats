@@ -8,13 +8,14 @@ website:
     title: Statistics
     logo: img/cropped-penang-institute-logo.png
     logo-alt: Penang Institute logo
+    pinned: true
     left:
-      - text: Socioeconomics and Statistics Programme
-        href: https://penanginstitute.org/aboutus/research-programmes/#socioeconomics-and-statistics-programme
-      - text: Source code
-        href: https://github.com/Penang-Institute/pistats
-      - text: Resources
-        href: about.qmd        
+    - text: Penang at a glance
+      href: '#penang-at-a-glance'
+    - text: Dashboards
+      href: '#dashboards'
+    - text: New in Penang Monthly
+      href: '#new-in-penang-monthly'
           # - text: Metadata
           #   href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
           # - text: Data sources
@@ -24,15 +25,19 @@ website:
       icon: house
       href: https://www.penanginstitute.org
   page-footer:
-    left: "Copyright © Penang Institute"
-    right: enquiry@penanginstitute.org
+    left: 
+    - text: "Copyright © Penang Institute"
+      href: "https://www.penanginstitute.org"
+    right: 
+    - text: Resources
+      href: about.qmd   
   twitter-card:
     site: "@penanginstitute"
   open-graph:
     title: "Statistics at Penang Institute"
   google-analytics: "G-WTRQJLDY3E"
   repo-url: https://github.com/Penang-Institute/pistats
-  repo-actions: [issue]
+  repo-actions: [source]
 format:
   html:
     theme:

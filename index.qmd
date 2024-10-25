@@ -28,19 +28,19 @@ title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
 ---
 
-# Penang at a glance
-::: {.metrics}
+## Penang at a glance
+
+:::: metrics
 ::: {#metrics}
 :::
-:::
+::::
 
-
-# Dashboards
+## Dashboards
 
 ::: {#main-listing}
 :::
 
-# New in Penang Monthly
+## New in Penang Monthly
 
 ::: {#penang-monthly}
 :::
