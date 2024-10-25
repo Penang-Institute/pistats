@@ -16,18 +16,9 @@ categories:
   <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
-</br>
 
-::: {.btn-group role="group"}
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
 
-<i class="bi bi-download"></i> Download data
-
-</button>
-
-<ul class="dropdown-menu">
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sa_eymrIvUcD4yONac7EufBnyGSdqNIdlZATeMhMVUhh4q0AJQcbkmcAs3bN_EWoArJFUxAutFJp/pub?gid=2088301504&single=true&output=csv">Consumer price index by state and main group, monthly</a></li>
-
-</ul>
+1.  [Consumer price index by state and main group, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sa_eymrIvUcD4yONac7EufBnyGSdqNIdlZATeMhMVUhh4q0AJQcbkmcAs3bN_EWoArJFUxAutFJp/pub?gid=2088301504&single=true&output=csv)
 :::

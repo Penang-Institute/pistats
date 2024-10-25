@@ -16,20 +16,10 @@ categories:
   <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
-</br>
 
-::: {.btn-group role="group"}
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
+1. [Trade volume, Malaysia by state, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv)
+2. [Trade volume by partner country and HS code, Penang](https://drive.google.com/file/d/1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ/view?usp=sharing)
 
-<i class="bi bi-download"></i> Download data
-
-</button>
-
-<ul class="dropdown-menu">
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv">Trade volume by state, monthly</a></li>
-
-<li><a class="dropdown-item" href="https://drive.google.com/file/d/1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ/view?usp=sharing">Trade volume by partner country and HS code, Penang</a></li>
-
-</ul>
 :::

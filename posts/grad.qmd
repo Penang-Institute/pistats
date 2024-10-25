@@ -17,20 +17,11 @@ categories:
   <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
-</br>
 
-::: {.btn-group role="group"}
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-
-<i class="bi bi-download"></i> Download data
-
-</button>
-
-<ul class="dropdown-menu">
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=0&single=true&output=csv">Graduates by field of study and employment status, Penang</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=1853330143&single=true&output=csv">Employed graduates by field of study and industry of work, Penang</a></li>
-
-</ul>
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+1. [Graduates by field of study and employment status, Penang](https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=0&single=true&output=csv)
+2. [Employed graduates by field of study and industry of work, Penang](https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=1853330143&single=true&output=csv)
 :::
+
+

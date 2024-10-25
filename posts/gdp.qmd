@@ -16,24 +16,13 @@ categories:
 <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
-</br>
 
-::: {.btn-group role="group"}
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
 
-<i class="bi bi-download"></i> Download data
+1. [GDP by economic activity, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
+2. [GDP per capita by state, current prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vTvlM3MCisvSnlolfyj62IlV8iWrMf6nh7abda3Q3qx2MJxLGE99AF_r1fOUjj1NVK_tRh_TjOHECrA/pub?gid=1372571923&single=true&output=csv)
+3. [GDP by state and economic activity, constant prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=2038708362&single=true&output=csv)
+4. [GDP by state and sub-economic activity, constant prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=1439319907&single=true&output=csv)
 
-</button>
-
-<ul class="dropdown-menu">
-
-<li><a class="dropdown-item" href="https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke">GDP by economic activity, Malaysia</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTvlM3MCisvSnlolfyj62IlV8iWrMf6nh7abda3Q3qx2MJxLGE99AF_r1fOUjj1NVK_tRh_TjOHECrA/pub?gid=1372571923&single=true&output=csv">GDP per capita by state, current prices</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=2038708362&single=true&output=csv">GDP by state and economic activity, constant prices</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=1439319907&single=true&output=csv">GDP by state and sub-economic activity, constant prices</a></li>
-
-</ul>
 :::

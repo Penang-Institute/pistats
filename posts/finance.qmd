@@ -14,24 +14,12 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallf
 <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
-</br>
 
-::: {.btn-group role="group"}
-<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
 
-<i class="bi bi-download"></i> Download data
-
-</button>
-
-<ul class="dropdown-menu">
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=845875504&single=true&output=csv">Fiscal position</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=967187339&single=true&output=csv">Revenue items</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=1377625370&single=true&output=csv">Operating expenditure components</a></li>
-
-<li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=680372100&single=true&output=csv">Expenditure items</a></li>
-
-</ul>
+1.  [Fiscal position](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=845875504&single=true&output=csv)
+2.  [Revenue items](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=967187339&single=true&output=csv)
+3.  [Operating expenditure components](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=1377625370&single=true&output=csv)
+4.  [Expenditure items](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=680372100&single=true&output=csv)
 :::
