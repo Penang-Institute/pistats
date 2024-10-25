@@ -1,1 +1,16 @@
 /* css styles */
+
+.metrics {
+  .card-title{
+    opacity: .8;
+    font-size: 0.8rem;
+  }
+  .card-subtitle{
+    font-size: 1.7rem;
+  }  
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+

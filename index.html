@@ -56,6 +56,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-metrics .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-description','listing-subtitle','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-description","listing-subtitle","listing-title"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-metrics'] = new List('listing-metrics', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-penang-monthly .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -206,12 +234,8 @@ window.Quarto = {
  <span class="dropdown-text">Resources</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&amp;pvs=4">
- <span class="dropdown-text">Metadata</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://hollow-locket-922.notion.site/4079047156cf441398595107f688a30f?v=75577be15da545219fcaff695b4d7c96&amp;pvs=4">
- <span class="dropdown-text">Data sources</span></a>
+    <a class="dropdown-item" href="https://penanginstitute.org/programmes/socioeconomics-and-statistics-programme/">
+ <span class="dropdown-text">Socioeconomics and Statistics Programme</span></a>
   </li>  
     </ul>
   </li>
@@ -256,16 +280,115 @@ window.Quarto = {
 
 
 
+<section id="penang-at-a-glance" class="level1">
+<h1>Penang at a glance</h1>
+<div class="metrics">
+<div id="listing-metrics" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-5">
+<div class="g-col-1" data-index="0">
+<a href="posts/pop.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="penang-at-a-glance">
+2024
+</h5>
+<div class="card-subtitle listing-subtitle">
+1.8 mil
+</div>
+<div class="card-text listing-description">
+Population
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1">
+<a href="posts/gdp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+2023
+</h5>
+<div class="card-subtitle listing-subtitle">
+3.27%
+</div>
+<div class="card-text listing-description">
+GDP growth
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2">
+<a href="posts/hhinc.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+2022
+</h5>
+<div class="card-subtitle listing-subtitle">
+RM6,502
+</div>
+<div class="card-text listing-description">
+Median gross household income
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3">
+<a href="posts/cpi.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sep 2024
+</h5>
+<div class="card-subtitle listing-subtitle">
+3.10%
+</div>
+<div class="card-text listing-description">
+CPI inflation, year-on-year
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4">
+<a href="posts/labour.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Q2 2024
+</h5>
+<div class="card-subtitle listing-subtitle">
+1.80%
+</div>
+<div class="card-text listing-description">
+Unemployment rate
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</div>
+</section>
+<section id="dashboards" class="level1">
+<h1>Dashboards</h1>
 <div id="listing-main-listing" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="Economic sectors" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="g-col-1" data-index="0" data-categories="Economic sectors" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
 <a href="./posts/manf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1.png" class="thumbnail-image card-img" style="height: 5;">
 </p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="dashboards">
 Approved Manufacturing Investments
 </h5>
 <div class="card-text listing-description">
@@ -280,7 +403,7 @@ Explore the landscape and composition of manufacturing investment in Penang
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="g-col-1" data-index="1" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <a href="./posts/cpi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -302,7 +425,7 @@ Consumer Price Index
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="g-col-1" data-index="2" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
 <a href="./posts/trade.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -324,7 +447,7 @@ External Trade
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="g-col-1" data-index="3" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
 <a href="./posts/gender.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -346,7 +469,7 @@ Gender
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="g-col-1" data-index="4" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <a href="./posts/grad.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -368,7 +491,7 @@ Graduate Employability
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="g-col-1" data-index="5" data-categories="Macroeconomic indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
 <a href="./posts/gdp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -390,7 +513,7 @@ Gross Domestic Product
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
+<div class="g-col-1" data-index="6" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
 <a href="./posts/health.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -412,7 +535,7 @@ Healthcare
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="g-col-1" data-index="7" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
 <a href="./posts/hhinc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -434,7 +557,7 @@ Household Income
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
+<div class="g-col-1" data-index="8" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="110">
 <a href="./posts/labour.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -456,7 +579,7 @@ Labour Force
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
 <a href="./posts/finance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -478,7 +601,7 @@ Penang State Finance
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Social indicators" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
+<div class="g-col-1" data-index="10" data-categories="Social indicators" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
 <a href="./posts/pop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -500,7 +623,7 @@ Population and Demographics
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Economic sectors" data-listing-file-modified-sort="1729856740908" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="g-col-1" data-index="11" data-categories="Economic sectors" data-listing-file-modified-sort="1729866590990" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./posts/prop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -527,6 +650,7 @@ Residential Property
 No matching items
 </div>
 </div>
+</section>
 <section id="new-in-penang-monthly" class="level1">
 <h1>New in Penang Monthly</h1>
 <div id="listing-penang-monthly" class="quarto-listing quarto-listing-container-grid">
@@ -593,12 +717,6 @@ April 2024
 No matching items
 </div>
 </div>
-<!-- <div -->
-<!--     data-rss-feed="https://www.theguardian.com/international/rss" -->
-<!--     data-rss-link-titles="true" -->
-<!--     data-rss-title-wrapper="h3" -->
-<!--     data-rss-max="3"> -->
-<!-- </div> -->
 
 
 
