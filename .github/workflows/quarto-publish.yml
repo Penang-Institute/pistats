@@ -6,8 +6,8 @@ name: Render and Publish
 
 # you need these permissions to publish to GitHub pages
 permissions: 
-    contents: write
-    pages: write
+  contents: write
+  pages: write
 
 jobs:
   build-deploy:
@@ -22,7 +22,7 @@ jobs:
           # To install LaTeX to build PDF book 
           # tinytex: true 
           # uncomment below and fill to pin a version
-          version: pre-release
+          version: 1.5
       
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       - name: Publish to GitHub Pages (and render) 
