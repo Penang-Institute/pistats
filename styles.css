@@ -3,14 +3,19 @@
 .metrics {
   .card-title{
     opacity: .8;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .card-subtitle{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }  
   .card-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
-
+.dashboards {
+  .card-title{
+    font-weight: bold; 
+    color: #444 ;
+  }
+}
