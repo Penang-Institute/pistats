@@ -1,31 +1,170 @@
 ---
 title: "Resources"
+description: A selection of data sources for socioeconomic analysis and research on Penang and Malaysia
+title-block-banner: ../img/pexels-kevin-ku-92347-577585.jpg
+title-block-banner-color: white
 ---
 
-## Datasets
+### General
+::: {.panel-tabset}
+#### Malaysian government sources
 
-1. [www.data.gov.my: Public Sector Open Data](https://www.data.gov.my)
-    - [Archived open data portal](http://archive.data.gov.my/), datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
+##### Public Sector Open Data, [www.data.gov.my](https://www.data.gov.my)
+Data catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the [archived open data portal](http://archive.data.gov.my/), including datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
 
-2. [Bank Negara Malaysia](https://www.bnm.gov.my/rates-statistics)
+##### Malaysia's national statistical agency, [Department of Statistics Malaysia](https://www.dosm.gov.my/) (DOSM)
+- [eStatistik](https://newss.statistics.gov.my)
+- [OpenDOSM](https://open.dosm.gov.my/) is a scoped version of data.gov.my hosting only DOSM data
+- [MysIDC (to be deprecated in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
+
+#### In-house data publications 
+
+##### Penang Economic and Development Report
+
+Biennial socioeconomic review produced by Penang Institute, commissioned by the Penang Economic Planning Unit. 
+
+- [2019/2020](https://penanginstitute.org/publications/books-and-reports/penang-economic-and-development-report-2019-2020/)
+- [2017/2018](https://penanginstitute.org/wp-content/uploads/jml/files/PEDR-2017-2018/PEDR_2017-2018_1-160.pdf)
+- [2015/2016](https://penanginstitute.org/wp-content/uploads/2020/02/PEDR_2015-2016.pdf)
+
+##### Penang in Numbers
+
+Compilation of socioeconomic data including demography, agriculture, tourism, social work, infrastructure, etc.
+
+- [2017-2018](https://penanginstitute.org/wp-content/uploads/2020/02/eBook_Penang-In-Numbers-2017-2018.pdf)
+- [2016-2017](https://penanginstitute.org/wp-content/uploads/2020/02/Buku-Data-Penang-2016-2017.pdf)
+- [2014-2015](https://penanginstitute.org/wp-content/uploads/jml/files/Penang-in-Numbers-2014-2015.pdf)
+- [2013](https://penanginstitute.org/wp-content/uploads/jml/files/PgInNumbers_2013.pdf)
+
+##### Quarterly Penang Statistics
+Discontinued. View [archives](quarterly_penang_statistics.html).
+
+#### Multilateral agencies 
+- UN Department of Economic and Social Affairs 
+    - [UNdata](https://data.un.org/) 
+    - [SDG Indicators Database](https://unstats.un.org/sdgs/dataportal)
+- [ASEANstats](https://www.aseanstats.org/)
+- [Asian Development Bank](https://data.adb.org/)
+
+#### Other sources
+- [Our World in Data](https://ourworldindata.org/)
+- [Awesome Malaysia Open Data Resources](https://github.com/Sinar/awesome-dotmy-opendata-resources)
+:::
+
+### Economic development, investment and trade, public finance and governance
+::: {.panel-tabset}
+#### Malaysian government sources
+
+- [Ministry of Economy](https://www.ekonomi.gov.my)
+- [Malaysian Investment Development Authority](https://www.mida.gov.my/why-malaysia/investment-statistics/)
+- [Malaysia External Trade Statistics (METS)](https://metsonline.dosm.gov.my/) (DOSM)
+- [Malaysia External Trade Development Corporation](https://www.matrade.gov.my/en/choose-malaysia/industry-capabilities/trade-statistics)
+- [Ministry of Finance](https://www.mof.gov.my/)
+- [Penang State Treasury](https://jkn.penang.gov.my)
+- [Jabatan Audit Negara](https://www.audit.gov.my)
+
+#### Multilateral agencies
+- [ASEAN+3 Macroeconomic Research Office (AMRO)](https://amro-asia.org/?s=&_categories=data)
+- [UN Trade and Development](https://unctadstat.unctad.org/datacentre/)
+- [COMTRADE](https://comtradeplus.un.org/)
+- [World Bank](https://data.worldbank.org/)
+    - [Poverty and Inequality Platform](https://pip.worldbank.org/home)
+- [UNDP Human Development Index](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI)
+
+#### Others
+- [Subnational Human Development Index](https://globaldatalab.org/shdi/)
+:::
+
+### Financial system and capital markets
+
+::: {.panel-tabset}
+#### Malaysian government sources
+- [Bank Negara Malaysia](https://www.bnm.gov.my/rates-statistics)
     - [OpenAPI](https://apikijangportal.bnm.gov.my/)
+- [Securities Commission](https://www.sc.com.my/analytics)
 
-2. [Ministry of Economy](https://www.ekonomi.gov.my)
+#### Multilateral agencies
+- [Bank for International Settlements](https://data.bis.org/)
+:::
 
-2. [Department of Statistics Malaysia](https://www.dosm.gov.my/)
-    - [eStatistik](https://newss.statistics.gov.my)
-    - [OpenDOSM](https://open.dosm.gov.my/)
-    - [MysIDC (to be deprecated in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
-    - [Malaysia External Trade Statistics (METS)](https://metsonline.dosm.gov.my/)
+### Human capital, labour, social safety net
 
-## Geodata
+::: {.panel-tabset}
+#### Malaysian government sources
+- Ministry of Education
+    - [Dashboard](https://emisonline.moe.gov.my/risalahmap/)
+    - [Buku Perangkaan Pendidikan Malaysia](https://www.moe.gov.my/muatturun#elf_l1_cGVuZXJiaXRhbl9kYW5fanVybmFsL2J1a3UtcGVyYW5na2Fhbi1wZW5kaWRpa2FuLW1hbGF5c2lh)
+- [Ministry of Higher Education](https://great.mohe.gov.my/Statistik)
+- [Institute of Labour Market Information and Analysis](https://www.ilmia.gov.my/index.php/en/)
+- [Employees Provident Fund](https://www.kwsp.gov.my/en/corporate/news-highlights/publications)
+- [PERKESO Labour Market Exchange](https://www.perkeso.gov.my/en/our-services/other-services/lmi-eng.html)
+- [Department of Occupational Safety and Health](https://www.dosh.gov.my/index.php/dahsboard-bda/dashboard-kemalangan/)
 
+#### Multilateral agencies
+
+- [UNESCO Institute for Statistics](https://data.uis.unesco.org/)
+- [ILOStat](https://ilostat.ilo.org/)
+
+:::
+
+### Health and healthcare 
+::: {.panel-tabset}
+#### Malaysian government sources
+Ministry of Health
+
+- [KKMNOW](https://data.moh.gov.my/) hosts real-time health data 
+- [Health Indicators/Health Facts (national)](https://www.moh.gov.my/index.php/pages/view/58?mid=19)
+- [National Health and Morbidity Survey](https://iku.gov.my/nhms)
+- [Penang Health Facts](https://jknpenang.moh.gov.my/jknpenang/index.php/penerbitan-0/8-artikel-jknpp/1110-penerbitan-3-health), JKN Pulau Pinang 
+
+#### Multilateral agencies
+- [WHO](https://www.who.int/data)
+:::
+
+### Transportation
+- [Ministry of Transport](https://www.mot.gov.my/en/browse-by-topic/reports-and-stats)
+- [Kementerian Kerja Raya](https://www.kkr.gov.my/ms/galeri/penerbitan/senarai-penerbitan-kkr)
+    - [Road Traffic Volume Malaysia](http://rtvm.kkr.gov.my/) (subscription required)
+
+### Water, energy, environment, agriculture
+::: {.panel-tabset}
+#### Malaysian government sources
+- [Public Infobanjir](https://publicinfobanjir.water.gov.my/?lang=en)
+- [Suruhanjaya Perkhidmatan Air Negara](https://www.span.gov.my/category/view/119)
+- [Energy Commission](https://www.st.gov.my/eng/web/download/listing/151)
+- [Sustainable Energy Development Authority](https://www.seda.gov.my/statistics-monitoring/)
+- [myMetData, Jabatan Meteorologi Malaysia](https://mymetdata.met.gov.my/) (by purchase)
+- [Department of Agriculture](https://www.doa.gov.my/index.php/pages/view/622?mid=239)
+- [Department of Fisheries](https://www.dof.gov.my/en/resources/fisheries-statistics-i/)
+- [Department of Veterinary Services](https://www.dvs.gov.my/)
+- [Department of Environment](https://www.doe.gov.my)
+
+#### Multilateral agencies
+- [International Energy Agency](https://www.iea.org/data-and-statistics/data-explorers)
+- World Bank [Climate Change Knowledge Portal](https://climateknowledgeportal.worldbank.org/)
+- [Food and Agriculture Organization of the United Nations (FAO)](https://www.fao.org/statistics/en)
+- [International Renewable Energy Agency](https://www.irena.org/Data/Downloads/IRENASTAT)
+- [ASEAN Centre for Energy](https://aseanenergy.org)
+
+#### Other sources
+- [Probable Futures](https://probablefutures.org/climate-maps/)
+- [US Department of Agriculture](https://fas.usda.gov/data)
+- [Air Quality Life Index](https://aqli.epic.uchicago.edu/the-index/)
+:::
+
+### Others    
+- [Malaysian Communications and Multimedia Commission](https://mcmc.gov.my/en/resources/statistics)
+- [National Property Information Centre](https://napic2.jpph.gov.my/)
+- [Tourism Malaysia](https://data.tourism.gov.my/)
+
+### Geodata
+::: {.panel-tabset}
+#### Malaysian government sources
 1. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
-
+    - [ArcGIS REST services](https://pegis.penang.gov.my/arcgis/rest/services)
 2. [Malaysia Geoportal](http://www.mygeoportal.gov.my/node/61)
 
-## Past publications 
-
-1. [Penang in Numbers](https://penanginstitute.org/publications/books-and-reports/)
-
-2.  [Quarterly Penang Statistics](quarterly_penang_statistics.html)
+#### Other sources
+- [Humanitarian Data Exchange](https://data.humdata.org/dataset/cod-ab-mys?)
+- [MapTiler](https://data.maptiler.com/) (similar source used for data.gov.my)
+:::
