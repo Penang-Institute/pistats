@@ -1,0 +1,13 @@
+main.column-page#quarto-document-content{
+    /* max-width: 1000px; */
+
+    .dashboard {
+        width: auto;
+        height: 850px;
+    }
+
+    .callout {
+        max-width: 1000px;
+    }
+}
+
