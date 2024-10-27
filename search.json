@@ -70,11 +70,39 @@
     "text": "New in Penang Monthly\n\n\n\n\n\n\n\n\n\n\nPenang’s Evolving Schooling Preferences\n\n\n\nAugust 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNon-Profit Organisations In Penang\n\n\n\nJune 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOur Worsening Climate\n\n\n\nApril 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
     "title": "Resources",
     "section": "",
-    "text": "For further data resources:\n\nPenang in Numbers\nBank Negara Malaysia\nMinistry of Economy\nDepartment of Statistics Malaysia\nPenang Geographic Information Centre (PeGIS)\nMalaysia Geoportal\nQuarterly Penang Statistics"
+    "text": "www.data.gov.my: Public Sector Open Data\n\nArchived open data portal, datasets released by the Penang State Government\n\nBank Negara Malaysia\n\nOpenAPI\n\nMinistry of Economy\nDepartment of Statistics Malaysia\n\neStatistik\nOpenDOSM\nMysIDC (to be deprecated in favour of OpenDOSM)\nMalaysia External Trade Statistics (METS)"
+  },
+  {
+    "objectID": "resources/index.html#datasets",
+    "href": "resources/index.html#datasets",
+    "title": "Resources",
+    "section": "",
+    "text": "www.data.gov.my: Public Sector Open Data\n\nArchived open data portal, datasets released by the Penang State Government\n\nBank Negara Malaysia\n\nOpenAPI\n\nMinistry of Economy\nDepartment of Statistics Malaysia\n\neStatistik\nOpenDOSM\nMysIDC (to be deprecated in favour of OpenDOSM)\nMalaysia External Trade Statistics (METS)"
+  },
+  {
+    "objectID": "resources/index.html#geodata",
+    "href": "resources/index.html#geodata",
+    "title": "Resources",
+    "section": "Geodata",
+    "text": "Geodata\n\nPenang Geographic Information Centre (PeGIS)\nMalaysia Geoportal"
+  },
+  {
+    "objectID": "resources/index.html#past-publications",
+    "href": "resources/index.html#past-publications",
+    "title": "Resources",
+    "section": "Past publications",
+    "text": "Past publications\n\nPenang in Numbers\nQuarterly Penang Statistics"
+  },
+  {
+    "objectID": "resources/quarterly_penang_statistics.html",
+    "href": "resources/quarterly_penang_statistics.html",
+    "title": "Quarterly Penang Statistics",
+    "section": "",
+    "text": "Quarterly Penang Statistics was published once every three months. Initiated in 1999, this series collates data provided by government departments and private organisations at state and national level, for the use of policymakers, researchers, academics and investors. The statistics found herein are Penang-relevant, and pertain to demographic, social and economic development. Key national economic statistics are also included, covering the areas of agriculture, fisheries, livestock, manufacturing, water, electricity, telecommunications, property, tourism, logistics, health and education."
   },
   {
     "objectID": "posts/econ/gdp.html",
