@@ -8,6 +8,7 @@ categories:
 - Economic sectors
 ---
 
+::: {.dashboard}
 ```{=html}
 <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -16,6 +17,7 @@ categories:
   <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
+:::
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
 Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
 1. [Transaction volume and value by price range](https://docs.google.com/spreadsheets/d/e/2PACX-1vTzR2vcnLKJ2iPssrbq60wNXOE8h5bfGL5nGGFIq4zDzroA5Cxjx8ISByXx09PEDILukMzxP85o4wOn/pub?gid=1467857133&single=true&output=csv)

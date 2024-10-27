@@ -8,6 +8,7 @@ categories:
 - Social indicators
 ---
 
+::: {.dashboard}
 ```{=html}
 <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -16,6 +17,7 @@ categories:
   <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
+:::
 
 </br>
 

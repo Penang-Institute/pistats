@@ -1,0 +1,29 @@
+---
+title: "Gross Domestic Product"
+image: 'https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1.png'
+description: |
+  Chart Penang's economic trajectory with GDP insights, 
+  revealing sector contributions and key trends 
+categories: 
+- Macroeconomic indicators
+---
+
+::: {.dashboard}
+```{=html}
+<script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+<tableau-viz id='tableau-viz' 
+    src='https://public.tableau.com/views/PenangsGrossDomesticProduct/GDPbystate' 
+    width='1000' height='850' toolbar='bottom' >
+<custom-parameter name=":showShareOptions" value="false"></custom-parameter>
+</tableau-viz>
+```
+:::
+
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+
+1.  [GDP by economic activity, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
+2.  [GDP per capita by state, current prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vTvlM3MCisvSnlolfyj62IlV8iWrMf6nh7abda3Q3qx2MJxLGE99AF_r1fOUjj1NVK_tRh_TjOHECrA/pub?gid=1372571923&single=true&output=csv)
+3.  [GDP by state and economic activity, constant prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=2038708362&single=true&output=csv)
+4.  [GDP by state and sub-economic activity, constant prices](https://docs.google.com/spreadsheets/d/e/2PACX-1vRXHJhFC2sI2nwsjrPY-2DSOU-BkQosKISZVRWwkl-SNi4M9ArBaBkFO-VcRLf4i6fXi5yOQ1b2e2Vd/pub?gid=1439319907&single=true&output=csv)
+:::

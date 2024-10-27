@@ -17,36 +17,24 @@ listing:
     date-format: "MMMM YYYY"
     type: grid
     max-items: 3
-    # categories: true
   - id: dashboards-econ
     contents: 
-    - posts/cpi.qmd
-    - posts/labour.qmd
-    - posts/trade.qmd
-    - posts/gdp.qmd
-    - posts/finance.qmd
+    - posts/econ/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
-    # categories: false
   - id: dashboards-sector
     contents: 
-    - posts/manf.qmd
-    - posts/prop.qmd  
-    - posts/health.qmd
-    - posts/grad.qmd
+    - posts/sector/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
   - id: dashboards-social
     contents: 
-    - posts/pop.qmd
-    - posts/gender.qmd
-    - posts/hhinc.qmd
+    - posts/social/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
-    # categories: false      
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
 ---

@@ -19,9 +19,14 @@
     margin-bottom: .5em;  
   }
   .card-text {
-    font-size: .8rem;
+    font-size: .75rem;
     opacity: .9;
-  }    
+    color: #444 ;
+  }
+}
+
+.dashboard {
+  height: 850;
 }
 
 h4 {

@@ -6,6 +6,7 @@ description: |
 image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png'
 ---
 
+::: {.dashboard}
 ```{=html}
 <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -14,9 +15,10 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallf
 <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
 </tableau-viz>
 ```
+:::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
 
 1.  [Fiscal position](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=845875504&single=true&output=csv)
 2.  [Revenue items](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=967187339&single=true&output=csv)
