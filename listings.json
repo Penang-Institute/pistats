@@ -2,18 +2,18 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/manf.html",
-      "/posts/cpi.html",
-      "/posts/trade.html",
-      "/posts/gender.html",
-      "/posts/grad.html",
-      "/posts/gdp.html",
-      "/posts/health.html",
-      "/posts/hhinc.html",
-      "/posts/labour.html",
-      "/posts/finance.html",
-      "/posts/pop.html",
-      "/posts/prop.html"
+      "/posts/econ/cpi.html",
+      "/posts/econ/trade.html",
+      "/posts/econ/gdp.html",
+      "/posts/econ/labour.html",
+      "/posts/econ/finance.html",
+      "/posts/sector/manf.html",
+      "/posts/sector/grad.html",
+      "/posts/sector/health.html",
+      "/posts/sector/prop.html",
+      "/posts/social/gender.html",
+      "/posts/social/hhinc.html",
+      "/posts/social/pop.html"
     ]
   }
 ]

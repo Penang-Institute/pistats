@@ -14,8 +14,23 @@
 }
 
 .dashboards {
+
   .card-title{
-    font-weight: bold; 
+    margin-bottom: .5em;  
+  }
+  .card-text {
+    font-size: .75rem;
+    opacity: .9;
     color: #444 ;
   }
+}
+
+.dashboard {
+  height: 850;
+}
+
+h4 {
+  margin-bottom: .5em; 
+  font-weight: bold; 
+  color: #444 ;
 }
