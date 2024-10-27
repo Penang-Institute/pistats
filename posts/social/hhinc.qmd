@@ -20,11 +20,9 @@ categories:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
 
-1. [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv) 
-
-2. [Mean/median income and income share by household income group](https://docs.google.com/spreadsheets/d/e/2PACX-1vT-_HsvzUxvcYnZ95e8MJE8lXZI0JYlSx_gK2JepjnVHTzBrQuB1cgN3kOIeAkBY_aq7dSaH6ThIs9H/pub?gid=480929340&single=true&output=csv) 
-
-3. [Household income share by district and income class](https://docs.google.com/spreadsheets/d/e/2PACX-1vSWtNz-IQ39PQkxQQx8ezuEIO4JGnqqksHFMmdXeT0HJsME26ZnJpRgoahAq4Km5Soe9gD8_SxpZkM1/pub?gid=1294274604&single=true&output=csv)
+1.  [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv)
+2.  [Mean/median income and income share by household income group](https://docs.google.com/spreadsheets/d/e/2PACX-1vT-_HsvzUxvcYnZ95e8MJE8lXZI0JYlSx_gK2JepjnVHTzBrQuB1cgN3kOIeAkBY_aq7dSaH6ThIs9H/pub?gid=480929340&single=true&output=csv)
+3.  [Household income share by district and income class](https://docs.google.com/spreadsheets/d/e/2PACX-1vSWtNz-IQ39PQkxQQx8ezuEIO4JGnqqksHFMmdXeT0HJsME26ZnJpRgoahAq4Km5Soe9gD8_SxpZkM1/pub?gid=1294274604&single=true&output=csv)
 :::
