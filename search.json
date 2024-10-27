@@ -74,35 +74,14 @@
     "href": "resources/index.html",
     "title": "Resources",
     "section": "",
-    "text": "www.data.gov.my: Public Sector Open Data\n\nArchived open data portal, datasets released by the Penang State Government\n\nBank Negara Malaysia\n\nOpenAPI\n\nMinistry of Economy\nDepartment of Statistics Malaysia\n\neStatistik\nOpenDOSM\nMysIDC (to be deprecated in favour of OpenDOSM)\nMalaysia External Trade Statistics (METS)"
-  },
-  {
-    "objectID": "resources/index.html#datasets",
-    "href": "resources/index.html#datasets",
-    "title": "Resources",
-    "section": "",
-    "text": "www.data.gov.my: Public Sector Open Data\n\nArchived open data portal, datasets released by the Penang State Government\n\nBank Negara Malaysia\n\nOpenAPI\n\nMinistry of Economy\nDepartment of Statistics Malaysia\n\neStatistik\nOpenDOSM\nMysIDC (to be deprecated in favour of OpenDOSM)\nMalaysia External Trade Statistics (METS)"
-  },
-  {
-    "objectID": "resources/index.html#geodata",
-    "href": "resources/index.html#geodata",
-    "title": "Resources",
-    "section": "Geodata",
-    "text": "Geodata\n\nPenang Geographic Information Centre (PeGIS)\nMalaysia Geoportal"
-  },
-  {
-    "objectID": "resources/index.html#past-publications",
-    "href": "resources/index.html#past-publications",
-    "title": "Resources",
-    "section": "Past publications",
-    "text": "Past publications\n\nPenang in Numbers\nQuarterly Penang Statistics"
+    "text": "General\n\nMalaysian government sourcesIn-house data publicationsMultilateral agenciesOther sources\n\n\n\nPublic Sector Open Data, www.data.gov.my\nData catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the archived open data portal, including datasets released by the Penang State Government\n\n\nMalaysia’s national statistical agency, Department of Statistics Malaysia (DOSM)\n\neStatistik\nOpenDOSM is a scoped version of data.gov.my hosting only DOSM data\nMysIDC (to be deprecated in favour of OpenDOSM)\n\n\n\n\n\nPenang Economic and Development Report\nBiennial socioeconomic review produced by Penang Institute, commissioned by the Penang Economic Planning Unit.\n\n2019/2020\n2017/2018\n2015/2016\n\n\n\nPenang in Numbers\nCompilation of socioeconomic data including demography, agriculture, tourism, social work, infrastructure, etc.\n\n2017-2018\n2016-2017\n2014-2015\n2013\n\n\n\nQuarterly Penang Statistics\nDiscontinued. View archives.\n\n\n\n\nUN Department of Economic and Social Affairs\n\nUNdata\nSDG Indicators Database\n\nASEANstats\nAsian Development Bank\n\n\n\n\nOur World in Data\nAwesome Malaysia Open Data Resources\n\n\n\n\n\n\nEconomic development, investment and trade, public finance and governance\n\nMalaysian government sourcesMultilateral agenciesOthers\n\n\n\nMinistry of Economy\nMalaysian Investment Development Authority\nMalaysia External Trade Statistics (METS) (DOSM)\nMalaysia External Trade Development Corporation\nMinistry of Finance\nPenang State Treasury\nJabatan Audit Negara\n\n\n\n\nASEAN+3 Macroeconomic Research Office (AMRO)\nUN Trade and Development\nCOMTRADE\nWorld Bank\n\nPoverty and Inequality Platform\n\nUNDP Human Development Index\n\n\n\n\nSubnational Human Development Index\n\n\n\n\n\n\nFinancial system and capital markets\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nBank Negara Malaysia\n\nOpenAPI\n\nSecurities Commission\n\n\n\n\nBank for International Settlements\n\n\n\n\n\n\nHuman capital, labour, social safety net\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nMinistry of Education\n\nDashboard\nBuku Perangkaan Pendidikan Malaysia\n\nMinistry of Higher Education\nInstitute of Labour Market Information and Analysis\nEmployees Provident Fund\nPERKESO Labour Market Exchange\nDepartment of Occupational Safety and Health\n\n\n\n\nUNESCO Institute for Statistics\nILOStat\n\n\n\n\n\n\nHealth and healthcare\n\nMalaysian government sourcesMultilateral agencies\n\n\nMinistry of Health\n\nKKMNOW hosts real-time health data\nHealth Indicators/Health Facts (national)\nNational Health and Morbidity Survey\nPenang Health Facts, JKN Pulau Pinang\n\n\n\n\nWHO\n\n\n\n\n\n\nTransportation\n\nMinistry of Transport\nKementerian Kerja Raya\n\nRoad Traffic Volume Malaysia (subscription required)\n\n\n\n\nWater, energy, environment, agriculture\n\nMalaysian government sourcesMultilateral agenciesOther sources\n\n\n\nPublic Infobanjir\nSuruhanjaya Perkhidmatan Air Negara\nEnergy Commission\nSustainable Energy Development Authority\nmyMetData, Jabatan Meteorologi Malaysia (by purchase)\nDepartment of Agriculture\nDepartment of Fisheries\nDepartment of Veterinary Services\nDepartment of Environment\n\n\n\n\nInternational Energy Agency\nWorld Bank Climate Change Knowledge Portal\nFood and Agriculture Organization of the United Nations (FAO)\nInternational Renewable Energy Agency\nASEAN Centre for Energy\n\n\n\n\nProbable Futures\nUS Department of Agriculture\nAir Quality Life Index\n\n\n\n\n\n\nOthers\n\nMalaysian Communications and Multimedia Commission\nNational Property Information Centre\nTourism Malaysia\n\n\n\nGeodata\n\nMalaysian government sourcesOther sources\n\n\n\nPenang Geographic Information Centre (PeGIS)\n\nArcGIS REST services\n\nMalaysia Geoportal\n\n\n\n\nHumanitarian Data Exchange\nMapTiler (similar source used for data.gov.my)"
   },
   {
     "objectID": "resources/quarterly_penang_statistics.html",
     "href": "resources/quarterly_penang_statistics.html",
     "title": "Quarterly Penang Statistics",
     "section": "",
-    "text": "Quarterly Penang Statistics was published once every three months. Initiated in 1999, this series collates data provided by government departments and private organisations at state and national level, for the use of policymakers, researchers, academics and investors. The statistics found herein are Penang-relevant, and pertain to demographic, social and economic development. Key national economic statistics are also included, covering the areas of agriculture, fisheries, livestock, manufacturing, water, electricity, telecommunications, property, tourism, logistics, health and education."
+    "text": "Initiated in 1999, Quarterly Penang Statistics collates data provided by government departments and private organisations at state and national levels, for the use of policymakers, researchers, academics and investors.\nThis publication contains statistics about Penang’s demographic, social and economic development. Key national economic statistics are also included, covering the areas of agriculture, fisheries, livestock, manufacturing, water, electricity, telecommunications, property, tourism, logistics, health and education.\nThis publication is now discontinued."
   },
   {
     "objectID": "posts/econ/gdp.html",
