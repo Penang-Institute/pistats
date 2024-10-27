@@ -4,7 +4,7 @@
     "href": "posts/social/pop.html",
     "title": "Population and Demographics",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Malaysia population by age, sex and ethnicity 2. Penang population by age, sex, ethnicity, nationality 3. Penang population by district and sex 4. Penang population by district and ethnicity 5. Land area by district, Penang 6. Fertility rate by state 7. Gross migration by state 8. Intra-state migration 9. Internal migrants by state of origin and state of destination, Malaysia"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Malaysia population by age, sex and ethnicity\n2. Penang population by age, sex, ethnicity, nationality\n3. Penang population by district and sex\n4. Penang population by district and ethnicity\n5. Land area by district, Penang\n6. Fertility rate by state\n7. Gross migration by state\n8. Intra-state migration\n9. Internal migrants by state of origin and state of destination, Malaysia"
   },
   {
     "objectID": "posts/social/hhinc.html",
@@ -18,14 +18,14 @@
     "href": "posts/sector/health.html",
     "title": "Healthcare",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Healthcare facilities (hospitals, beds) by state 2. Healthcare facilities by district 3. Healthcare utilisation by state 4. Healthcare utilisation by hospital 5. Healthcare personnel by state 6. Communicable disease cases and deaths"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Healthcare facilities (hospitals, beds) by state\n2. Healthcare facilities by district\n3. Healthcare utilisation by state\n4. Healthcare utilisation by hospital\n5. Healthcare personnel by state\n6. Communicable disease cases and deaths"
   },
   {
     "objectID": "posts/sector/grad.html",
     "href": "posts/sector/grad.html",
     "title": "Graduate Employability",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Graduates by field of study and employment status, Penang 2. Employed graduates by field of study and industry of work, Penang"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 2. Employed graduates by field of study and industry of work, Penang\n1. Graduates by field of study and employment status, Penang\n2. Employed graduates by field of study and industry of work, Penang"
   },
   {
     "objectID": "posts/econ/finance.html",
@@ -102,7 +102,7 @@
     "href": "posts/sector/prop.html",
     "title": "Residential Property",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Transaction volume and value by price range 2. Penang, new launches by price range, district 3. Unsold residential property by price range and type, quarterly 4. Annual residential prices by state and quantile 5. Household income, inequality and poverty metrics by state and district"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Transaction volume and value by price range\n2. Penang, new launches by price range, district\n3. Unsold residential property by price range and type, quarterly\n4. Annual residential prices by state and quantile\n5. Household income, inequality and poverty metrics by state and district"
   },
   {
     "objectID": "posts/sector/manf.html",
