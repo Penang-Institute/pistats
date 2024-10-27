@@ -6,6 +6,8 @@ description: |
   and analyze inequality patterns
 categories: 
 - Social indicators
+aliases:
+  - posts/hhinc.html
 ---
 
 ::: {.dashboard}

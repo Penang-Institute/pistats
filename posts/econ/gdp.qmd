@@ -6,6 +6,8 @@ description: |
   revealing sector contributions and key trends 
 categories: 
 - Macroeconomic indicators
+aliases:
+  - posts/gdp.html
 ---
 
 ::: {.dashboard}

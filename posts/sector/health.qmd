@@ -7,6 +7,8 @@ description: |
 categories: 
 - Social indicators
 - Sector-specific
+aliases:
+  - posts/health.html
 ---
 
 ::: {.dashboard}
@@ -35,4 +37,3 @@ Datasets are provided without warranty. You will be solely responsible for your 
 
 6\. [Communicable disease cases and deaths](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1768954840&single=true&output=csv)
 :::
-

@@ -4,6 +4,8 @@ description: |
   Explore the state's development and operating balances, revenue streams, 
   and detailed expenditure breakdowns
 image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png'
+aliases:
+  - posts/finance.html
 ---
 
 ::: {.dashboard}

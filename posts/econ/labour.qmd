@@ -6,6 +6,8 @@ description: |
   of the workforce across key demographics, sectors and occupations
 categories: 
 - Social indicators
+aliases:
+  - posts/labour.html
 ---
 
 ::: {.dashboard}
@@ -22,12 +24,19 @@ categories:
 </br>
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
-1. [Principal statistics of labour force for Penang, overall and by sex, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9GPZSn2aLSa7AX5xKgl0tQnxcvxm6Uxh7he3j6YXdpRvflcZ04oum23ci2TiRqTTcnyAqLgJFHnb/pub?gid=689973819&single=true&output=csv) 
-2. [Labour force statistics by age and sex, Malaysia and Penang, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vQQw1OWf1Qr8qkU7RNijH9tBica7_bO5BgrKF6-xN8gQ_A7ElwgF_D_Lr5Yd0dch_Ac8w-JG1aTPSnd/pub?gid=459186920&single=true&output=csv) 
-3. [Labour force participation rate by sex and state](https://docs.google.com/spreadsheets/d/e/2PACX-1vRUc3w2QfEqkDHKs9ZbDvmg7uS3xF2fmXLqlLSLtLbLOb3YV7GqeQ6kOB-w86RR-es3eALaqPG8qNBB/pub?gid=1988034258&single=true&output=csv) 
-4. [Employed and labour force, Penang by highest certificate obtained and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vSU8rvlbwuknE6xVZKc4jXcSFoCy0198N7TE6P0pf85NYpXbluB0oORmjND__6sI7pNrQPCp3nggKx3/pub?gid=971935158&single=true&output=csv) 
-5. [Employed and labour force, Penang by marital status and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vR7WrQJ1nyg7Qz557oBdDRM_zD2nrMbeBF4XvXlDQpxXXZrPjxqJpONQmIW1FEtj1b-qponfglcGJwI/pub?gid=614520469&single=true&output=csv) 
-6. [Employed persons by state, occupation and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vQSMxZaxL-zmovjWOjsS074oJNHon8Sgq2qAuYOTsm8Ln5Ty5pz-SFztKYoEfyck6ulCZiQoW2sdhuq/pub?gid=679368366&single=true&output=csv) 
-7. [Employed persons by state, industry and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vToDL2tbSL9YhnRMGwUheDtwFx6oY_v3Xt98j7aSfXgNefeEYuXkVaAFEuXY-KtPJLJrLRMUOOO-rf3/pub?gid=1321915459&single=true&output=csv)
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+
+1\. [Principal statistics of labour force for Penang, overall and by sex, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9GPZSn2aLSa7AX5xKgl0tQnxcvxm6Uxh7he3j6YXdpRvflcZ04oum23ci2TiRqTTcnyAqLgJFHnb/pub?gid=689973819&single=true&output=csv)
+
+2\. [Labour force statistics by age and sex, Malaysia and Penang, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vQQw1OWf1Qr8qkU7RNijH9tBica7_bO5BgrKF6-xN8gQ_A7ElwgF_D_Lr5Yd0dch_Ac8w-JG1aTPSnd/pub?gid=459186920&single=true&output=csv)
+
+3\. [Labour force participation rate by sex and state](https://docs.google.com/spreadsheets/d/e/2PACX-1vRUc3w2QfEqkDHKs9ZbDvmg7uS3xF2fmXLqlLSLtLbLOb3YV7GqeQ6kOB-w86RR-es3eALaqPG8qNBB/pub?gid=1988034258&single=true&output=csv)
+
+4\. [Employed and labour force, Penang by highest certificate obtained and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vSU8rvlbwuknE6xVZKc4jXcSFoCy0198N7TE6P0pf85NYpXbluB0oORmjND__6sI7pNrQPCp3nggKx3/pub?gid=971935158&single=true&output=csv)
+
+5\. [Employed and labour force, Penang by marital status and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vR7WrQJ1nyg7Qz557oBdDRM_zD2nrMbeBF4XvXlDQpxXXZrPjxqJpONQmIW1FEtj1b-qponfglcGJwI/pub?gid=614520469&single=true&output=csv)
+
+6\. [Employed persons by state, occupation and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vQSMxZaxL-zmovjWOjsS074oJNHon8Sgq2qAuYOTsm8Ln5Ty5pz-SFztKYoEfyck6ulCZiQoW2sdhuq/pub?gid=679368366&single=true&output=csv)
+
+7\. [Employed persons by state, industry and sex](https://docs.google.com/spreadsheets/d/e/2PACX-1vToDL2tbSL9YhnRMGwUheDtwFx6oY_v3Xt98j7aSfXgNefeEYuXkVaAFEuXY-KtPJLJrLRMUOOO-rf3/pub?gid=1321915459&single=true&output=csv)
 :::

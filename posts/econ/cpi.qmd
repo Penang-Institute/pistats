@@ -6,6 +6,8 @@ description: |
   inflation trends across food, housing, and more
 categories: 
 - Macroeconomic indicators
+aliases:
+  - posts/cpi.html
 ---
 
 ::: {.dashboard}

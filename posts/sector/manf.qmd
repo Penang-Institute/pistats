@@ -4,6 +4,8 @@ image: 'https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturing
 description: Explore the landscape and composition of manufacturing investment in Penang
 categories: 
 - Economic sectors
+aliases:
+  - posts/manf.html
 ---
 
 ::: {.dashboard}
@@ -18,8 +20,7 @@ categories:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets. 
+Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
 
-1. [Approved manufacturing investments by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv)
-
-::: 
+1.  [Approved manufacturing investments by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv)
+:::

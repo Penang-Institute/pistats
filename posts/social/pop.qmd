@@ -6,6 +6,8 @@ description: |
   distribution of Penang's people
 categories: 
 - Social indicators
+aliases:
+  - posts/pop.html
 ---
 
 ::: dashboard
@@ -40,4 +42,3 @@ Datasets are provided without warranty. You will be solely responsible for your 
 
 9\. [Internal migrants by state of origin and state of destination, Malaysia](https://docs.google.com/spreadsheets/d/e/2PACX-1vTywDv-XFV18VMdNPtaikhCSfjWbEbhR8GcCOojbxlNzkt7nKmwem567XPa3onr-mdg_4f5inj7wthR/pub?gid=599265474&single=true&output=csv)
 :::
-

@@ -6,6 +6,8 @@ description: |
   monitor new launches, and assess affordability with the price-to-income ratio
 categories: 
 - Economic sectors
+aliases:
+  - posts/prop.html
 ---
 
 ::: {.dashboard}
@@ -18,6 +20,7 @@ categories:
 </tableau-viz>
 ```
 :::
+
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
 Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
 
@@ -31,4 +34,3 @@ Datasets are provided without warranty. You will be solely responsible for your 
 
 5\. [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv)
 :::
-
