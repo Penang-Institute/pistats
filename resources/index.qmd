@@ -1,21 +1,22 @@
 ---
 title: "Resources"
-description: A selection of data sources for socioeconomic analysis and research on Penang and Malaysia
+description: Data sources for socioeconomic analysis and research on Penang and Malaysia
 title-block-banner: ../img/pexels-kevin-ku-92347-577585.jpg
 title-block-banner-color: white
+toc: true
 ---
 
 ### General
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 
-##### Public Sector Open Data, [www.data.gov.my](https://www.data.gov.my)
+##### Public Sector Open Data: [www.data.gov.my](https://www.data.gov.my)
 Data catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the [archived open data portal](http://archive.data.gov.my/), including datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
 
 ##### Malaysia's national statistical agency, [Department of Statistics Malaysia](https://www.dosm.gov.my/) (DOSM)
 - [eStatistik](https://newss.statistics.gov.my)
 - [OpenDOSM](https://open.dosm.gov.my/) is a scoped version of data.gov.my hosting only DOSM data
-- [MysIDC (to be deprecated in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
+- [MysIDC (to be discontinued in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
 
 #### In-house data publications 
 
@@ -50,9 +51,10 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 - [Our World in Data](https://ourworldindata.org/)
 - [Awesome Malaysia Open Data Resources](https://github.com/Sinar/awesome-dotmy-opendata-resources)
 :::
+---------
 
 ### Economic development, investment and trade, public finance and governance
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 
 - [Ministry of Economy](https://www.ekonomi.gov.my)
@@ -74,10 +76,11 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 #### Others
 - [Subnational Human Development Index](https://globaldatalab.org/shdi/)
 :::
+---------
 
 ### Financial system and capital markets
 
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 - [Bank Negara Malaysia](https://www.bnm.gov.my/rates-statistics)
     - [OpenAPI](https://apikijangportal.bnm.gov.my/)
@@ -87,16 +90,19 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 - [Bank for International Settlements](https://data.bis.org/)
 :::
 
+---------
+
 ### Human capital, labour, social safety net
 
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 - Ministry of Education
     - [Dashboard](https://emisonline.moe.gov.my/risalahmap/)
     - [Buku Perangkaan Pendidikan Malaysia](https://www.moe.gov.my/muatturun#elf_l1_cGVuZXJiaXRhbl9kYW5fanVybmFsL2J1a3UtcGVyYW5na2Fhbi1wZW5kaWRpa2FuLW1hbGF5c2lh)
 - [Ministry of Higher Education](https://great.mohe.gov.my/Statistik)
 - [Institute of Labour Market Information and Analysis](https://www.ilmia.gov.my/index.php/en/)
-- [Employees Provident Fund](https://www.kwsp.gov.my/en/corporate/news-highlights/publications)
+- [Jabatan Tenaga Kerja](https://jtksm.mohr.gov.my/en/statistic/i-stat)
+- [Employees' Provident Fund](https://www.kwsp.gov.my/en/corporate/news-highlights/publications)
 - [PERKESO Labour Market Exchange](https://www.perkeso.gov.my/en/our-services/other-services/lmi-eng.html)
 - [Department of Occupational Safety and Health](https://www.dosh.gov.my/index.php/dahsboard-bda/dashboard-kemalangan/)
 
@@ -107,27 +113,32 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 
 :::
 
+---------
+
 ### Health and healthcare 
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 Ministry of Health
 
 - [KKMNOW](https://data.moh.gov.my/) hosts real-time health data 
 - [Health Indicators/Health Facts (national)](https://www.moh.gov.my/index.php/pages/view/58?mid=19)
 - [National Health and Morbidity Survey](https://iku.gov.my/nhms)
-- [Penang Health Facts](https://jknpenang.moh.gov.my/jknpenang/index.php/penerbitan-0/8-artikel-jknpp/1110-penerbitan-3-health), JKN Pulau Pinang 
+- [Penang Health Facts](https://jknpenang.moh.gov.my/jknpenang/index.php/penerbitan-0/8-artikel-jknpp/1110-penerbitan-3-health), Penang Health Department 
 
 #### Multilateral agencies
-- [WHO](https://www.who.int/data)
+- [World Health Organization](https://www.who.int/data)
 :::
+---------
 
 ### Transportation
 - [Ministry of Transport](https://www.mot.gov.my/en/browse-by-topic/reports-and-stats)
 - [Kementerian Kerja Raya](https://www.kkr.gov.my/ms/galeri/penerbitan/senarai-penerbitan-kkr)
     - [Road Traffic Volume Malaysia](http://rtvm.kkr.gov.my/) (subscription required)
 
+---------
+
 ### Water, energy, environment, agriculture
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 - [Public Infobanjir](https://publicinfobanjir.water.gov.my/?lang=en)
 - [Suruhanjaya Perkhidmatan Air Negara](https://www.span.gov.my/category/view/119)
@@ -152,13 +163,11 @@ Ministry of Health
 - [Air Quality Life Index](https://aqli.epic.uchicago.edu/the-index/)
 :::
 
-### Others    
-- [Malaysian Communications and Multimedia Commission](https://mcmc.gov.my/en/resources/statistics)
-- [National Property Information Centre](https://napic2.jpph.gov.my/)
-- [Tourism Malaysia](https://data.tourism.gov.my/)
+
+---------
 
 ### Geodata
-::: {.panel-tabset}
+::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 1. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
     - [ArcGIS REST services](https://pegis.penang.gov.my/arcgis/rest/services)
@@ -168,3 +177,10 @@ Ministry of Health
 - [Humanitarian Data Exchange](https://data.humdata.org/dataset/cod-ab-mys?)
 - [MapTiler](https://data.maptiler.com/) (similar source used for data.gov.my)
 :::
+
+---------
+
+### Others    
+- [Malaysian Communications and Multimedia Commission](https://mcmc.gov.my/en/resources/statistics)
+- [National Property Information Centre](https://napic2.jpph.gov.my/)
+- [Tourism Malaysia](https://data.tourism.gov.my/)
