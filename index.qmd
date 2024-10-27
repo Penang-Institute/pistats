@@ -17,13 +17,36 @@ listing:
     date-format: "MMMM YYYY"
     type: grid
     max-items: 3
-    # categories: false
-  - id: main-listing
-    contents: posts
+    # categories: true
+  - id: dashboards-econ
+    contents: 
+    - posts/cpi.qmd
+    - posts/labour.qmd
+    - posts/trade.qmd
+    - posts/gdp.qmd
+    - posts/finance.qmd
     type: grid
-    grid-columns: 4
+    grid-columns: 5
     image-height: "5"
-    # categories: true    
+    # categories: false
+  - id: dashboards-sector
+    contents: 
+    - posts/manf.qmd
+    - posts/prop.qmd  
+    - posts/health.qmd
+    - posts/grad.qmd
+    type: grid
+    grid-columns: 5
+    image-height: "5"
+  - id: dashboards-social
+    contents: 
+    - posts/pop.qmd
+    - posts/gender.qmd
+    - posts/hhinc.qmd
+    type: grid
+    grid-columns: 5
+    image-height: "5"
+    # categories: false      
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
 ---
@@ -36,8 +59,25 @@ title-block-banner-color: 'white'
 ::::
 
 ## Dashboards
+
+#### Economic indicators
+
 :::: dashboards
-::: {#main-listing}
+::: {#dashboards-econ}
+:::
+::::
+
+#### Sector-specific
+
+:::: dashboards
+::: {#dashboards-sector}
+:::
+::::
+
+#### Social indicators
+
+:::: dashboards
+::: {#dashboards-social}
 :::
 ::::
 
