@@ -1,0 +1,31 @@
+---
+title: "Resources"
+---
+
+## Datasets
+
+1. [www.data.gov.my: Public Sector Open Data](https://www.data.gov.my)
+    - [Archived open data portal](http://archive.data.gov.my/), datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
+
+2. [Bank Negara Malaysia](https://www.bnm.gov.my/rates-statistics)
+    - [OpenAPI](https://apikijangportal.bnm.gov.my/)
+
+2. [Ministry of Economy](https://www.ekonomi.gov.my)
+
+2. [Department of Statistics Malaysia](https://www.dosm.gov.my/)
+    - [eStatistik](https://newss.statistics.gov.my)
+    - [OpenDOSM](https://open.dosm.gov.my/)
+    - [MysIDC (to be deprecated in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
+    - [Malaysia External Trade Statistics (METS)](https://metsonline.dosm.gov.my/)
+
+## Geodata
+
+1. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
+
+2. [Malaysia Geoportal](http://www.mygeoportal.gov.my/node/61)
+
+## Past publications 
+
+1. [Penang in Numbers](https://penanginstitute.org/publications/books-and-reports/)
+
+2.  [Quarterly Penang Statistics](quarterly_penang_statistics.html)
