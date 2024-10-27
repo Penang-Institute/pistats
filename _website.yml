@@ -1,0 +1,61 @@
+website:
+  title: "Key Penang Statistics: Penang Institute"
+  search: false
+  navbar:
+    title: Statistics
+    logo: img/cropped-penang-institute-logo.png
+    logo-alt: Penang Institute logo
+    pinned: true
+    left:
+    - text: Penang at a glance
+      href: '#penang-at-a-glance'
+    - text: Dashboards
+      href: '#dashboards'
+    - text: New in Penang Monthly
+      href: '#new-in-penang-monthly'
+          # - text: Metadata
+          #   href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
+          # - text: Data sources
+          #   href: https://hollow-locket-922.notion.site/4079047156cf441398595107f688a30f?v=75577be15da545219fcaff695b4d7c96&pvs=4
+    right:
+    - text: Homepage
+      icon: house
+      href: https://www.penanginstitute.org
+  page-footer:
+    left: >-
+     Copyright © {{< now year >}} Penang Institute</br>  
+     Made with [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo blue round circle with a cross within the circumference" width=65px}](https://quarto.org/)
+    right: 
+    - text: Resources
+      href: about.qmd   
+    - text: Contact
+      href: mailto:enquiry@penanginstitute.org
+    center: |
+      <!-- Based on https://nhsrcommunity.com/ --> 
+      <!-- TBD: fixed width icons: https://docs.fontawesome.com/web/style/fixed-width --> 
+      <a href="https://www.penanginstitute.org" aria-label="Go to Penang Institute's homepage" target="_blank" rel="noopener">
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa solid house title="homepage">}}</a>
+      <a href="https://penanginstitute.org/podcasts/" aria-label="Go to Penang Institute's podcasts" target="_blank" rel="noopener">
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa solid podcast title="podcasts" >}}</a>
+      <a href="https://www.youtube.com/user/penanginstitute" aria-label="Go to Penang Institute's YouTube"  target="_blank" rel="noopener">
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands youtube title="youtube">}}</a>
+      <a href="https://github.com/Penang-Institute/" aria-label="Go to Penang Institute's GitHub"  target="_blank" rel="noopener">
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands github title="github">}}</a>
+      <a href="https://www.linkedin.com/company/penang-institute" aria-label="Go to Penang Institute's LinkedIn" target="_blank" rel="noopener">
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands linkedin title="linkedin">}}</a>
+      <a href="https://www.facebook.com/PenangInstitute/" aria-label="Go to Penang Institute's Facebook page"  target="_blank" rel="noopener">
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands facebook title="facebook">}}</a>
+      <a href="https://www.instagram.com/penanginstitute/" aria-label="Go to Penang Institute's Instagram" target="_blank" rel="noopener">
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands instagram title="instagram">}}</a>
+      <a href="https://x.com/penanginstitute" aria-label="Go to Penang Institute's X (formerly Twitter)" target="_blank" rel="noopener">
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands x-twitter title="x/twitter">}}</a>
+  twitter-card:
+    site: "@penanginstitute"
+  open-graph:
+    title: "Statistics at Penang Institute"
+  # TODO: https://quarto.org/docs/projects/environment.html
+  google-analytics: "G-WTRQJLDY3E"
+  # repo-url: https://github.com/Penang-Institute/pistats
+  # repo-actions: [source]
+
+

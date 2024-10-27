@@ -4,9 +4,9 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Faci
 description: |
   Uncover trends in healthcare access, 
   utilisation and disease prevalence in Penang
-categories: 
+keywords: 
 - Social indicators
-- Sector-specific
+- Healthcare
 aliases:
   - posts/health.html
 ---
@@ -23,7 +23,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Healthcare facilities (hospitals, beds) by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=425527996&single=true&output=csv)
 

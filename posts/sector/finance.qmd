@@ -4,6 +4,8 @@ description: |
   Explore the state's development and operating balances, revenue streams, 
   and detailed expenditure breakdowns
 image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png'
+keywords: 
+- Public finance
 aliases:
   - posts/finance.html
 ---
@@ -20,8 +22,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
-
+{{< var data-disclaimer >}}
 1.  [Fiscal position](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=845875504&single=true&output=csv)
 2.  [Revenue items](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=967187339&single=true&output=csv)
 3.  [Operating expenditure components](https://docs.google.com/spreadsheets/d/e/2PACX-1vTPUSDqox2KO0UhWGqcdiLBv0M72Ynd5QVKN4NKmfuKm6FRyJvfRkcbpO_OTFbjOyPfRGVu3P8LCX2h/pub?gid=1377625370&single=true&output=csv)

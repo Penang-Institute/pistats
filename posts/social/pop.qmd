@@ -4,8 +4,8 @@ image: 'https://public.tableau.com/static/images/Pe/Penangspopulationanddemograp
 description: |
   Explore population and migration trends, ethnic composition, and age 
   distribution of Penang's people
-categories: 
-- Social indicators
+keywords: 
+- Demography
 aliases:
   - posts/pop.html
 ---
@@ -22,7 +22,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Malaysia population by age, sex and ethnicity](https://docs.google.com/spreadsheets/d/e/2PACX-1vS03rougOQ6GD0tmhK1hEwrkCOTjZ8C5QhkpxYTyMgFD1VHCdgXl39dWyr0t05T3odUtUf5-EhertBq/pub?gid=1977271985&single=true&output=csv)
 

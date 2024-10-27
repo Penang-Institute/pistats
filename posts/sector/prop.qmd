@@ -4,8 +4,9 @@ image: 'https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/S
 description: |
   Track transaction trends in Penang's housing market, gauge unsold inventory, 
   monitor new launches, and assess affordability with the price-to-income ratio
-categories: 
-- Economic sectors
+keywords:
+- Housing
+- Property
 aliases:
   - posts/prop.html
 ---
@@ -22,7 +23,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Transaction volume and value by price range](https://docs.google.com/spreadsheets/d/e/2PACX-1vTzR2vcnLKJ2iPssrbq60wNXOE8h5bfGL5nGGFIq4zDzroA5Cxjx8ISByXx09PEDILukMzxP85o4wOn/pub?gid=1467857133&single=true&output=csv)
 

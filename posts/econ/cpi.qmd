@@ -4,7 +4,7 @@ image: 'https://public.tableau.com/static/images/Co/ConsumerPriceIndex_165061637
 description: |
   Track Penang's cost of living with visualizations of
   inflation trends across food, housing, and more
-categories: 
+keywords: 
 - Macroeconomic indicators
 aliases:
   - posts/cpi.html
@@ -22,7 +22,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1.  [Consumer price index by state and main group, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sa_eymrIvUcD4yONac7EufBnyGSdqNIdlZATeMhMVUhh4q0AJQcbkmcAs3bN_EWoArJFUxAutFJp/pub?gid=2088301504&single=true&output=csv)
 :::

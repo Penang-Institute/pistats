@@ -4,7 +4,7 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Exter
 description: |
   Gauge Penang's trade performance at a glance, exploring export and 
   import trends by product and partner nation
-categories: 
+keywords: 
 - Macroeconomic indicators
 aliases:
   - posts/trade.html
@@ -22,7 +22,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Trade volume, Malaysia by state, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv)
 

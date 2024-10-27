@@ -5,9 +5,9 @@ description: |
   Analyze employment rates for Penang's graduates,
   field of study trends, and career paths by field with
   Graduate Tracer Study data
-categories: 
+keywords: 
 - Social indicators
-- Sector-specific
+- Higher education
 aliases:
   - posts/grad.html
 ---
@@ -24,7 +24,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Graduates by field of study and employment status, Penang](https://docs.google.com/spreadsheets/d/e/2PACX-1vSvExrW-3EjV_A1Poc8OsfhOXEDPi7t6dDcpTSU0L5N9YXoVuLW1sQdWFs0mQmFVLviORPSUIG0Cmb-/pub?gid=0&single=true&output=csv)
 

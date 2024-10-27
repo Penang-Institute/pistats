@@ -4,7 +4,7 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principal
 description: |
   Visualise principal labour force statistics and distribution 
   of the workforce across key demographics, sectors and occupations
-categories: 
+keywords: 
 - Social indicators
 aliases:
   - posts/labour.html
@@ -24,7 +24,7 @@ aliases:
 </br>
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1\. [Principal statistics of labour force for Penang, overall and by sex, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9GPZSn2aLSa7AX5xKgl0tQnxcvxm6Uxh7he3j6YXdpRvflcZ04oum23ci2TiRqTTcnyAqLgJFHnb/pub?gid=689973819&single=true&output=csv)
 

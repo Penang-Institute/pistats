@@ -4,7 +4,8 @@ image: 'https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959
 description: |
   Explore Penang's gender landscape, including education, employment and leadership disparities
 categories: 
-- Social indicators
+- Gender
+- Inequality
 aliases:
   - posts/gender.html
 ---
@@ -21,7 +22,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-Datasets are provided without warranty. You will be solely responsible for your use of the Datasets.
+{{< var data-disclaimer >}}
 
 1.  [Labour force participation rate by sex and state, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vRUc3w2QfEqkDHKs9ZbDvmg7uS3xF2fmXLqlLSLtLbLOb3YV7GqeQ6kOB-w86RR-es3eALaqPG8qNBB/pub?gid=1988034258&single=true&output=csv)
 2.  [Mean and median salaries by state and sex, annual](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4Pp6Al94PeXdLrAR9dp1Xb2f77KQRSSMKSZt_FoIAPlOR30kecThNOfXTntNJuxiX_PVRM_QOjgM7/pub?gid=644412439&single=true&output=csv)
