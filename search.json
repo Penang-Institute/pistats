@@ -21,18 +21,18 @@
     "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Healthcare facilities (hospitals, beds) by state\n2. Healthcare facilities by district\n3. Healthcare utilisation by state\n4. Healthcare utilisation by hospital\n5. Healthcare personnel by state\n6. Communicable disease cases and deaths"
   },
   {
-    "objectID": "posts/sector/grad.html",
-    "href": "posts/sector/grad.html",
-    "title": "Graduate Employability",
+    "objectID": "posts/sector/prop.html",
+    "href": "posts/sector/prop.html",
+    "title": "Residential Property",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 2. Employed graduates by field of study and industry of work, Penang\n1. Graduates by field of study and employment status, Penang\n2. Employed graduates by field of study and industry of work, Penang"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Transaction volume and value by price range\n2. Penang, new launches by price range, district\n3. Unsold residential property by price range and type, quarterly\n4. Annual residential prices by state and quantile\n5. Household income, inequality and poverty metrics by state and district"
   },
   {
-    "objectID": "posts/econ/finance.html",
-    "href": "posts/econ/finance.html",
-    "title": "Penang State Finance",
+    "objectID": "posts/econ/labour.html",
+    "href": "posts/econ/labour.html",
+    "title": "Labour Force",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nFiscal position\nRevenue items\nOperating expenditure components\nExpenditure items"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Principal statistics of labour force for Penang, overall and by sex, annual 2. Labour force statistics by age and sex, Malaysia and Penang, annual 3. Labour force participation rate by sex and state 4. Employed and labour force, Penang by highest certificate obtained and sex 5. Employed and labour force, Penang by marital status and sex 6. Employed persons by state, occupation and sex 7. Employed persons by state, industry and sex"
   },
   {
     "objectID": "posts/econ/cpi.html",
@@ -60,7 +60,7 @@
     "href": "index.html#dashboards",
     "title": "Key Penang Statistics",
     "section": "Dashboards",
-    "text": "Dashboards\n\nEconomic indicators\n\n\n\n\n\n\n\n\n\n\n\nConsumer Price Index\n\n\nTrack Penang’s cost of living with visualizations of inflation trends across food, housing, and more\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExternal Trade\n\n\nGauge Penang’s trade performance at a glance, exploring export and import trends by product and partner nation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGross Domestic Product\n\n\nChart Penang’s economic trajectory with GDP insights, revealing sector contributions and key trends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabour Force\n\n\nVisualise principal labour force statistics and distribution of the workforce across key demographics, sectors and occupations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPenang State Finance\n\n\nExplore the state’s development and operating balances, revenue streams, and detailed expenditure breakdowns\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nSector-specific\n\n\n\n\n\n\n\n\n\n\n\nApproved Manufacturing Investments\n\n\nExplore the landscape and composition of manufacturing investment in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraduate Employability\n\n\nAnalyze employment rates for Penang’s graduates, field of study trends, and career paths by field with Graduate Tracer Study data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare\n\n\nUncover trends in healthcare access, utilisation and disease prevalence in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResidential Property\n\n\nTrack transaction trends in Penang’s housing market, gauge unsold inventory, monitor new launches, and assess affordability with the price-to-income ratio\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nSocial indicators\n\n\n\n\n\n\n\n\n\n\n\nGender\n\n\nExplore Penang’s gender landscape, including education, employment and leadership disparities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHousehold Income\n\n\nUnmask Penang’s economic disparities: explore household income trends and analyze inequality patterns\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation and Demographics\n\n\nExplore population and migration trends, ethnic composition, and age distribution of Penang’s people\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Dashboards\n\nEconomic indicators\n\n\n\n\n\n\n\n\n\n\n\nConsumer Price Index\n\n\nTrack Penang’s cost of living with visualizations of inflation trends across food, housing, and more\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExternal Trade\n\n\nGauge Penang’s trade performance at a glance, exploring export and import trends by product and partner nation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGross Domestic Product\n\n\nChart Penang’s economic trajectory with GDP insights, revealing sector contributions and key trends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabour Force\n\n\nVisualise principal labour force statistics and distribution of the workforce across key demographics, sectors and occupations\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nSector-specific\n\n\n\n\n\n\n\n\n\n\n\nApproved Manufacturing Investments\n\n\nExplore the landscape and composition of manufacturing investment in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraduate Employability\n\n\nAnalyze employment rates for Penang’s graduates, field of study trends, and career paths by field with Graduate Tracer Study data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare\n\n\nUncover trends in healthcare access, utilisation and disease prevalence in Penang\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPenang State Finance\n\n\nExplore the state’s development and operating balances, revenue streams, and detailed expenditure breakdowns\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResidential Property\n\n\nTrack transaction trends in Penang’s housing market, gauge unsold inventory, monitor new launches, and assess affordability with the price-to-income ratio\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nSocial indicators\n\n\n\n\n\n\n\n\n\n\n\nGender\n\n\nExplore Penang’s gender landscape, including education, employment and leadership disparities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHousehold Income\n\n\nUnmask Penang’s economic disparities: explore household income trends and analyze inequality patterns\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation and Demographics\n\n\nExplore population and migration trends, ethnic composition, and age distribution of Penang’s people\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#new-in-penang-monthly",
@@ -91,18 +91,18 @@
     "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Trade volume, Malaysia by state, monthly 2. Trade volume by partner country and HS code, Penang"
   },
   {
-    "objectID": "posts/econ/labour.html",
-    "href": "posts/econ/labour.html",
-    "title": "Labour Force",
+    "objectID": "posts/sector/grad.html",
+    "href": "posts/sector/grad.html",
+    "title": "Graduate Employability",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 1. Principal statistics of labour force for Penang, overall and by sex, annual 2. Labour force statistics by age and sex, Malaysia and Penang, annual 3. Labour force participation rate by sex and state 4. Employed and labour force, Penang by highest certificate obtained and sex 5. Employed and labour force, Penang by marital status and sex 6. Employed persons by state, occupation and sex 7. Employed persons by state, industry and sex"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. 2. Employed graduates by field of study and industry of work, Penang\n1. Graduates by field of study and employment status, Penang\n2. Employed graduates by field of study and industry of work, Penang"
   },
   {
-    "objectID": "posts/sector/prop.html",
-    "href": "posts/sector/prop.html",
-    "title": "Residential Property",
+    "objectID": "posts/sector/finance.html",
+    "href": "posts/sector/finance.html",
+    "title": "Penang State Finance",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Transaction volume and value by price range\n2. Penang, new launches by price range, district\n3. Unsold residential property by price range and type, quarterly\n4. Annual residential prices by state and quantile\n5. Household income, inequality and poverty metrics by state and district"
+    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nFiscal position\nRevenue items\nOperating expenditure components\nExpenditure items"
   },
   {
     "objectID": "posts/sector/manf.html",
