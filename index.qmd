@@ -46,6 +46,8 @@ title-block-banner-color: 'white'
 :::
 ::::
 
+-----
+
 ## Dashboards
 
 #### Economic indicators
@@ -55,6 +57,8 @@ title-block-banner-color: 'white'
 :::
 ::::
 
+-----
+
 #### Sector-specific
 
 :::: dashboards
@@ -62,12 +66,16 @@ title-block-banner-color: 'white'
 :::
 ::::
 
+-----
+
 #### Social indicators
 
 :::: dashboards
 ::: {#dashboards-social}
 :::
 ::::
+
+-----
 
 ## New in Penang Monthly
 
