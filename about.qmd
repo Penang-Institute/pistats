@@ -1,0 +1,20 @@
+---
+title: "About"
+---
+
+Penang Institute is proud to present Key Penang Statistics, a portal dedicated to socioeconomic statistics about the state of Penang. What’s more, it comes in interactive format, powered by [Tableau](https://public.tableau.com/app/profile/penang.institute).
+
+These dashboards illustrate trends and patterns in an easily comprehensible form, which will hopefully inspire users to communicate with the data in effective and cogent ways.
+
+Users may download graphics as images, PDFs or PowerPoint presentation. The data is also provided for download.
+
+::: {.callout-note title="Archive" collapse="true" icon="false"}
+The following dashboards may not be regularly maintained/updated and are provided for reference only. 
+
+- [Air transport](https://public.tableau.com/app/profile/penang.institute/viz/PenangsAirTransportStatistics/ByairportinMalaysia)
+- [Maritime cargo](https://public.tableau.com/app/profile/penang.institute/viz/Maritime_17090070885470/Maritime)
+- [Covid-19 Data Snapshots for Malaysia](https://public.tableau.com/app/profile/penang.institute/viz/Covid-19StatisticsMalaysia/Covid-19statistics)
+- [Subdivision-level statistics](https://public.tableau.com/app/profile/penang.institute/viz/PenangMukimsandTowns/Dashboard1)
+- [Life tables](https://public.tableau.com/app/profile/penang.institute/viz/PenangLifeTables/Dashboard1)
+- [Public housing](https://public.tableau.com/app/profile/penang.institute/viz/PublichousinginPenang/Dashboard1)
+:::
