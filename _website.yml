@@ -24,7 +24,7 @@ website:
   page-footer:
     left: >-
      Copyright © {{< now year >}} Penang Institute</br>  
-     Made with [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo blue round circle with a cross within the circumference" width=65px}](https://quarto.org/)
+     Made with [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo blue round circle with a cross within the circumference" width=65px}](https://quarto.org/). Best viewed on desktop. 
     right: 
     - text: Resources
       href: resources   
