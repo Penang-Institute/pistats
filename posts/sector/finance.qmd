@@ -7,7 +7,7 @@ image: 'https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallf
 keywords: 
 - Public finance
 aliases:
-  - posts/finance.html
+  - /posts/finance.html
 ---
 
 ::: {.dashboard}

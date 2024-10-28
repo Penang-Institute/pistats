@@ -7,7 +7,7 @@ categories:
 - Gender
 - Inequality
 aliases:
-  - posts/gender.html
+  - /posts/gender.html
 ---
 
 ::: {.dashboard}

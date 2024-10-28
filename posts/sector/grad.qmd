@@ -9,7 +9,7 @@ keywords:
 - Social indicators
 - Higher education
 aliases:
-  - posts/grad.html
+  - /posts/grad.html
 ---
 
 ::: {.dashboard}

@@ -18,7 +18,7 @@ Links are only provided for reference. We are not responsible for the contents o
 Data catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the [archived open data portal](http://archive.data.gov.my/), including datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
 
 ##### Malaysia's national statistical agency, [Department of Statistics Malaysia](https://www.dosm.gov.my/) (DOSM)
-- [eStatistik](https://newss.statistics.gov.my)
+- Most reports are now available on the main site in PDFs with accompanying Excel files. For other reports (especially older reports), refer to [eStatistik](https://newss.statistics.gov.my) (free sign-up) 
 - [OpenDOSM](https://open.dosm.gov.my/) is a scoped version of data.gov.my hosting only DOSM data
 - [MysIDC (to be discontinued in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
 

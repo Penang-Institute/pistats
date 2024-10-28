@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Macroeconomic indicators
 aliases:
-  - posts/cpi.html
+  - /posts/cpi.html
 ---
 
 ::: {.dashboard}

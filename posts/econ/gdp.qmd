@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Macroeconomic indicators
 aliases:
-  - posts/gdp.html
+  - /posts/gdp.html
 ---
 
 ::: {.dashboard}
