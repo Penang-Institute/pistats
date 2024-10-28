@@ -10,7 +10,14 @@ website:
     - text: Penang at a glance
       href: '#penang-at-a-glance'
     - text: Dashboards
-      href: '#dashboards'
+      # href: '#dashboards'
+      menu: 
+      - text: Economic indicators
+        href: '#economic-indicators'
+      - text: Sector-specific
+        href: '#sector-specific'
+      - text: Social indicators
+        href: '#social-indicators'
     - text: New in Penang Monthly
       href: '#new-in-penang-monthly'
           # - text: Metadata
