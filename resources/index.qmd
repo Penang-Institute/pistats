@@ -6,6 +6,10 @@ title-block-banner-color: white
 toc: true
 ---
 
+::: {.callout-warning appearance="simple"}
+Links are only provided for reference. We are not responsible for the contents of external links. 
+:::
+
 ### General
 ::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
