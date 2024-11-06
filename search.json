@@ -4,7 +4,7 @@
     "href": "posts/social/pop.html",
     "title": "Population and Demographics",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Malaysia population by age, sex and ethnicity\n2. Penang population by age, sex, ethnicity, nationality\n3. Penang population by district and sex\n4. Penang population by district and ethnicity\n5. Land area by district, Penang\n6. Fertility rate by state\n7. Gross migration by state\n8. Intra-state migration\n9. Internal migrants by state of origin and state of destination, Malaysia"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nAnnual Live Births by State (data.gov.my)\nAnnual Deaths by State (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nPopulation by state, age, ethnicity, sex\nPenang population by district and sex\nPenang population by district and ethnicity\nLand area by district, Penang\nFertility rate by state\nGross migration by state\nIntra-state migration\nInternal migrants by state of origin and state of destination, Malaysia"
   },
   {
     "objectID": "posts/social/hhinc.html",
@@ -39,7 +39,7 @@
     "href": "posts/econ/cpi.html",
     "title": "Consumer Price Index",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nConsumer price index by state and main group, monthly"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nCPI by State & Division (2-digit) (data.gov.my)\nMCOICOP (data.gov.my)\nProducer Price Index (data.gov.my)\nCPI by Division (2-digit) (data.gov.my)\nCore CPI by Division (2-digit) (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nQuarterly gross domestic product, Malaysia"
   },
   {
     "objectID": "index.html",
@@ -102,7 +102,7 @@
     "href": "posts/econ/trade.html",
     "title": "External Trade",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Trade volume, Malaysia by state, monthly\n2. Trade volume by partner country and HS code, Penang"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTrade volume, Malaysia by state, monthly\nTrade volume by partner country and HS code, Penang"
   },
   {
     "objectID": "posts/sector/grad.html",
@@ -116,7 +116,7 @@
     "href": "posts/sector/finance.html",
     "title": "Penang State Finance",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nFiscal position\nRevenue items\nOperating expenditure components\nExpenditure items"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nQuarterly Federal Government Finance\nQuarterly Federal Government Revenue\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nFiscal position\nRevenue items\nOperating expenditure components\nExpenditure items"
   },
   {
     "objectID": "posts/sector/manf.html",
