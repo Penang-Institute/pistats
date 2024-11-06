@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Inequality
 aliases:
-  - posts/hhinc.html
+  - /posts/hhinc.html
 ---
 
 ::: {.dashboard}

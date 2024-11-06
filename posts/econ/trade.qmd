@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Macroeconomic indicators
 aliases:
-  - posts/trade.html
+  - /posts/trade.html
 ---
 
 ::: {.dashboard}

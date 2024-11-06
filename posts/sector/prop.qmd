@@ -8,7 +8,7 @@ keywords:
 - Housing
 - Property
 aliases:
-  - posts/prop.html
+  - /posts/prop.html
 ---
 
 ::: {.dashboard}

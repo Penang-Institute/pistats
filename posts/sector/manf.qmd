@@ -5,7 +5,7 @@ description: Explore the landscape and composition of manufacturing investment i
 keywords:
 - Manufacturing
 aliases:
-  - posts/manf.html
+  - /posts/manf.html
 ---
 
 ::: {.dashboard}

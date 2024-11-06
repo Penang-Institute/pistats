@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Social indicators
 aliases:
-  - posts/labour.html
+  - /posts/labour.html
 ---
 
 ::: {.dashboard}

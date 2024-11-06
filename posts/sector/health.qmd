@@ -8,7 +8,7 @@ keywords:
 - Social indicators
 - Healthcare
 aliases:
-  - posts/health.html
+  - /posts/health.html
 ---
 
 ::: {.dashboard}

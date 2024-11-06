@@ -7,7 +7,7 @@ description: |
 keywords: 
 - Demography
 aliases:
-  - posts/pop.html
+  - /posts/pop.html
 ---
 
 ::: dashboard

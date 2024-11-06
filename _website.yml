@@ -9,9 +9,19 @@ website:
     left:
     - text: Penang at a glance
       href: '#penang-at-a-glance'
+      icon: speedometer
     - text: Dashboards
-      href: '#dashboards'
+      icon: file-bar-graph-fill
+      # href: '#dashboards'
+      menu: 
+      - text: Economic indicators
+        href: '#economic-indicators'
+      - text: Sector-specific
+        href: '#sector-specific'
+      - text: Social indicators
+        href: '#social-indicators'
     - text: New in Penang Monthly
+      icon: book
       href: '#new-in-penang-monthly'
           # - text: Metadata
           #   href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
