@@ -22,7 +22,17 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
+
+##### Datasets used
+- [CPI by State & Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_state)
+- [MCOICOP (data.gov.my)](https://data.gov.my/data-catalogue/mcoicop)
+- [Producer Price Index (data.gov.my)](https://data.gov.my/data-catalogue/ppi)
+- [CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_headline)
+- [Core CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_core)
+
+##### Prepared datasets
+
 {{< var data-disclaimer >}}
 
-1.  [Consumer price index by state and main group, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vS1sa_eymrIvUcD4yONac7EufBnyGSdqNIdlZATeMhMVUhh4q0AJQcbkmcAs3bN_EWoArJFUxAutFJp/pub?gid=2088301504&single=true&output=csv)
+- [Quarterly gross domestic product, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
 :::
