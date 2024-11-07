@@ -20,7 +20,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
+##### Prepared datasets
 {{< var data-disclaimer >}}
-
-1.  [Approved manufacturing investments by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv)
+- [Approved manufacturing investments by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv)
 :::

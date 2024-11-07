@@ -23,17 +23,18 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
+##### Prepared datasets
 {{< var data-disclaimer >}}
 
-1\. [Healthcare facilities (hospitals, beds) by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=425527996&single=true&output=csv)
+- [Healthcare facilities (hospitals, beds) by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=425527996&single=true&output=csv)
 
-2\. [Healthcare facilities by district](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1297984470&single=true&output=csv)
+- [Healthcare facilities by district](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1297984470&single=true&output=csv)
 
-3\. [Healthcare utilisation by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1387917742&single=true&output=csv)
+- [Healthcare utilisation by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1387917742&single=true&output=csv)
 
-4\. [Healthcare utilisation by hospital](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=2073008203&single=true&output=cs)
+- [Healthcare utilisation by hospital](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=2073008203&single=true&output=cs)
 
-5\. [Healthcare personnel by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1667767644&single=true&output=csv)
+- [Healthcare personnel by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1667767644&single=true&output=csv)
 
-6\. [Communicable disease cases and deaths](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1768954840&single=true&output=csv)
+- [Communicable disease cases and deaths](https://docs.google.com/spreadsheets/d/e/2PACX-1vScIEL4e8t8zee5fBNY070ICNOol6Ujl0N3iMRbMTqV8kA2dKQUTUGtrUNbA7eC_E_yYal2sstsCqy8/pub?gid=1768954840&single=true&output=csv)
 :::
