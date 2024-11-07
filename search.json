@@ -11,21 +11,21 @@
     "href": "posts/social/hhinc.html",
     "title": "Household Income",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHousehold income, inequality and poverty metrics by state and district\nMean/median income and income share by household income group\nHousehold income share by district and income class"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHousehold income, inequality and poverty metrics by state and district\nMean/median income and income share by household income group\nHousehold income share by district and income class"
   },
   {
     "objectID": "posts/sector/health.html",
     "href": "posts/sector/health.html",
     "title": "Healthcare",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Healthcare facilities (hospitals, beds) by state\n2. Healthcare facilities by district\n3. Healthcare utilisation by state\n4. Healthcare utilisation by hospital\n5. Healthcare personnel by state\n6. Communicable disease cases and deaths"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths"
   },
   {
     "objectID": "posts/sector/prop.html",
     "href": "posts/sector/prop.html",
     "title": "Residential Property",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Transaction volume and value by price range\n2. Penang, new launches by price range, district\n3. Unsold residential property by price range and type, quarterly\n4. Annual residential prices by state and quantile\n5. Household income, inequality and poverty metrics by state and district"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTransaction volume and value by price range\nPenang, new launches by price range, district\nUnsold residential property by price range and type, quarterly\nAnnual residential prices by state and quantile\nHousehold income, inequality and poverty metrics by state and district"
   },
   {
     "objectID": "posts/econ/labour.html",
@@ -95,7 +95,7 @@
     "href": "posts/econ/gdp.html",
     "title": "Gross Domestic Product",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nGDP by economic activity, Malaysia\nGDP per capita by state, current prices\nGDP by state and economic activity, constant prices\nGDP by state and sub-economic activity, constant prices"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nGDP by economic activity, Malaysia\nGDP per capita by state, current prices\nGDP by state and economic activity, constant prices\nGDP by state and sub-economic activity, constant prices"
   },
   {
     "objectID": "posts/econ/trade.html",
@@ -109,7 +109,7 @@
     "href": "posts/sector/grad.html",
     "title": "Graduate Employability",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n1. Graduates by field of study and employment status, Penang\n2. Employed graduates by field of study and industry of work, Penang"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nGraduates by field of study and employment status, Penang\nEmployed graduates by field of study and industry of work, Penang"
   },
   {
     "objectID": "posts/sector/finance.html",
@@ -123,13 +123,13 @@
     "href": "posts/sector/manf.html",
     "title": "Approved Manufacturing Investments",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nApproved manufacturing investments by state"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nApproved manufacturing investments by state"
   },
   {
     "objectID": "posts/social/gender.html",
     "href": "posts/social/gender.html",
     "title": "Gender",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nLabour force participation rate by sex and state, annual\nMean and median salaries by state and sex, annual\nMean and median salaries by occupation and sex, annual\nLiteracy rate by state and age group\nNumber/share of women in leadership and decision-making positions, Malaysia and Penang"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nLabour force participation rate by sex and state, annual\nMean and median salaries by state and sex, annual\nMean and median salaries by occupation and sex, annual\nLiteracy rate by state and age group\nNumber/share of women in leadership and decision-making positions, Malaysia and Penang"
   }
 ]
