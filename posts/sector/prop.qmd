@@ -27,12 +27,8 @@ aliases:
 {{< var data-disclaimer >}}
 
 - [Transaction volume and value by price range](https://docs.google.com/spreadsheets/d/e/2PACX-1vTzR2vcnLKJ2iPssrbq60wNXOE8h5bfGL5nGGFIq4zDzroA5Cxjx8ISByXx09PEDILukMzxP85o4wOn/pub?gid=1467857133&single=true&output=csv)
-
 - [Penang, new launches by price range, district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ52x_D61b2yjTKAxgNewD5Pg85BRJz66oGetxPwNgXymWTcA3C4BprzaYBFWHTSGQb77TTQHJ3b_nF/pub?gid=1566335107&single=true&output=csv)
-
 - [Unsold residential property by price range and type, quarterly](https://docs.google.com/spreadsheets/d/e/2PACX-1vSe60O1UMX-l_Xg0tVJaz37Kxv1ptLJ2GsARk2fuz9hs9Fft12s2Ey6mqV9p43qj7IJSM45OQWKlGlW/pub?gid=1217652967&single=true&output=csv)
-
 - [Annual residential prices by state and quantile](https://docs.google.com/spreadsheets/d/e/2PACX-1vS9XL_HPUUaHS6AeiRNea4hLnEM3yatVT_wUeKYZfexOt3ufamK1gPJpd65zLnM-Na8fto20gNC_z4P/pub?gid=653003630&single=true&output=csv)
-
 - [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv)
 :::
