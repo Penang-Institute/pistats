@@ -4,7 +4,8 @@ format:
     orientation: rows
 navbar: false
 page-footer: ""
-repo-actions: false  
+repo-actions: false
+draft: true
 ---
 
 ## Row 1 {.fill}
@@ -38,4 +39,3 @@ Unemployment rate (Q2 2024)
 
 1.80%
 :::
-

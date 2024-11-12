@@ -16,22 +16,22 @@ listing:
     contents: penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
     type: grid
-    max-items: 3
+    page-size: 3
   - id: dashboards-econ
     contents: 
-    - posts/econ/*.qmd
+    - dashboards/econ/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
   - id: dashboards-sector
     contents: 
-    - posts/sector/*.qmd
+    - dashboards/sector/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
   - id: dashboards-social
     contents: 
-    - posts/social/*.qmd
+    - dashboards/social/*.qmd
     type: grid
     grid-columns: 5
     image-height: "5"
@@ -46,7 +46,7 @@ title-block-banner-color: 'white'
 :::
 ::::
 
------
+------------------------------------------------------------------------
 
 ## Dashboards
 
@@ -57,7 +57,7 @@ title-block-banner-color: 'white'
 :::
 ::::
 
------
+------------------------------------------------------------------------
 
 #### Sector-specific
 
@@ -66,7 +66,7 @@ title-block-banner-color: 'white'
 :::
 ::::
 
------
+------------------------------------------------------------------------
 
 #### Social indicators
 
@@ -75,7 +75,7 @@ title-block-banner-color: 'white'
 :::
 ::::
 
------
+------------------------------------------------------------------------
 
 ## New in Penang Monthly
 

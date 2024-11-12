@@ -5,10 +5,10 @@ description: Explore the landscape and composition of manufacturing investment i
 keywords:
 - Manufacturing
 aliases:
-  - /posts/manf.html
+  - /dashboards/manf.html
 ---
 
-::: {.dashboard}
+::: dashboard
 ```{=html}
 <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -21,6 +21,7 @@ aliases:
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
 ##### Prepared datasets
-{{< var data-disclaimer >}}
+
+{{< var data-disclaimer >}} 
 - [Approved manufacturing investments by state](https://docs.google.com/spreadsheets/d/e/2PACX-1vThFULT3ww68TWNZT3sbjYUOqAdXsUZap64kfpCmpCpoOGY6EWHPdUrtTze1uSnIFVi20J1UtKoJX9J/pub?gid=0&single=true&output=csv)
 :::

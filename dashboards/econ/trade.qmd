@@ -7,10 +7,10 @@ description: |
 keywords: 
 - Macroeconomic indicators
 aliases:
-  - /posts/trade.html
+  - /dashboards/trade.html
 ---
 
-::: {.dashboard}
+::: dashboard
 ```{=html}
 <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -22,12 +22,10 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-
 ##### Prepared datasets
 
 {{< var data-disclaimer >}}
 
-- [Trade volume, Malaysia by state, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv)
-- [Trade volume by partner country and HS code, Penang](https://drive.google.com/file/d/1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ/view?usp=sharing)
+-   [Trade volume, Malaysia by state, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv)
+-   [Trade volume by partner country and HS code, Penang](https://drive.google.com/file/d/1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ/view?usp=sharing)
 :::
-

@@ -1,0 +1,35 @@
+---
+title: "Residential Property"
+image: 'https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png'
+description: |
+  Track transaction trends in Penang's housing market, gauge unsold inventory, 
+  monitor new launches, and assess affordability with the price-to-income ratio
+keywords:
+- Housing
+- Property
+aliases:
+  - /dashboards/prop.html
+---
+
+::: dashboard
+```{=html}
+<script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+<tableau-viz id='tableau-viz' 
+    src='https://public.tableau.com/views/Penangsresidentialproperty/Supply-demand' 
+    width='1000' height='850' toolbar='bottom' >
+  <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
+</tableau-viz>
+```
+:::
+
+::: {.callout-important icon="false" collapse="true" title="Download data"}
+##### Prepared datasets
+
+{{< var data-disclaimer >}}
+
+-   [Transaction volume and value by price range](https://docs.google.com/spreadsheets/d/e/2PACX-1vTzR2vcnLKJ2iPssrbq60wNXOE8h5bfGL5nGGFIq4zDzroA5Cxjx8ISByXx09PEDILukMzxP85o4wOn/pub?gid=1467857133&single=true&output=csv)
+-   [Penang, new launches by price range, district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ52x_D61b2yjTKAxgNewD5Pg85BRJz66oGetxPwNgXymWTcA3C4BprzaYBFWHTSGQb77TTQHJ3b_nF/pub?gid=1566335107&single=true&output=csv)
+-   [Unsold residential property by price range and type, quarterly](https://docs.google.com/spreadsheets/d/e/2PACX-1vSe60O1UMX-l_Xg0tVJaz37Kxv1ptLJ2GsARk2fuz9hs9Fft12s2Ey6mqV9p43qj7IJSM45OQWKlGlW/pub?gid=1217652967&single=true&output=csv)
+-   [Annual residential prices by state and quantile](https://docs.google.com/spreadsheets/d/e/2PACX-1vS9XL_HPUUaHS6AeiRNea4hLnEM3yatVT_wUeKYZfexOt3ufamK1gPJpd65zLnM-Na8fto20gNC_z4P/pub?gid=653003630&single=true&output=csv)
+-   [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv)
+:::

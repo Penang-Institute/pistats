@@ -7,10 +7,10 @@ description: |
 keywords: 
 - Macroeconomic indicators
 aliases:
-  - /posts/cpi.html
+  - /dashboards/cpi.html
 ---
 
-::: {.dashboard}
+::: dashboard
 ```{=html}
  <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
 <tableau-viz id='tableau-viz' 
@@ -22,17 +22,17 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-
 ##### Datasets used
-- [CPI by State & Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_state)
-- [MCOICOP (data.gov.my)](https://data.gov.my/data-catalogue/mcoicop)
-- [Producer Price Index (data.gov.my)](https://data.gov.my/data-catalogue/ppi)
-- [CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_headline)
-- [Core CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_core)
+
+-   [CPI by State & Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_state)
+-   [MCOICOP (data.gov.my)](https://data.gov.my/data-catalogue/mcoicop)
+-   [Producer Price Index (data.gov.my)](https://data.gov.my/data-catalogue/ppi)
+-   [CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_headline)
+-   [Core CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_core)
 
 ##### Prepared datasets
 
 {{< var data-disclaimer >}}
 
-- [Quarterly gross domestic product, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
+-   [Quarterly gross domestic product, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
 :::
