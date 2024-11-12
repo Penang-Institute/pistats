@@ -1,3 +1,8 @@
 format:
   html:
     css: ../assets/dashboard.css
+    grid:
+      body-width: 950px
+      sidebar-width: 0px      
+      margin-width: 0px      
+      gutter-width: 0px
