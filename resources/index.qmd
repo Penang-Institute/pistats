@@ -18,7 +18,7 @@ Links are only provided for reference. We are not responsible for the contents o
 Data catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the [archived open data portal](http://archive.data.gov.my/), including datasets released by the [Penang State Government](https://archive.data.gov.my/data/ms_MY/dataset/?q=&organization=Kerajaan+Negeri+Pulau+Pinang&sort=title_string+asc)
 
 ##### Malaysia's national statistical agency, [Department of Statistics Malaysia](https://www.dosm.gov.my/) (DOSM)
-- Most reports are now available on the main site in PDFs with accompanying Excel files. For other reports (especially older reports), refer to [eStatistik](https://newss.statistics.gov.my) (free sign-up) 
+- Most reports are now available on the main site in PDFs with accompanying Excel files. For other reports (especially older reports), refer to [eStatistik](https://newss.statistics.gov.my) (free sign-up). Scans of historical publications may be available at [StatsDigital](https://statsdigital.stats.gov.my/).
 - [OpenDOSM](https://open.dosm.gov.my/) is a scoped version of data.gov.my hosting only DOSM data
 - [MysIDC (to be discontinued in favour of OpenDOSM)](https://mysidc.statistics.gov.my/)
 
@@ -57,7 +57,7 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 :::
 ---------
 
-### Economic development, investment and trade, public finance and governance
+### Economic development, investment and trade, macroeconomy, public finance and governance
 ::: {.panel-tabset .nav-pills}
 #### Malaysian government sources
 
@@ -68,10 +68,12 @@ Discontinued. View [archives](quarterly_penang_statistics.html).
 - [Ministry of Finance](https://www.mof.gov.my/)
 - [Penang State Treasury](https://jkn.penang.gov.my)
 - [Jabatan Audit Negara](https://www.audit.gov.my)
+- [METS Online](https://metsonline.dosm.gov.my/)
 
 #### Multilateral agencies
 - [ASEAN+3 Macroeconomic Research Office (AMRO)](https://amro-asia.org/?s=&_categories=data)
 - [UN Trade and Development](https://unctadstat.unctad.org/datacentre/)
+- [IMF](https://betadata.imf.org/)
 - [COMTRADE](https://comtradeplus.un.org/)
 - [World Bank](https://data.worldbank.org/)
     - [Poverty and Inequality Platform](https://pip.worldbank.org/home)
@@ -176,10 +178,10 @@ Ministry of Health
 1. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
     - [ArcGIS REST services](https://pegis.penang.gov.my/arcgis/rest/services)
 2. [Malaysia Geoportal](http://www.mygeoportal.gov.my/node/61)
+3. [data.gov.my front-end map data](https://github.com/data-gov-my/datagovmy-front/tree/main/packages/datagovmy-ui/src/lib/geojson/raw)
 
 #### Other sources
 - [Humanitarian Data Exchange](https://data.humdata.org/dataset/cod-ab-mys?)
-- [MapTiler](https://data.maptiler.com/) (similar source used for data.gov.my)
 :::
 
 ---------
