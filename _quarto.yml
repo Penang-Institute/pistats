@@ -16,3 +16,6 @@ format:
     # toc: true
 
 editor: visual
+
+resources: 
+- "keyPenangMetrics/output/*.yaml"
