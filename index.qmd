@@ -9,11 +9,11 @@ description: |
   from official government sources. 
 listing:
   - id: metrics
-    contents: metrics_grid.yaml
+    contents: keyPenangMetrics/output/metrics_grid.yaml
     grid-columns: 5
     type: grid
   - id: penang-monthly
-    contents: penang-monthly-stats.yaml
+    contents: keyPenangMetrics/output/penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
     type: grid
     page-size: 3
