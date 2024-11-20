@@ -21,19 +21,19 @@ listing:
     contents: 
     - dashboards/econ/*.qmd
     type: grid
-    grid-columns: 5
+    grid-columns: 3
     image-height: "5"
   - id: dashboards-sector
     contents: 
     - dashboards/sector/*.qmd
     type: grid
-    grid-columns: 5
+    grid-columns: 3
     image-height: "5"
   - id: dashboards-social
     contents: 
     - dashboards/social/*.qmd
     type: grid
-    grid-columns: 5
+    grid-columns: 3
     image-height: "5"
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
@@ -48,7 +48,7 @@ title-block-banner-color: 'white'
 
 ------------------------------------------------------------------------
 
-## Dashboards
+## Dashboards 
 
 #### Economic indicators
 
