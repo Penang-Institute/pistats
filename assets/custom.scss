@@ -1,8 +1,16 @@
 /*-- scss:defaults --*/
+$link-color: #291528;
+$link-hover-color: #C53036;
 $spacer: 1rem !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$navbar-brand-font-size:            $font-size-lg * 1 !default;
-$navbar-brand-padding-y:                  $spacer * 1.5 !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$navbar-brand-font-size: $font-size-lg * 1 !default;
+$navbar-brand-padding-y: $spacer * 1.5 !default;
+$nav-pills-link-active-bg: #3A3E3B;
+$nav-tabs-border-color: $gray-300;
+$nav-tabs-link-hover-border-color: #3A3E3B;
+$pagination-color: #3A3E3B;
+$pagination-active-bg: #3A3E3B;
+$pagination-active-border-color: #3A3E3B;
 
 /*-- scss:rules --*/
