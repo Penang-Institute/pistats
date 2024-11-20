@@ -34,5 +34,5 @@ aliases:
 
 {{< var data-disclaimer >}}
 
--   [Quarterly gross domestic product, Malaysia](https://drive.google.com/uc?export=download&id=12_Ioxhu4WeCa47nbYl3-e0Hs3swbJtke)
+-   [Quarterly gross domestic product by demand and supply components, Malaysia](https://drive.google.com/uc?export=download&id=18BD5_KzJrnEL1j7DOv2VJEEjJqGblu9D)
 :::
