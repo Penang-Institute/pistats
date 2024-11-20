@@ -178,7 +178,7 @@ Ministry of Health
 1. [Penang Geographic Information Centre (PeGIS)](http://pegis.penang.gov.my/)
     - [ArcGIS REST services](https://pegis.penang.gov.my/arcgis/rest/services)
 2. [Malaysia Geoportal](http://www.mygeoportal.gov.my/node/61)
-3. [data.gov.my front-end map data](https://github.com/data-gov-my/datagovmy-front/tree/main/packages/datagovmy-ui/src/lib/geojson/raw)
+3. [data.gov.my front-end map data](https://github.com/dosm-malaysia/data-open/tree/main/datasets/geodata)
 
 #### Other sources
 - [Humanitarian Data Exchange](https://data.humdata.org/dataset/cod-ab-mys?)
