@@ -5,11 +5,16 @@
     opacity: .8;
     font-size: 0.7rem;
   }
-  .card-subtitle{
-    font-size: 1.5rem;
+  .card-subtitle {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #3A3E3B;
   }  
   .card-text {
     font-size: 0.7rem;
+  }
+  .card {
+    background-color: #F0EFF4;
   }
 }
 
@@ -23,6 +28,10 @@
     opacity: .9;
     color: #444 ;
   }
+
+  .card {
+    background-color: #F0EFF4;
+  }  
 }
 
 h4 {
