@@ -116,7 +116,7 @@
     "href": "dashboards/sector/health.html",
     "title": "Healthcare",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nPopulation Table: States (data.gov.my)\nLocation data (PeGIS)\n\nKESIHATAN\nKESSWASTA\nHOSPITAL\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths"
   },
   {
     "objectID": "dashboards/social/hhinc.html",
