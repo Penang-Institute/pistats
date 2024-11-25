@@ -109,14 +109,14 @@
     "href": "dashboards/sector/prop.html",
     "title": "Residential Property",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTransaction volume and value by price range\nPenang, new launches by price range, district\nUnsold residential property by price range and type, quarterly\nAnnual residential prices by state and quantile\nHousehold income, inequality and poverty metrics by state and district"
+    "text": "Download data\n\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTransaction volume and value by price range\nPenang, new launches by price range, district\nUnsold residential property by price range and type, quarterly\nAnnual residential prices by state and quantile\nHousehold income, inequality and poverty metrics by state and district\n\n\n\nRelated publications\nThe following publications are published by the National Property Information Centre (NAPIC), part of the Valuation and Property Services Department under the Ministry of Finance.\n\nProperty Market Report\n\nProperty sales data (biannual)\nProperty prices, residential (annual)\n\nProperty Market Status Report (quarterly)\n\nProperty Market Status Report\nNewly Launched Residential Units And The Sales Performances"
   },
   {
     "objectID": "dashboards/sector/health.html",
     "href": "dashboards/sector/health.html",
     "title": "Healthcare",
     "section": "",
-    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nPopulation Table: States (data.gov.my)\nLocation data (PeGIS)\n\nKESIHATAN\nKESSWASTA\nHOSPITAL\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nPopulation Table: States (data.gov.my)\nLocation data (PeGIS)\n\nKESIHATAN\nKESSWASTA\nHOSPITAL\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths\n\n\n\nRelated publications\n\nHealth Facts, State Health Department, Penang\nHealth Indicators, Ministry of Health, Malaysia"
   },
   {
     "objectID": "dashboards/social/hhinc.html",
