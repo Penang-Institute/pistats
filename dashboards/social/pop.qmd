@@ -8,16 +8,22 @@ keywords:
 - Demography
 aliases:
   - /dashboards/pop.html
+include-in-header:
+  - text: |
+     <script type="module" src="./pop.js"></script>
 ---
+
+::: {.hide-on-desktop}
+::: {.callout-note }
+You're currently viewing this dashboard in **mobile mode**. For a better experience and to access more features, please open this page on a larger screen.
+:::
+:::
+
 
 ::: dashboard
 ```{=html}
-<script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-<tableau-viz id='tableau-viz' 
-    src='https://public.tableau.com/views/Penangspopulationanddemographics/Overalltrend' 
-    width='1000' height='850' toolbar='bottom' >
-  <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
-</tableau-viz>
+<!-- Don't set div width and height as we've done that above -->
+<div id="tableauViz"></div>
 ```
 :::
 

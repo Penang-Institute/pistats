@@ -1,5 +1,8 @@
 project:
   type: website
+  preview: 
+    port: 8080
+    watch-inputs: true
 
 metadata-files:
   - _website.yml
