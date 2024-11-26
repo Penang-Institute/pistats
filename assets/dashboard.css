@@ -3,6 +3,7 @@ main.column-page#quarto-document-content{
 
     .dashboard {
         width: auto;
+        height: auto;
     }
 
     .callout {
