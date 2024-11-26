@@ -12,6 +12,11 @@ const toolbarPosition  = "bottom"              // Position of the toolbar. Optio
 
 const viz = new TableauViz();
 
+const customParameter = document.createElement("custom-parameter");
+customParameter.setAttribute("name", ":showShareOptions");
+customParameter.setAttribute("value", "false");
+viz.appendChild(customParameter);
+
 viz.src = vizURL;
 viz.toolbar = toolbarPosition;
 
