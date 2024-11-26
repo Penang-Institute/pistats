@@ -32,4 +32,16 @@ aliases:
 -   [Unsold residential property by price range and type, quarterly](https://docs.google.com/spreadsheets/d/e/2PACX-1vSe60O1UMX-l_Xg0tVJaz37Kxv1ptLJ2GsARk2fuz9hs9Fft12s2Ey6mqV9p43qj7IJSM45OQWKlGlW/pub?gid=1217652967&single=true&output=csv)
 -   [Annual residential prices by state and quantile](https://docs.google.com/spreadsheets/d/e/2PACX-1vS9XL_HPUUaHS6AeiRNea4hLnEM3yatVT_wUeKYZfexOt3ufamK1gPJpd65zLnM-Na8fto20gNC_z4P/pub?gid=653003630&single=true&output=csv)
 -   [Household income, inequality and poverty metrics by state and district](https://docs.google.com/spreadsheets/d/e/2PACX-1vQnkVj7bQIJIK7b_FTq5zNsrTCSY9g2LGt5Q0byAQkC_ZYOJDKmZReYHshxO4OdleBmmwzAHR1rPuNt/pub?gid=2071777810&single=true&output=csv)
+
+##### Related publications
+
+The following publications are published by the **National Property Information Centre (NAPIC)**, part of the Valuation and Property Services Department under the Ministry of Finance.
+
+- Property Market Report
+  - [Property sales data (biannual)](https://napic2.jpph.gov.my/en/archives/jadual-data-transaksi-harta-tanah)
+  - [Property prices, residential (annual)](https://napic2.jpph.gov.my/en/archives/harga-kediaman-sukuantahunan-terkini)
+- [Property Market Status Report (quarterly)](https://napic2.jpph.gov.my/en/archives/laporan-status-harta-tanah)
+  - Property Market Status Report
+  - Newly Launched Residential Units And The Sales Performances
+
 :::
