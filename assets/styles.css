@@ -39,5 +39,20 @@ h4 {
   font-weight: bolder; 
   color: #444 ;
 }
+#title-block-header.quarto-title-block .quarto-title-banner {
+  .quarto-title .title{
+    margin-bottom:.5em;
+  }
+  .description>p {
+    font-size:.8em;
+  }
+} 
 
 
+
+@media screen and (max-width: 1000px) {
+  .quarto-title-banner {
+    padding-top: 40px; /* Adjust the top padding as needed */
+    padding-bottom: 40px; /* Adjust the bottom padding as needed */
+  }
+}
