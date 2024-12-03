@@ -64,7 +64,7 @@ website:
   twitter-card:
     site: "@penanginstitute"
   open-graph:
-    title: "Statistics at Penang Institute"
+    site-name: "Key Penang Statistics: Penang Institute"
   # TODO: https://quarto.org/docs/projects/environment.html
   google-analytics: "G-WTRQJLDY3E"
   # repo-url: https://github.com/Penang-Institute/pistats

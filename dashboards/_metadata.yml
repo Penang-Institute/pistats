@@ -6,3 +6,4 @@ format:
       sidebar-width: 0px      
       margin-width: 0px      
       gutter-width: 1rem
+    title-prefix: ""
