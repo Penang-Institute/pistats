@@ -7,3 +7,4 @@ format:
       margin-width: 0px      
       gutter-width: 1rem
     title-prefix: ""
+    pagetitle: "{{< meta title >}}"
