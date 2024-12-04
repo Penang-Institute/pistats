@@ -1,5 +1,7 @@
 ---
 title: "Key Penang Statistics"
+pagetitle: Key Penang Statistics by Penang Institute
+title-prefix: ""
 description: |
   Key Penang Statistics is a set of dashboards that visualise key socioeconomic 
   data about Penang. Developed by Penang Institute's Socioeconomics & Statistics 

@@ -17,6 +17,7 @@ format:
     # link-external-icon: true
     anchor-sections: false
     # toc: true
+    html-math-method: plain
 
 editor: visual
 
