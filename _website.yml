@@ -3,7 +3,7 @@ website:
   search: false
   navbar:
     title: Statistics
-    logo: img/cropped-penang-institute-logo.png
+    logo: img/cropped-penang-institute-logo.webp
     logo-alt: Penang Institute logo
     pinned: true
     left:
