@@ -8,3 +8,4 @@ format:
       gutter-width: 1rem
     title-prefix: ""
     pagetitle: "{{< meta title >}}"
+    canonical-url: true
