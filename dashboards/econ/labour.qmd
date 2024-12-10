@@ -1,6 +1,7 @@
 ---
 title: "Labour Force"
 image: 'https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1.png'
+image-alt: Labour Force dashboard
 description: |
   Visualise principal labour force statistics and distribution 
   of the workforce across key demographics, sectors and occupations

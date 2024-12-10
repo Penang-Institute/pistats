@@ -1,6 +1,7 @@
 ---
 title: "Household Income"
 image: 'https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1.png'
+image-alt: Household Income dashboard
 description: |
   Unmask Penang's economic disparities: explore household income trends
   and analyze inequality patterns

@@ -1,6 +1,7 @@
 ---
 title: "Gross Domestic Product"
 image: 'https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1.png'
+image-alt: Gross Domestic Product dashboard
 description: |
   Chart Penang's economic trajectory with GDP insights, 
   revealing sector contributions and key trends 

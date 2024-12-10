@@ -1,6 +1,7 @@
 ---
 title: "External Trade"
 image: 'https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Externaltradebystate/1.png'
+image-alt: External Trade dashboard
 description: |
   Gauge Penang's trade performance at a glance, exploring export and 
   import trends by product and partner nation

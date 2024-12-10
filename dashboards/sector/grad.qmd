@@ -1,6 +1,7 @@
 ---
 title: "Graduate Employability"
 image: 'https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1.png'
+image-alt: Graduate Employability dashboard
 description: |
   Analyze employment rates for Penang's graduates,
   field of study trends, and career paths by field with

@@ -1,6 +1,7 @@
 ---
 title: "Population and Demographics"
 image: 'https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png'
+image-alt: Population and Demographics dashboard
 description: |
   Explore population and migration trends, ethnic composition, and age 
   distribution of Penang's people

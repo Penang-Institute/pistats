@@ -1,6 +1,7 @@
 ---
 title: "Approved Manufacturing Investments"
 image: 'https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1.png'
+image-alt: Approved Manufacturing Investments dashboard
 description: Explore the landscape and composition of manufacturing investment in Penang
 keywords:
 - Manufacturing

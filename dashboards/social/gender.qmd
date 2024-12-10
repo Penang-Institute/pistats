@@ -1,6 +1,7 @@
 ---
 title: "Gender"
 image: 'https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1.png'
+image-alt: Gender dashboard
 description: |
   Explore Penang's gender landscape, including education, employment and leadership disparities
 categories: 

@@ -1,6 +1,7 @@
 ---
 title: "Healthcare"
 image: 'https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1.png'
+image-alt: Healthcare dashboard
 description: |
   Uncover trends in healthcare access, 
   utilisation and disease prevalence in Penang

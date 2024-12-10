@@ -1,6 +1,7 @@
 ---
 title: "Consumer Price Index"
 image: 'https://public.tableau.com/static/images/Co/ConsumerPriceIndex_16506163722350/ConsumerPriceIndex/1.png'
+image-alt: Consumer Price Index dashboard
 description: |
   Track Penang's cost of living with visualizations of
   inflation trends across food, housing, and more

@@ -1,6 +1,7 @@
 ---
 title: "Residential Property"
 image: 'https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png'
+image-alt: Residential Property dashboard
 description: |
   Track transaction trends in Penang's housing market, gauge unsold inventory, 
   monitor new launches, and assess affordability with the price-to-income ratio

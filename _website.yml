@@ -46,19 +46,19 @@ website:
       <!-- Based on https://nhsrcommunity.com/ --> 
       <!-- TBD: fixed width icons: https://docs.fontawesome.com/web/style/fixed-width --> 
       <a href="https://www.penanginstitute.org" aria-label="Go to Penang Institute's homepage" target="_blank" rel="noopener">
-      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa solid house title="homepage">}}</a>
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa solid house title="homepage">}}</a>&nbsp;
       <a href="https://penanginstitute.org/podcasts/" aria-label="Go to Penang Institute's podcasts" target="_blank" rel="noopener">
-      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa solid podcast title="podcasts" >}}</a>
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa solid podcast title="podcasts" >}}</a>&nbsp;
       <a href="https://www.youtube.com/user/penanginstitute" aria-label="Go to Penang Institute's YouTube"  target="_blank" rel="noopener">
-      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands youtube title="youtube">}}</a>
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands youtube title="youtube">}}</a>&nbsp;
       <a href="https://github.com/Penang-Institute/" aria-label="Go to Penang Institute's GitHub"  target="_blank" rel="noopener">
-      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands github title="github">}}</a>
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands github title="github">}}</a>&nbsp;
       <a href="https://www.linkedin.com/company/penang-institute" aria-label="Go to Penang Institute's LinkedIn" target="_blank" rel="noopener">
-      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands linkedin title="linkedin">}}</a>
+      <i class="link-dark me-1"aria-hidden="true"></i>{{< fa brands linkedin title="linkedin">}}</a>&nbsp;
       <a href="https://www.facebook.com/PenangInstitute/" aria-label="Go to Penang Institute's Facebook page"  target="_blank" rel="noopener">
-      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands facebook title="facebook">}}</a>
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands facebook title="facebook">}}</a>&nbsp;
       <a href="https://www.instagram.com/penanginstitute/" aria-label="Go to Penang Institute's Instagram" target="_blank" rel="noopener">
-      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands instagram title="instagram">}}</a>
+      <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands instagram title="instagram">}}</a>&nbsp;
       <a href="https://x.com/penanginstitute" aria-label="Go to Penang Institute's X (formerly Twitter)" target="_blank" rel="noopener">
       <i class="link-dark me-1" aria-hidden="true"></i>{{< fa brands x-twitter title="x/twitter">}}</a>
   twitter-card:
