@@ -1,6 +1,7 @@
 website:
   title: "Key Penang Statistics: Penang Institute"
   search: false
+  image: img/general.png  
   navbar:
     title: Statistics
     logo: img/cropped-penang-institute-logo.webp
