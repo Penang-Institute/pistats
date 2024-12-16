@@ -3,7 +3,7 @@ title: "Resources"
 description: Data sources for socioeconomic analysis and research on Penang and Malaysia
 title-block-banner: ../img/pexels-kevin-ku-92347-577585.jpg
 title-block-banner-color: white
-image: img/general.png
+image: /img/general.png
 toc: true
 ---
 
