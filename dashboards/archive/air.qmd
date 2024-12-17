@@ -1,0 +1,20 @@
+
+---
+title: "Air Transport"
+image: 'https://public.tableau.com/static/images/Pe/PenangsAirTransportStatistics/ByairportinMalaysia/4_3.png'
+image-alt: Air Transport dashboard
+description: |
+  Air traffic indicators
+---
+
+
+::: dashboard
+```{=html}
+ <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+<tableau-viz id='tableau-viz' 
+    src='https://public.tableau.com/views/PenangsAirTransportStatistics/ByairportinMalaysia' 
+    width='1000' height='850'>
+  <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
+</tableau-viz>
+```
+:::

@@ -11,8 +11,8 @@ Users may download graphics as images, PDFs or PowerPoint presentation. The data
 ::: {.callout-note title="Archive" collapse="true" icon="false"}
 The following dashboards may not be regularly maintained/updated and are provided for reference only. 
 
-- [Air transport](https://public.tableau.com/app/profile/penang.institute/viz/PenangsAirTransportStatistics/ByairportinMalaysia)
-- [Maritime cargo](https://public.tableau.com/app/profile/penang.institute/viz/Maritime_17090070885470/Maritime)
+- [Air transport](/dashboards/archive/air.html)
+- [Maritime cargo](/dashboards/archive/maritime.html)
 - [Covid-19 Data Snapshots for Malaysia](https://public.tableau.com/app/profile/penang.institute/viz/Covid-19StatisticsMalaysia/Covid-19statistics)
 - [Subdivision-level statistics](https://public.tableau.com/app/profile/penang.institute/viz/PenangMukimsandTowns/Dashboard1)
 - [Life tables](https://public.tableau.com/app/profile/penang.institute/viz/PenangLifeTables/Dashboard1)

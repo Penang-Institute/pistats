@@ -1,0 +1,18 @@
+---
+title: "Maritime Cargo"
+image: 'https://public.tableau.com/static/images/Ma/Maritime_17090070885470/Maritime/4_3.png'
+image-alt: Maritime Cargo dashboard
+description: |
+  Maritime cargo indicators
+---
+
+::: dashboard
+```{=html}
+ <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+<tableau-viz id='tableau-viz' 
+    src='https://public.tableau.com/views/Maritime_17090070885470/Maritime' 
+    width='1000' height='850'>
+  <custom-parameter name=":showShareOptions" value="false"></custom-parameter>
+</tableau-viz>
+```
+:::
