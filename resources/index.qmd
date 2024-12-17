@@ -3,6 +3,7 @@ title: "Resources"
 description: Data sources for socioeconomic analysis and research on Penang and Malaysia
 title-block-banner: ../img/pexels-kevin-ku-92347-577585.jpg
 title-block-banner-color: white
+image: /img/general.png
 toc: true
 ---
 
@@ -129,6 +130,7 @@ Ministry of Health
 - [KKMNOW](https://data.moh.gov.my/) hosts real-time health data 
 - [Health Indicators/Health Facts (national)](https://www.moh.gov.my/index.php/pages/view/58?mid=19)
 - [National Health and Morbidity Survey](https://iku.gov.my/nhms)
+    - [Oral health research publications](https://hq.moh.gov.my/ohp/en/publication/research)
 - [Penang Health Facts](https://jknpenang.moh.gov.my/jknpenang/index.php/penerbitan-0/8-artikel-jknpp/1110-penerbitan-3-health), Penang Health Department 
 
 #### Multilateral agencies

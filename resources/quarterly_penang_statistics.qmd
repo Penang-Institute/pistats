@@ -1,5 +1,6 @@
 ---
 title: "Quarterly Penang Statistics"
+image: /img/general.png
 ---
 
 Initiated in 1999, **Quarterly Penang Statistics** collates data provided by government departments and private organisations at state and national levels, for the use of policymakers, researchers, academics and investors. 
