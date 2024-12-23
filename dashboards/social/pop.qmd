@@ -7,6 +7,15 @@ description: |
   distribution of Penang's people
 keywords: 
 - Demography
+- Population by age
+- Population by ethnicity
+- Age dependency ratio
+- Population by district
+- Fertility rate
+- Life expectancy 
+- Births and deaths
+- Inter-state migration
+- Intra-state migration
 aliases:
   - /dashboards/pop.html
 include-in-header:
