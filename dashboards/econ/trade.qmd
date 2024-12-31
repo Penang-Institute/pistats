@@ -28,5 +28,5 @@ aliases:
 {{< var data-disclaimer >}}
 
 -   [Trade value, Malaysia by state, monthly](https://docs.google.com/spreadsheets/d/e/2PACX-1vTXPphxXsVCens8610825ZL2PlrfwJLDRFgnIohNM3omCzQnbtB5U9zhlV_UD-Ph_Kj7R_jadtsMc7a/pub?gid=1137776307&single=true&output=csv)
--   [Trade value by partner country and HS code, Penang](https://drive.google.com/file/d/1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ/view?usp=sharing)
+-   [Trade value by partner country and HS code, Penang](https://drive.google.com/uc?export=download&id=1z4-qFLIR4rBf8hFYqJyzDmiEIZs469cQ)
 :::
