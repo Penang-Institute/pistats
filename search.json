@@ -123,7 +123,7 @@
     "href": "dashboards/econ/trade.html",
     "title": "External Trade",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTrade value, Malaysia by state, monthly\nTrade value by partner country and HS code, Penang"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTrade value, Malaysia by state, monthly\nTrade value by partner country and HS code, Penang (parquet)"
   },
   {
     "objectID": "dashboards/econ/gdp.html",
