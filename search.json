@@ -1,59 +1,24 @@
 [
   {
-    "objectID": "dashboards/econ/labour.html",
-    "href": "dashboards/econ/labour.html",
-    "title": "Labour Force",
+    "objectID": "resources/quarterly_penang_statistics.html",
+    "href": "resources/quarterly_penang_statistics.html",
+    "title": "Quarterly Penang Statistics",
     "section": "",
-    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nQuarterly Principal Labour Force Statistics by State (data.gov.my)\n\n\n\nPrepared data\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nPrincipal statistics of labour force for Penang, overall and by sex, annual\nLabour force statistics by age and sex, Malaysia and Penang, annual\nLabour force participation rate by sex and state\nEmployed and labour force, Penang by highest certificate obtained and sex\nEmployed and labour force, Penang by marital status and sex\nEmployed persons by state, occupation and sex\nEmployed persons by state, industry and sex"
-  },
-  {
-    "objectID": "dashboards/econ/cpi.html",
-    "href": "dashboards/econ/cpi.html",
-    "title": "Consumer Price Index",
-    "section": "",
-    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nCPI by State & Division (2-digit) (data.gov.my)\nMCOICOP (data.gov.my)\nProducer Price Index (data.gov.my)\nCPI by Division (2-digit) (data.gov.my)\nCore CPI by Division (2-digit) (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nQuarterly gross domestic product by demand and supply components, Malaysia"
-  },
-  {
-    "objectID": "dashboards/sector/finance.html",
-    "href": "dashboards/sector/finance.html",
-    "title": "Penang State Finance",
-    "section": "",
-    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nQuarterly Federal Government Finance (data.gov.my)\nQuarterly Federal Government Revenue (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. - Fiscal position - Revenue items - Operating expenditure components - Expenditure items"
-  },
-  {
-    "objectID": "dashboards/sector/health.html",
-    "href": "dashboards/sector/health.html",
-    "title": "Healthcare",
-    "section": "",
-    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nPopulation Table: States (data.gov.my)\nLocation data (PeGIS)\n\nKESIHATAN\nKESSWASTA\nHOSPITAL\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths\n\n\n\nRelated publications\n\nHealth Facts, State Health Department, Penang\nHealth Indicators, Ministry of Health, Malaysia"
-  },
-  {
-    "objectID": "dashboards/sector/manf.html",
-    "href": "dashboards/sector/manf.html",
-    "title": "Approved Manufacturing Investments",
-    "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. - Approved manufacturing investments by state"
-  },
-  {
-    "objectID": "dashboards/social/hhinc.html",
-    "href": "dashboards/social/hhinc.html",
-    "title": "Household Income",
-    "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHousehold income, inequality and poverty metrics by state and district\nMean/median income and income share by household income group\nHousehold income share by district and income class"
+    "text": "Initiated in 1999, Quarterly Penang Statistics collates data provided by government departments and private organisations at state and national levels, for the use of policymakers, researchers, academics and investors.\nThis publication contains statistics about Penang’s demographic, social and economic development. Key national economic statistics are also included, covering the areas of agriculture, fisheries, livestock, manufacturing, water, electricity, telecommunications, property, tourism, logistics, health and education.\nThis publication is now discontinued."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Key Penang Statistics",
     "section": "",
-    "text": "1.80mil\n\n\nPopulation\n\n\n\n\n\n\n\n\n\n\n3.27%\n\n\nGDP growth\n\n\n\n\n\n\n\n\n\n\nRM6,502\n\n\nMedian gross household income\n\n\n\n\n\n\n\n\n\n\n0.70%\n\n\nCPI inflation, year-on-year\n\n\n\n\n\n\n\n\n\n\n2.20%\n\n\nUnemployment rate\n\n\n\n\n\nNo matching items"
+    "text": "1.80mil\n\n\nPopulation\n\n\n\n\n\n\n\n\n\n\n3.27%\n\n\nGDP growth\n\n\n\n\n\n\n\n\n\n\nRM6,502\n\n\nMedian gross household income\n\n\n\n\n\n\n\n\n\n\n1.00%\n\n\nCPI inflation, year-on-year\n\n\n\n\n\n\n\n\n\n\n2.20%\n\n\nUnemployment rate\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#penang-at-a-glance",
     "href": "index.html#penang-at-a-glance",
     "title": "Key Penang Statistics",
     "section": "",
-    "text": "1.80mil\n\n\nPopulation\n\n\n\n\n\n\n\n\n\n\n3.27%\n\n\nGDP growth\n\n\n\n\n\n\n\n\n\n\nRM6,502\n\n\nMedian gross household income\n\n\n\n\n\n\n\n\n\n\n0.70%\n\n\nCPI inflation, year-on-year\n\n\n\n\n\n\n\n\n\n\n2.20%\n\n\nUnemployment rate\n\n\n\n\n\nNo matching items"
+    "text": "1.80mil\n\n\nPopulation\n\n\n\n\n\n\n\n\n\n\n3.27%\n\n\nGDP growth\n\n\n\n\n\n\n\n\n\n\nRM6,502\n\n\nMedian gross household income\n\n\n\n\n\n\n\n\n\n\n1.00%\n\n\nCPI inflation, year-on-year\n\n\n\n\n\n\n\n\n\n\n2.20%\n\n\nUnemployment rate\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#dashboards",
@@ -70,39 +35,32 @@
     "text": "New in Penang Monthly\n\n\n\n\n\n\n\n\nHow Much Energy Are We Consuming?\n\n\n\nHajar Ariff\n\n\nApril 2025\n\n\n\n\n\n\n\n\n\n\n\nWater in Penang\n\n\n\nHajar Ariff\n\n\nNovember 2024\n\n\n\n\n\n\n\n\n\n\n\nPenang’s Evolving Schooling Preferences\n\n\n\nPhilip Khor\n\n\nAugust 2024\n\n\n\n\n\n\n\n\n\n\n\nNon-Profit Organisations In Penang\n\n\n\nPhilip Khor\n\n\nJune 2024\n\n\n\n\n\n\n\n\n\n\n\nOur Worsening Climate\n\n\n\nHajar Ariff\n\n\nApril 2024\n\n\n\n\n\n\n\n\n\n\n\nGender Equality in Malaysia\n\n\n\nYeong Pey Jung\n\n\nMarch 2024\n\n\n\n\n\n\n\n\n\n\n\nCreative Hubs\n\n\n\nHajar Ariff\n\n\nFebruary 2024\n\n\n\n\n\n\n\n\n\n\n\nYear in Review: Penang Key Economic Statistics\n\n\n\nDoris Liew\n\n\nJanuary 2024\n\n\n\n\n\n\n\n\n\n\n\nHow Food Price Increases Are Affecting Malaysians\n\n\n\nDoris Liew\n\n\nDecember 2023\n\n\n\n\n\n\n\n\n\n\n\nArtificial Intelligence In Numbers\n\n\n\nPhilip Khor\n\n\nNovember 2023\n\n\n\n\n\n\n\n\n\n\n\nThe State of Penang’s Modes of Transport\n\n\n\nYeong Pey Jung\n\n\nOctober 2023\n\n\n\n\n\n\n\n\n\n\n\nPenang’s Socio-Economic Excellence\n\n\n\nOng Wooi Leng\n\n\nSeptember 2023\n\n\n\n\n\n\n\n\n\n\n\nOn Libraries, Printers and Publishers\n\n\n\nPhilip Khor\n\n\nAugust 2023\n\n\n\n\n\n\n\n\n\n\n\nThe Jetties of George Town\n\n\n\nAzmil Akil\n\n\nJuly 2023\n\n\n\n\n\n\n\n\n\n\n\nThe Food and Beverage Industry in Numbers\n\n\n\nNegin Vaghefi\n\n\nDecember 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
+    "objectID": "dashboards/econ/cpi.html",
+    "href": "dashboards/econ/cpi.html",
+    "title": "Consumer Price Index",
     "section": "",
-    "text": "Links are only provided for reference. We are not responsible for the contents of external links.\n\n\n\n\nGeneral\n\nMalaysian government sourcesIn-house data publicationsMultilateral agenciesOther sources\n\n\n\nPublic Sector Open Data: www.data.gov.my\nData catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the archived open data portal, including datasets released by the Penang State Government\n\n\nMalaysia’s national statistical agency, Department of Statistics Malaysia (DOSM)\n\nMost reports are now available on the main site in PDFs with accompanying Excel files. For other reports (especially older reports), refer to eStatistik (free sign-up). Scans of historical publications may be available at StatsDigital.\nOpenDOSM is a scoped version of data.gov.my hosting only DOSM data\nMysIDC (to be discontinued in favour of OpenDOSM)\n\n\n\n\n\nPenang Economic and Development Report\nBiennial socioeconomic review produced by Penang Institute, commissioned by the Penang Economic Planning Unit.\n\n2019/2020\n2017/2018\n2015/2016\n\n\n\nPenang in Numbers\nCompilation of socioeconomic data including demography, agriculture, tourism, social work, infrastructure, etc.\n\n2017-2018\n2016-2017\n2014-2015\n2013\n\n\n\nQuarterly Penang Statistics\nDiscontinued. View archives.\n\n\n\n\nUN Department of Economic and Social Affairs\n\nUNdata\nSDG Indicators Database\n\nASEANstats\nAsian Development Bank\n\n\n\n\nOur World in Data\nAwesome Malaysia Open Data Resources\n\n\n\n\n\n\n\nEconomic development, investment and trade, macroeconomy, public finance and governance\n\nMalaysian government sourcesMultilateral agenciesOthers\n\n\n\nMinistry of Economy\nMalaysian Investment Development Authority\nMalaysia External Trade Statistics (METS) (DOSM)\nMalaysia External Trade Development Corporation\nMinistry of Finance\nPenang State Treasury\nJabatan Audit Negara\nMETS Online\n\n\n\n\nASEAN+3 Macroeconomic Research Office (AMRO)\nUN Trade and Development\nIMF\nCOMTRADE\nWorld Bank\n\nPoverty and Inequality Platform\n\nUNDP Human Development Index\n\n\n\n\nSubnational Human Development Index\n\n\n\n\n\n\n\nFinancial system and capital markets\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nBank Negara Malaysia\n\nOpenAPI\n\nSecurities Commission\n\n\n\n\nBank for International Settlements\n\n\n\n\n\n\n\nHuman capital, labour, social safety net\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nMinistry of Education\n\nDashboard\nBuku Perangkaan Pendidikan Malaysia\n\nMinistry of Higher Education\nInstitute of Labour Market Information and Analysis\nJabatan Tenaga Kerja\nEmployees’ Provident Fund\nPERKESO Labour Market Exchange\nDepartment of Occupational Safety and Health\n\n\n\n\nUNESCO Institute for Statistics\nILOStat\n\n\n\n\n\n\n\nHealth and healthcare\n\nMalaysian government sourcesMultilateral agencies\n\n\nMinistry of Health\n\nKKMNOW hosts real-time health data\nHealth Indicators/Health Facts (national)\nNational Health and Morbidity Survey\n\nOral health research publications\n\nPenang Health Facts, Penang Health Department\n\n\n\n\nWorld Health Organization\n\n\n\n\n\n\n\nTransportation\n\nMinistry of Transport\nKementerian Kerja Raya\n\nRoad Traffic Volume Malaysia (subscription required)\n\n\n\n\n\nWater, energy, environment, agriculture\n\nMalaysian government sourcesMultilateral agenciesOther sources\n\n\n\nPublic Infobanjir\nSuruhanjaya Perkhidmatan Air Negara\nEnergy Commission\nSustainable Energy Development Authority\nmyMetData, Jabatan Meteorologi Malaysia (by purchase)\nDepartment of Agriculture\nDepartment of Fisheries\nDepartment of Veterinary Services\nDepartment of Environment\n\n\n\n\nInternational Energy Agency\nWorld Bank Climate Change Knowledge Portal\nFood and Agriculture Organization of the United Nations (FAO)\nInternational Renewable Energy Agency\nASEAN Centre for Energy\n\n\n\n\nProbable Futures\nUS Department of Agriculture\nAir Quality Life Index\n\n\n\n\n\n\n\nGeodata\n\nMalaysian government sourcesOther sources\n\n\n\nPenang Geographic Information Centre (PeGIS)\n\nArcGIS REST services\n\nMalaysia Geoportal\ndata.gov.my front-end map data\n\n\n\n\nHumanitarian Data Exchange\n\n\n\n\n\n\n\nOthers\n\nMalaysian Communications and Multimedia Commission\nNational Property Information Centre\nTourism Malaysia"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nCPI by State & Division (2-digit) (data.gov.my)\nMCOICOP (data.gov.my)\nProducer Price Index (data.gov.my)\nCPI by Division (2-digit) (data.gov.my)\nCore CPI by Division (2-digit) (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nQuarterly gross domestic product by demand and supply components, Malaysia"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "dashboards/econ/gdp.html",
+    "href": "dashboards/econ/gdp.html",
+    "title": "Gross Domestic Product",
     "section": "",
-    "text": "Penang Institute is proud to present Key Penang Statistics, a portal dedicated to socioeconomic statistics about the state of Penang. What’s more, it comes in interactive format, powered by Tableau.\nThese dashboards illustrate trends and patterns in an easily comprehensible form, which will hopefully inspire users to communicate with the data in effective and cogent ways.\nUsers may download graphics as images, PDFs or PowerPoint presentation. The data is also provided for download.\n\n\n\n\n\n\nArchive\n\n\n\n\n\nThe following dashboards may not be regularly maintained/updated and are provided for reference only.\n\nAir transport\nMaritime cargo\nCovid-19 Data Snapshots for Malaysia\nSubdivision-level statistics\nLife tables\nPublic housing"
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nQuarterly GDP by demand and supply components, Malaysia\nAnnual GDP per capita by state, current prices\nAnnual GDP by state and economic activity, constant prices\nAnnual GDP by state and sub-economic activity, constant prices"
   },
   {
-    "objectID": "resources/quarterly_penang_statistics.html",
-    "href": "resources/quarterly_penang_statistics.html",
-    "title": "Quarterly Penang Statistics",
+    "objectID": "dashboards/social/hhinc.html",
+    "href": "dashboards/social/hhinc.html",
+    "title": "Household Income",
     "section": "",
-    "text": "Initiated in 1999, Quarterly Penang Statistics collates data provided by government departments and private organisations at state and national levels, for the use of policymakers, researchers, academics and investors.\nThis publication contains statistics about Penang’s demographic, social and economic development. Key national economic statistics are also included, covering the areas of agriculture, fisheries, livestock, manufacturing, water, electricity, telecommunications, property, tourism, logistics, health and education.\nThis publication is now discontinued."
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHousehold income, inequality and poverty metrics by state and district\nMean/median income and income share by household income group\nHousehold income share by district and income class"
   },
   {
-    "objectID": "dashboards/social/gender.html",
-    "href": "dashboards/social/gender.html",
-    "title": "Gender",
+    "objectID": "dashboards/sector/health.html",
+    "href": "dashboards/sector/health.html",
+    "title": "Healthcare",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nLabour force participation rate by sex and state, annual\nMean and median salaries by state and sex, annual\nMean and median salaries by occupation and sex, annual\nLiteracy rate by state and age group\nNumber/share of women in leadership and decision-making positions, Malaysia and Penang"
-  },
-  {
-    "objectID": "dashboards/social/pop.html",
-    "href": "dashboards/social/pop.html",
-    "title": "Population and Demographics",
-    "section": "",
-    "text": "Note\n\n\n\nYou’re currently viewing this dashboard in mobile mode. For a better experience and to access more features, please open this page on a larger screen.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload data\n\n\n\n\n\n\nDatasets used\n\nAnnual Live Births by State (data.gov.my)\nAnnual Deaths by State (data.gov.my)\nTFR and ASFR by State (data.gov.my)\nTFR and ASFR (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nPopulation by state, age, ethnicity, sex\nPenang population by district and sex\nPenang population by district and ethnicity\nLand area by district, Penang\nGross migration by state\nIntra-state migration\nInternal migrants by state of origin and state of destination, Malaysia"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nPopulation Table: States (data.gov.my)\nLocation data (PeGIS)\n\nKESIHATAN\nKESSWASTA\nHOSPITAL\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nHealthcare facilities (hospitals, beds) by state\nHealthcare facilities by district\nHealthcare utilisation by state\nHealthcare utilisation by hospital\nHealthcare personnel by state\nCommunicable disease cases and deaths\n\n\n\nRelated publications\n\nHealth Facts, State Health Department, Penang\nHealth Indicators, Ministry of Health, Malaysia"
   },
   {
     "objectID": "dashboards/sector/prop.html",
@@ -112,11 +70,46 @@
     "text": "Download data\n\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTransaction volume and value by price range\nPenang, new launches by price range, district\nUnsold residential property by price range and type, quarterly\nAnnual residential prices by state and quantile\nHousehold income, inequality and poverty metrics by state and district\n\n\n\nRelated publications\nThe following publications are published by the National Property Information Centre (NAPIC), part of the Valuation and Property Services Department under the Ministry of Finance.\n\nProperty Market Report\n\nProperty sales data (biannual)\nProperty prices, residential (annual)\n\nProperty Market Status Report (quarterly)\n\nProperty Market Status Report\nNewly Launched Residential Units And The Sales Performances"
   },
   {
+    "objectID": "dashboards/sector/finance.html",
+    "href": "dashboards/sector/finance.html",
+    "title": "Penang State Finance",
+    "section": "",
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nQuarterly Federal Government Finance (data.gov.my)\nQuarterly Federal Government Revenue (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. - Fiscal position - Revenue items - Operating expenditure components - Expenditure items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Penang Institute is proud to present Key Penang Statistics, a portal dedicated to socioeconomic statistics about the state of Penang. What’s more, it comes in interactive format, powered by Tableau.\nThese dashboards illustrate trends and patterns in an easily comprehensible form, which will hopefully inspire users to communicate with the data in effective and cogent ways.\nUsers may download graphics as images, PDFs or PowerPoint presentation. The data is also provided for download.\n\n\n\n\n\n\nArchive\n\n\n\n\n\nThe following dashboards may not be regularly maintained/updated and are provided for reference only.\n\nAir transport\nMaritime cargo\nCovid-19 Data Snapshots for Malaysia\nSubdivision-level statistics\nLife tables\nPublic housing"
+  },
+  {
     "objectID": "dashboards/sector/grad.html",
     "href": "dashboards/sector/grad.html",
     "title": "Graduate Employability",
     "section": "",
     "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nGraduates by field of study and employment status, Penang\nEmployed graduates by field of study and industry of work, Penang"
+  },
+  {
+    "objectID": "dashboards/sector/manf.html",
+    "href": "dashboards/sector/manf.html",
+    "title": "Approved Manufacturing Investments",
+    "section": "",
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets. - Approved manufacturing investments by state"
+  },
+  {
+    "objectID": "dashboards/social/pop.html",
+    "href": "dashboards/social/pop.html",
+    "title": "Population and Demographics",
+    "section": "",
+    "text": "Note\n\n\n\nYou’re currently viewing this dashboard in mobile mode. For a better experience and to access more features, please open this page on a larger screen.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload data\n\n\n\n\n\n\nDatasets used\n\nAnnual Live Births by State (data.gov.my)\nAnnual Deaths by State (data.gov.my)\nTFR and ASFR by State (data.gov.my)\nTFR and ASFR (data.gov.my)\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nPopulation by state, age, ethnicity, sex\nPenang population by district and sex\nPenang population by district and ethnicity\nLand area by district, Penang\nGross migration by state\nIntra-state migration\nInternal migrants by state of origin and state of destination, Malaysia"
+  },
+  {
+    "objectID": "dashboards/social/gender.html",
+    "href": "dashboards/social/gender.html",
+    "title": "Gender",
+    "section": "",
+    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nLabour force participation rate by sex and state, annual\nMean and median salaries by state and sex, annual\nMean and median salaries by occupation and sex, annual\nLiteracy rate by state and age group\nNumber/share of women in leadership and decision-making positions, Malaysia and Penang"
   },
   {
     "objectID": "dashboards/econ/trade.html",
@@ -126,10 +119,17 @@
     "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nTrade value, Malaysia by state, monthly\nTrade value by partner country and HS code, Penang (parquet)"
   },
   {
-    "objectID": "dashboards/econ/gdp.html",
-    "href": "dashboards/econ/gdp.html",
-    "title": "Gross Domestic Product",
+    "objectID": "dashboards/econ/labour.html",
+    "href": "dashboards/econ/labour.html",
+    "title": "Labour Force",
     "section": "",
-    "text": "Download data\n\n\n\n\n\nPrepared datasets\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nQuarterly GDP by demand and supply components, Malaysia\nAnnual GDP per capita by state, current prices\nAnnual GDP by state and economic activity, constant prices\nAnnual GDP by state and sub-economic activity, constant prices"
+    "text": "Download data\n\n\n\n\n\n\nDatasets used\n\nQuarterly Principal Labour Force Statistics by State (data.gov.my)\n\n\n\nPrepared data\nDatasets are provided without warranty. You will be solely responsible for your use of the Datasets.\n\nPrincipal statistics of labour force for Penang, overall and by sex, annual\nLabour force statistics by age and sex, Malaysia and Penang, annual\nLabour force participation rate by sex and state\nEmployed and labour force, Penang by highest certificate obtained and sex\nEmployed and labour force, Penang by marital status and sex\nEmployed persons by state, occupation and sex\nEmployed persons by state, industry and sex"
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Links are only provided for reference. We are not responsible for the contents of external links.\n\n\n\n\nGeneral\n\nMalaysian government sourcesIn-house data publicationsMultilateral agenciesOther sources\n\n\n\nPublic Sector Open Data: www.data.gov.my\nData catalogue across multiple government agencies in machine-readable format, including accompanying dashboards. See also the archived open data portal, including datasets released by the Penang State Government\n\n\nMalaysia’s national statistical agency, Department of Statistics Malaysia (DOSM)\n\nMost reports are now available on the main site in PDFs with accompanying Excel files. For other reports (especially older reports), refer to eStatistik (free sign-up). Scans of historical publications may be available at StatsDigital.\nOpenDOSM is a scoped version of data.gov.my hosting only DOSM data\nMysIDC (to be discontinued in favour of OpenDOSM)\n\n\n\n\n\nPenang Economic and Development Report\nBiennial socioeconomic review produced by Penang Institute, commissioned by the Penang Economic Planning Unit.\n\n2019/2020\n2017/2018\n2015/2016\n\n\n\nPenang in Numbers\nCompilation of socioeconomic data including demography, agriculture, tourism, social work, infrastructure, etc.\n\n2017-2018\n2016-2017\n2014-2015\n2013\n\n\n\nQuarterly Penang Statistics\nDiscontinued. View archives.\n\n\n\n\nUN Department of Economic and Social Affairs\n\nUNdata\nSDG Indicators Database\n\nASEANstats\nAsian Development Bank\n\n\n\n\nOur World in Data\nAwesome Malaysia Open Data Resources\n\n\n\n\n\n\n\nEconomic development, investment and trade, macroeconomy, public finance and governance\n\nMalaysian government sourcesMultilateral agenciesOthers\n\n\n\nMinistry of Economy\nMalaysian Investment Development Authority\nMalaysia External Trade Statistics (METS) (DOSM)\nMalaysia External Trade Development Corporation\nMinistry of Finance\nPenang State Treasury\nJabatan Audit Negara\nMETS Online\n\n\n\n\nASEAN+3 Macroeconomic Research Office (AMRO)\nUN Trade and Development\nIMF\nCOMTRADE\nWorld Bank\n\nPoverty and Inequality Platform\n\nUNDP Human Development Index\n\n\n\n\nSubnational Human Development Index\n\n\n\n\n\n\n\nFinancial system and capital markets\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nBank Negara Malaysia\n\nOpenAPI\n\nSecurities Commission\n\n\n\n\nBank for International Settlements\n\n\n\n\n\n\n\nHuman capital, labour, social safety net\n\nMalaysian government sourcesMultilateral agencies\n\n\n\nMinistry of Education\n\nDashboard\nBuku Perangkaan Pendidikan Malaysia\n\nMinistry of Higher Education\nInstitute of Labour Market Information and Analysis\nJabatan Tenaga Kerja\nEmployees’ Provident Fund\nPERKESO Labour Market Exchange\nDepartment of Occupational Safety and Health\n\n\n\n\nUNESCO Institute for Statistics\nILOStat\n\n\n\n\n\n\n\nHealth and healthcare\n\nMalaysian government sourcesMultilateral agencies\n\n\nMinistry of Health\n\nKKMNOW hosts real-time health data\nHealth Indicators/Health Facts (national)\nNational Health and Morbidity Survey\n\nOral health research publications\n\nPenang Health Facts, Penang Health Department\n\n\n\n\nWorld Health Organization\n\n\n\n\n\n\n\nTransportation\n\nMinistry of Transport\nKementerian Kerja Raya\n\nRoad Traffic Volume Malaysia (subscription required)\n\n\n\n\n\nWater, energy, environment, agriculture\n\nMalaysian government sourcesMultilateral agenciesOther sources\n\n\n\nPublic Infobanjir\nSuruhanjaya Perkhidmatan Air Negara\nEnergy Commission\nSustainable Energy Development Authority\nmyMetData, Jabatan Meteorologi Malaysia (by purchase)\nDepartment of Agriculture\nDepartment of Fisheries\nDepartment of Veterinary Services\nDepartment of Environment\n\n\n\n\nInternational Energy Agency\nWorld Bank Climate Change Knowledge Portal\nFood and Agriculture Organization of the United Nations (FAO)\nInternational Renewable Energy Agency\nASEAN Centre for Energy\n\n\n\n\nProbable Futures\nUS Department of Agriculture\nAir Quality Life Index\n\n\n\n\n\n\n\nGeodata\n\nMalaysian government sourcesOther sources\n\n\n\nPenang Geographic Information Centre (PeGIS)\n\nArcGIS REST services\n\nMalaysia Geoportal\ndata.gov.my front-end map data\n\n\n\n\nHumanitarian Data Exchange\n\n\n\n\n\n\n\nOthers\n\nMalaysian Communications and Multimedia Commission\nNational Property Information Centre\nTourism Malaysia"
   }
 ]
