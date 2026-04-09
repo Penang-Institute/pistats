@@ -6,3 +6,8 @@
 /.quarto/
 /_site/
 /site_libs
+
+**/*.quarto_ipynb
+
+# Local design mockups (not for production)
+/mock_design/
