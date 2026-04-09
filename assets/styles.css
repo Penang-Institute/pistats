@@ -15,21 +15,27 @@
   }
   .card {
     background-color: #F0EFF4;
-    display: flex;
-    flex-direction: column;
   }
-  /* "Data as of …" footer badge, injected by the small script in index.qmd.
-     Echoes the data period already shown in .card-title so readers can see
-     at a glance when each metric was last published. */
-  .data-as-of {
-    margin-top: auto;
-    padding: .5em .9em 0 0;
-    text-align: right;
-    font-size: 0.65rem;
-    font-weight: 600;
-    color: #64748B;
-    letter-spacing: 0.01em;
-  }
+}
+
+/* "Data as of …" footer badge, injected by the small script in index.qmd.
+   Echoes the data period already shown in .card-title so readers can see
+   at a glance when each metric was last published. Flat selectors (not
+   nested) for maximum browser/tooling compatibility, and appended INSIDE
+   .card-body so Bootstrap's flex-column card layout pushes it to the
+   bottom of the visible card rather than overflowing below. */
+.metrics .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.metrics .card-body .data-as-of {
+  margin-top: auto;
+  padding: .6em .2em 0 0;
+  text-align: right;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.01em;
 }
 
 .dashboards {
