@@ -1,0 +1,50 @@
+name: Update submodules and publish
+
+# Replaces the keyPenangMetrics -> pistats cross-repo push (update-parent.yaml),
+# which depended on a PAT (PRIVATE_TOKEN_GITHUB) that expired in June 2026.
+# Running inside pistats lets the ephemeral GITHUB_TOKEN push to this repo,
+# so no stored credential is needed.
+
+on:
+  schedule:
+    # keyPenangMetrics renders Thursdays 05:00 UTC; run well after it finishes
+    - cron: '00 12 * * THU'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Update submodules to latest remote
+        run: git submodule update --remote --recursive
+
+      - name: Commit submodule bump
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions - update submodules"
+          git add --all
+          git commit -m "Update submodules" || echo "No changes to commit"
+
+      - name: Push changes
+        run: git push
+
+      # A push made with GITHUB_TOKEN does not trigger the Render and Publish
+      # workflow, so render and publish here in the same job.
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
