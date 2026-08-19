@@ -1,0 +1,15 @@
+<div class="glance-grid">
+<% for (const item of items) { %>
+<div class="glance-card">
+<div class="glance-period"><%= item.title %></div>
+<div class="glance-value"><%= item.subtitle %></div>
+<div class="glance-label"><%= item.description %></div>
+<div class="glance-links">
+<a href="<%= item.path %>">Find out more</a>
+<a href="<%= item.path %>" class="glance-disabled" title="Dataset link — to be wired to data source">Dataset</a>
+<a href="<%= item.path %>">Dashboard</a>
+</div>
+<div class="glance-views">views counter <span class="glance-toadd">to add</span></div>
+</div>
+<% } %>
+</div>

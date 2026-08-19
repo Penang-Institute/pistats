@@ -3,45 +3,167 @@ title: "Key Penang Statistics"
 pagetitle: Key Penang Statistics by Penang Institute
 title-prefix: ""
 description: |
-  Key Penang Statistics is a set of dashboards that visualise key socioeconomic 
-  data about Penang. Developed by Penang Institute's Socioeconomics & Statistics 
-  Programme, it provides insights into Penang's cost of living, trade
-  performance, gender landscape, graduate employability, economic trajectory, 
-  income disparities, labour force statistics, state finance, and population trends 
-  from official government sources. 
+  Dashboards and datasets on Penang's economy and society, maintained by
+  Penang Institute's Socioeconomics & Statistics Programme from official
+  government sources.
 listing:
   - id: metrics
     contents: keyPenangMetrics/output/metrics_grid.yaml
-    grid-columns: 5
-    type: grid
+    template: assets/glance.ejs
   - id: penang-monthly
     contents: keyPenangMetrics/output/penang-monthly-stats.yaml
     date-format: "MMMM YYYY"
     type: grid
     page-size: 3
   - id: dashboards-econ
-    contents: 
+    contents:
     - dashboards/econ/*.qmd
     type: grid
     grid-columns: 3
-    image-height: "5"
+    fields: [title, description]
   - id: dashboards-sector
-    contents: 
+    contents:
     - dashboards/sector/*.qmd
     type: grid
     grid-columns: 3
-    image-height: "5"
+    fields: [title, description]
   - id: dashboards-social
-    contents: 
+    contents:
     - dashboards/social/*.qmd
     type: grid
     grid-columns: 3
-    image-height: "5"
+    fields: [title, description]
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
 ---
 
+```{=html}
+<div class="revamp-search-wrap" role="search">
+  <div class="revamp-search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+    <input id="revamp-search-input" type="search" autocomplete="off"
+           placeholder="Search dashboards and datasets — e.g. inflation, household income"
+           aria-label="Search dashboards and datasets">
+  </div>
+  <ul id="revamp-search-results" hidden></ul>
+</div>
+<script>
+(function () {
+  var input = document.getElementById('revamp-search-input');
+  var list = document.getElementById('revamp-search-results');
+  var docs = null;
+
+  function load() {
+    if (docs) return Promise.resolve(docs);
+    // Dashboard cards carry curated descriptions that the page-text index
+    // lacks (dashboard pages are mostly embedded Tableau frames), so fold
+    // them in as first-priority documents.
+    var cards = Array.prototype.map.call(
+      document.querySelectorAll('a.quarto-grid-link'),
+      function (a) {
+        var title = a.querySelector('.card-title');
+        var desc = a.querySelector('.listing-description');
+        if (!title) return null;
+        return { href: a.getAttribute('href'),
+                 title: title.textContent.trim(),
+                 section: '',
+                 text: desc ? desc.textContent.trim() : '' };
+      }).filter(Boolean);
+    return fetch('search.json').then(function (r) { return r.json(); })
+      .then(function (json) { docs = cards.concat(json); return docs; });
+  }
+
+  function snippet(text, q) {
+    var i = text.toLowerCase().indexOf(q);
+    if (i < 0) return text.slice(0, 90);
+    var start = Math.max(0, i - 30);
+    return (start ? '…' : '') + text.slice(start, i + q.length + 60) + '…';
+  }
+
+  function render(hits, q) {
+    list.innerHTML = '';
+    if (!hits.length) {
+      list.innerHTML = '<li class="rs-empty">No matches for “' + q + '”</li>';
+    } else {
+      hits.forEach(function (h) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = h.href;
+        a.innerHTML = '<strong>' + h.title + '</strong>' +
+          (h.section ? ' <span class="rs-section">' + h.section + '</span>' : '') +
+          '<span class="rs-snippet">' + snippet(h.text || '', q) + '</span>';
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    }
+    list.hidden = false;
+  }
+
+  function search(q) {
+    q = q.trim().toLowerCase();
+    if (q.length < 2) { list.hidden = true; return; }
+    load().then(function (docs) {
+      var seen = {};
+      var hits = docs
+        .map(function (d) {
+          var t = (d.title || '').toLowerCase();
+          var body = (d.text || '').toLowerCase();
+          var page = (d.href || '').replace(location.origin, '').replace(/^\.?\//, '').split('#')[0];
+          var score = t.indexOf(q) === 0 ? 4 : t.includes(q) ? 3 : body.includes(q) ? 1 : 0;
+          if (score && page.indexOf('dashboards/') === 0) score += 1;
+          return { d: d, page: page, score: score };
+        })
+        .filter(function (x) { return x.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; })
+        .filter(function (x) {
+          if (seen[x.page]) return false;
+          seen[x.page] = true;
+          return true;
+        })
+        .slice(0, 8)
+        .map(function (x) { return x.d; });
+      render(hits, q);
+    });
+  }
+
+  input.addEventListener('input', function () { search(input.value); });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      var first = list.querySelector('a');
+      if (first) window.location.href = first.href;
+    }
+    if (e.key === 'Escape') { list.hidden = true; input.blur(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.revamp-search-wrap')) list.hidden = true;
+  });
+})();
+
+// Fill the glance-card view counters from Tableau Public counts fetched at
+// build time by scripts/fetch_view_counts.py.
+(function () {
+  fetch('keyPenangMetrics/output/view_counts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (counts) {
+      document.querySelectorAll('.glance-card').forEach(function (card) {
+        var link = card.querySelector('.glance-links a');
+        var el = card.querySelector('.glance-views');
+        if (!link || !el) return;
+        var stem = (link.getAttribute('href') || '')
+          .split('/').pop().replace('.html', '');
+        if (counts[stem] == null) return;
+        el.innerHTML = counts[stem].toLocaleString('en-MY') +
+          ' dashboard views <span class="glance-src">Tableau Public</span>';
+      });
+    })
+    .catch(function () { /* keep the static placeholder if the file is absent */ });
+})();
+</script>
+```
+
 ## Penang at a glance
+
+[Each card links to the full story, the source dataset, and the interactive dashboard.]{.glance-sub}
 
 :::: metrics
 ::: {#metrics}
@@ -84,6 +206,15 @@ title-block-banner-color: 'white'
 ::: {#penang-monthly}
 :::
 
+------------------------------------------------------------------------
+
+::: {.smart-city-placeholder}
+## Penang as a Smart City
+
+Placeholder section for the proposed revamp. Indicators and narrative to be
+defined by the Socioeconomics & Statistics Programme.
+:::
+
 ```{=html}
 <script>
   // Append "Data as of <period>" and "Updated <date>" footers to each
@@ -97,12 +228,17 @@ title-block-banner-color: 'white'
   //
   // Both footers are appended inside .card-body so Bootstrap's flex layout
   // pushes them to the bottom of the card without overflow.
+  //
+  // The Option A revamp renders these as .glance-card divs (assets/glance.ejs),
+  // NOT Bootstrap .card elements, and puts the period in .glance-period rather
+  // than .card-title. Both shapes are matched below so the badge keeps working
+  // whichever layout is in use; matching only .card silently attached nothing.
   (function addCardFooters() {
     function addDataAsOf(cards) {
       cards.forEach(function (card) {
         if (card.querySelector('.data-as-of')) return;
         var body = card.querySelector('.card-body') || card;
-        var titleEl = body.querySelector('.card-title');
+        var titleEl = body.querySelector('.card-title, .glance-period');
         var period = titleEl && titleEl.textContent.trim();
         if (!period) return;
         var el = document.createElement('div');
@@ -124,7 +260,7 @@ title-block-banner-color: 'white'
     }
 
     function run() {
-      var cards = document.querySelectorAll('.metrics .card');
+      var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
 
       fetch('keyPenangMetrics/output/metrics_grid.json')

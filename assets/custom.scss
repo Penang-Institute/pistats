@@ -2,7 +2,20 @@
 $link-color: #291528;
 $link-hover-color: #C53036;
 $spacer: 1rem !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+// ---- Client-specified typography (Aug 2026): Google Jost, 14px base ----
+// The <link> to fonts.googleapis.com lives in _quarto.yml (include-in-header),
+// not here: a CSS @import emitted after the simplex layer would be ignored by
+// the browser, since @import must precede all rules.
+// No !default on these two — they must beat simplex's own values.
+$font-family-sans-serif: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// Must stay in rem: Bootstrap computes $nav-link-height from
+// $font-size-base * $line-height-base + $nav-link-padding-y, and a px value
+// there fails the theme compile ("21px and 1.8rem have incompatible units").
+// simplex sets $font-size-root to 17px, so plain 0.875rem would render
+// 14.875px. 14/17 = 0.823529 gives the client's 14px exactly, and leaves every
+// other rem-sized element on the page untouched.
+$font-size-base: 0.823529rem; // = 14px at simplex's 17px root
 $font-size-lg: $font-size-base * 1.25 !default;
 $navbar-brand-font-size: $font-size-lg * 1 !default;
 $navbar-brand-padding-y: $spacer * 1.5 !default;
@@ -14,3 +27,281 @@ $pagination-active-bg: #3A3E3B;
 $pagination-active-border-color: #3A3E3B;
 
 /*-- scss:rules --*/
+
+// ---- Revamp test (Option A): Penang-at-a-glance cards ----
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
+}
+.glance-card {
+  background: #F0EFF4;
+  border-radius: 10px;
+  padding: 18px 16px 14px;
+  display: flex;
+  flex-direction: column;
+}
+.glance-period { font-size: 0.74rem; color: #6a6f6c; font-weight: 600; letter-spacing: 0.04em; }
+.glance-value { font-size: 1.85rem; font-weight: 800; color: #c3353c; margin: 2px 0; }
+.glance-label { font-size: 0.88rem; font-weight: 600; min-height: 2.6em; }
+.glance-links {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #dcd9e3;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
+  a { text-decoration: none; color: #454944; }
+  a::before { content: "\2192\00a0"; color: #c3353c; }
+  a:hover { color: #c3353c; text-decoration: underline; }
+}
+// Freshness footers, per the Apr 2026 mock (mock_design/option_b_combined.html):
+// grey line = the period the figure covers, red line = when the pipeline last ran.
+.data-as-of {
+  margin-top: 6px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #6a6f6c;
+  letter-spacing: 0.01em;
+}
+.updated-at {
+  margin-top: 2px;
+  font-size: 0.60rem;
+  font-weight: 600;
+  color: #c3353c;
+  letter-spacing: 0.01em;
+}
+
+.glance-views {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: #6a6f6c;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.glance-toadd {
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.smart-city-placeholder {
+  margin-top: 3rem;
+  border: 2px dashed #e3e1e8;
+  border-radius: 12px;
+  padding: 34px;
+  text-align: center;
+  color: #6a6f6c;
+  h2 { border: none; margin-top: 0; }
+}
+
+// ---- Revamp test: mock parity layer ----
+// Big mid-page search bar (opens the Quarto search overlay on click)
+.revamp-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #2b2e2c;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  color: #666;
+  background: #fff;
+  cursor: pointer;
+  max-width: 860px;
+  margin: 1.6rem auto 0.4rem;
+  svg { flex: none; }
+  &:hover, &:focus-visible { border-color: #c3353c; }
+}
+
+// Stack the three links in each glance card (pandoc wraps them in one <p>)
+.glance-links p { margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.glance-links a { display: block; }
+
+// Category chips on dashboard listing cards, colours from David's wireframe
+#listing-dashboards-econ, #listing-dashboards-sector, #listing-dashboards-social {
+  .quarto-grid-item .card-body::before {
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: fit-content;
+  }
+  .quarto-grid-item .card {
+    border-radius: 10px;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .quarto-grid-item .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.12); transform: translateY(-2px); }
+}
+#listing-dashboards-econ .quarto-grid-item .card-body::before { content: "Economic"; background: #d9d9d9; }
+#listing-dashboards-sector .quarto-grid-item .card-body::before { content: "Sector-specific"; background: #f6b26b; }
+#listing-dashboards-social .quarto-grid-item .card-body::before { content: "Social"; background: #ffe599; }
+
+// ---- Standalone homepage search (queries search.json directly) ----
+.revamp-search-wrap {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto 3.2rem;
+}
+.revamp-search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+  color: #2b2e2c;
+  &::placeholder { color: #888; }
+}
+#revamp-search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0; right: 0;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #e3e1e8;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.16);
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  max-height: 420px;
+  overflow-y: auto;
+  li { margin: 0; }
+  a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2b2e2c;
+    strong { color: #c3353c; }
+    &:hover { background: #F0EFF4; }
+  }
+  .rs-section { color: #6a6f6c; font-size: 0.8rem; margin-left: 6px; }
+  .rs-snippet { display: block; font-size: 0.8rem; color: #6a6f6c; margin-top: 2px; }
+  .rs-empty { padding: 12px 14px; color: #6a6f6c; font-size: 0.9rem; }
+}
+// Hide the navbar search icon; keep search: true so search.json is still built
+.navbar #quarto-search { display: none; }
+
+// ---- Mock parity round 2 ----
+// Subtitle under "Penang at a glance"
+.glance-sub {
+  display: block;
+  color: #6a6f6c;
+  font-size: 0.88rem;
+  margin: -0.4rem 0 1.1rem;
+}
+// Keep the navbar expanded from 768px up (Bootstrap default collapses below 992px;
+// the mock never collapses at ~800px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    .navbar-toggler { display: none; }
+    .navbar-collapse { display: flex !important; flex-basis: auto; }
+    .navbar-nav { flex-direction: row; }
+    .navbar-nav .nav-link { padding-right: 0.5rem; padding-left: 0.5rem; }
+    .navbar-nav .dropdown-menu { position: absolute; }
+  }
+}
+// Text-only dashboard cards: tighten padding now that thumbnails are gone
+#listing-dashboards-econ, #listing-dashboards-sector, #listing-dashboards-social {
+  .quarto-grid-item .card-body { padding: 16px; }
+  .quarto-grid-item .listing-description { font-size: 0.85rem; color: #6a6f6c; }
+}
+// Prevent brand truncation and link wrapping in the forced-expand range
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .navbar-brand { max-width: none; font-size: 1rem; }
+  .navbar .navbar-title { white-space: nowrap; overflow: visible; text-overflow: clip; max-width: none; }
+  .navbar-nav .nav-link, .navbar-nav .nav-item { white-space: nowrap; font-size: 0.9rem; }
+}
+// Dashboard cards: white with light border, as in the mock
+#listing-dashboards-econ, #listing-dashboards-sector, #listing-dashboards-social {
+  .quarto-grid-item.card { background: #fff; border: 1px solid #e3e1e8; }
+}
+
+// ---- Navbar brand lockup: logo | divider | wordmark ----
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.navbar .navbar-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+  color: #2b2e2c;
+  border-left: 1px solid #d9d6d0;
+  padding-left: 12px;
+  line-height: 1.15;
+}
+.navbar .navbar-brand:hover .navbar-title { color: #c3353c; }
+
+// ---- Streamlined navbar: slim bar, brand left, links right ----
+.navbar {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+}
+.navbar .navbar-brand { padding-top: 0.2rem; padding-bottom: 0.2rem; }
+.navbar .navbar-logo { max-height: 32px; }
+// Push the primary links to the right edge, clearing space after the brand
+.navbar .navbar-nav.me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #454944;
+  padding: 0.45rem 0.75rem;
+  position: relative;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus-visible { color: #1f2421; }
+.navbar .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: #c3353c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.18s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after,
+.navbar .navbar-nav .nav-link:focus-visible::after,
+.navbar .navbar-nav .nav-item.active .nav-link::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+  .navbar .navbar-nav .nav-link::after { transition: none; }
+}
+// Tablet range: scale the lockup down so nothing clips
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar .navbar-title { font-size: 0.9rem; }
+  .navbar .navbar-logo { max-height: 28px; }
+  .navbar .navbar-nav .nav-link { padding: 0.45rem 0.5rem; font-size: 0.85rem; }
+  .navbar .navbar-nav .nav-link::after { left: 0.5rem; right: 0.5rem; }
+}
+// Source tag on live view counters
+.glance-src {
+  background: #e8e6ef;
+  color: #55595f;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

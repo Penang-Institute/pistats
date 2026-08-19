@@ -1,0 +1,27 @@
+---
+title: "Datasets"
+description: |
+  Source datasets behind the Key Penang Statistics dashboards.
+title-block-banner: '#c3353c'
+title-block-banner-color: 'white'
+---
+
+::: {.callout-note}
+Placeholder page for the revamp test. The production version will list each
+downloadable dataset with its source, update frequency, and a link to the
+dashboard it feeds.
+:::
+
+| Dataset | Feeds dashboard | Source |
+|---|---|---|
+| Consumer Price Index | Consumer Price Index | DOSM / OpenDOSM |
+| External trade by channel | External Trade | METS Online |
+| GDP and GDP growth | Gross Domestic Product | DOSM publication |
+| Labour force statistics | Labour Force | DOSM / OpenDOSM |
+| Approved manufacturing investments | Approved Manufacturing Investments | MIDA |
+| Graduate employability | Graduate Employability | Ministry of Higher Education |
+| Healthcare indicators | Healthcare | Ministry of Health |
+| State finance | Penang State Finance | Penang State Government |
+| Gender indicators | Gender | DOSM |
+| Household income | Household Income | DOSM |
+| Population and demographics | Population and Demographics | DOSM / OpenDOSM |

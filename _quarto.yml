@@ -13,6 +13,13 @@ format:
     - simplex
     - assets/custom.scss
     css: assets/styles.css
+    # Client-specified font (Aug 2026). Loaded via <link> rather than an SCSS
+    # @import so it is guaranteed to precede the stylesheet rules.
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
     page-layout: full
     # link-external-icon: true
     anchor-sections: false
