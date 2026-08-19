@@ -74,6 +74,9 @@ $pagination-active-border-color: #3A3E3B;
   letter-spacing: 0.01em;
 }
 
+// No counts fetched -> no empty gap at the foot of the card.
+.glance-views:empty { display: none; }
+
 .glance-views {
   margin-top: 10px;
   font-size: 0.72rem;

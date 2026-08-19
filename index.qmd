@@ -140,7 +140,12 @@ title-block-banner-color: 'white'
 })();
 
 // Fill the glance-card view counters from Tableau Public counts fetched at
-// build time by scripts/fetch_view_counts.py.
+// build time by scripts/fetch_view_counts.py (a step in update-submodules.yml).
+//
+// .glance-views ships EMPTY from glance.ejs and is filled in here. It used to
+// ship as "views counter to add", which meant any run where view_counts.json
+// was missing published that scaffolding text to the live homepage. Empty +
+// `.glance-views:empty { display: none }` degrades to nothing visible instead.
 (function () {
   fetch('keyPenangMetrics/output/view_counts.json')
     .then(function (r) { return r.json(); })

@@ -37,6 +37,22 @@ jobs:
       - name: Push changes
         run: git push
 
+      # Tableau Public view counts for the "Penang at a glance" cards.
+      #
+      # This has to run here rather than in keyPenangMetrics: the script maps
+      # workbooks to pages by scanning pistats' dashboards/ tree, which the
+      # metrics repo does not have. It runs AFTER the commit/push steps on
+      # purpose, so the generated file stays ephemeral build output and never
+      # lands in git; `resources:` in _quarto.yml publishes it to gh-pages.
+      #
+      # continue-on-error: Tableau's profile API is undocumented. If it changes
+      # shape, the cards lose their counts but the site still publishes. Letting
+      # a third-party enrichment fail the job is what took the homepage down for
+      # three weeks in Jul 2026 (the Penang Monthly RSS 403).
+      - name: Fetch Tableau view counts
+        continue-on-error: true
+        run: python3 scripts/fetch_view_counts.py
+
       # A push made with GITHUB_TOKEN does not trigger the Render and Publish
       # workflow, so render and publish here in the same job.
       - name: Set up Quarto
