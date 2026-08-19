@@ -95,7 +95,8 @@ Everything below has been verified working:
 | **Typography** | Google Jost throughout, body text at exactly 14px |
 | **"Data as of 2025"** (grey) | The period each figure actually covers |
 | **"Updated 13 Aug 2026"** (red) | When the data pipeline last refreshed, updates itself every run |
-| **View counters** | Live Tableau Public numbers, e.g. Population at 32,502 views |
+| **View counters (glance cards)** | Tableau Public numbers, e.g. Population at 32,502 views |
+| **View counters (dashboard cards)** | All 12 dashboards now carry the same counter, aligned along the bottom of each row |
 | **Search box** | Searches across all dashboards and datasets |
 | **Dashboards menu** | Regrouped into Economic / Sector-specific / Social |
 | **Datasets page** | New top-level page in the navbar |
@@ -115,7 +116,12 @@ Be ready for these, in case the client spots them:
   It is a placeholder pending a decision on where dataset links should point.
   Safest handling: do not click it during the demo.
 * **View counts are fetched at build time**, not live in the browser. The number
-  is correct as of whenever you last ran the script.
+  is correct as of whenever you last ran the script. In production they refresh
+  weekly, with the Thursday publish.
+* **The count is cumulative all-time**, not views this month, so an older
+  dashboard outranks a newer one partly on age. Expect the client to ask why
+  Population (32,502) is so far ahead of Gender (2,451): a 13x spread across the
+  twelve dashboards is now visible on one screen.
 * **Residential Property** is still flagged as an open question in the original
   mock (keep it in the menu or not).
 

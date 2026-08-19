@@ -147,21 +147,62 @@ title-block-banner-color: 'white'
 // was missing published that scaffolding text to the live homepage. Empty +
 // `.glance-views:empty { display: none }` degrades to nothing visible instead.
 (function () {
+  function label(n) {
+    return n.toLocaleString('en-MY') +
+      ' dashboard views <span class="glance-src">Tableau Public</span>';
+  }
+
+  function stemOf(href) {
+    return (href || '').split('/').pop().replace('.html', '');
+  }
+
+  // "Penang at a glance" cards (custom glance.ejs template).
+  function fillGlanceCards(counts) {
+    document.querySelectorAll('.glance-card').forEach(function (card) {
+      var link = card.querySelector('.glance-links a');
+      var el = card.querySelector('.glance-views');
+      if (!link || !el) return;
+      var n = counts[stemOf(link.getAttribute('href'))];
+      if (n == null) return;
+      el.innerHTML = label(n);
+    });
+  }
+
+  // Dashboard listing cards (Quarto's stock grid template, so there is no
+  // markup hook to fill: the line is created here and appended to .card-body).
+  //
+  // Scoped to the three dashboard listings on purpose. The Penang Monthly
+  // listing renders .quarto-grid-item too, and those are articles with no
+  // workbook behind them.
+  function fillDashboardCards(counts) {
+    var sel = ['econ', 'sector', 'social'].map(function (s) {
+      return '#listing-dashboards-' + s + ' .quarto-grid-item';
+    }).join(', ');
+
+    document.querySelectorAll(sel).forEach(function (card) {
+      if (card.querySelector('.listing-views')) return;      // don't double-insert
+      var wrapper = card.closest('a');                        // grid item is anchor-wrapped
+      if (!wrapper) return;
+      var n = counts[stemOf(wrapper.getAttribute('href'))];
+      if (n == null) return;                                  // e.g. archived dashboards
+      var body = card.querySelector('.card-body') || card;
+      var el = document.createElement('div');
+      el.className = 'listing-views';
+      el.innerHTML = label(n);
+      body.appendChild(el);
+    });
+  }
+
   fetch('keyPenangMetrics/output/view_counts.json')
-    .then(function (r) { return r.json(); })
-    .then(function (counts) {
-      document.querySelectorAll('.glance-card').forEach(function (card) {
-        var link = card.querySelector('.glance-links a');
-        var el = card.querySelector('.glance-views');
-        if (!link || !el) return;
-        var stem = (link.getAttribute('href') || '')
-          .split('/').pop().replace('.html', '');
-        if (counts[stem] == null) return;
-        el.innerHTML = counts[stem].toLocaleString('en-MY') +
-          ' dashboard views <span class="glance-src">Tableau Public</span>';
-      });
+    .then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
     })
-    .catch(function () { /* keep the static placeholder if the file is absent */ });
+    .then(function (counts) {
+      fillGlanceCards(counts);
+      fillDashboardCards(counts);
+    })
+    .catch(function () { /* no counts file: both card types simply show none */ });
 })();
 </script>
 ```
