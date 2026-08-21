@@ -20,6 +20,31 @@ format:
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
+        <script>
+        // The "Dataset" link on each "Penang at a glance" card points at
+        // <dashboard>.html#download-data. That callout ships collapsed, so a bare
+        // anchor would land on a hidden element and the visitor would see nothing.
+        // Expand it by clicking the header rather than toggling classes directly,
+        // so Bootstrap's own collapse state stays consistent.
+        document.addEventListener('DOMContentLoaded', function () {
+          if (location.hash !== '#download-data') return;
+          var el = document.getElementById('download-data');
+          if (!el) return;
+          var header = el.querySelector('[data-bs-toggle="collapse"]');
+          if (header && header.classList.contains('collapsed')) header.click();
+
+          // The Tableau embed above this callout renders asynchronously and grows
+          // the page by thousands of pixels, so a single scroll lands nowhere near
+          // the target. Re-assert the position until the layout settles, give up
+          // after 4s, and bail out the moment the reader scrolls for themselves.
+          var timer = setInterval(function () { el.scrollIntoView({ block: 'start' }); }, 250);
+          var stop = function () { clearInterval(timer); };
+          setTimeout(stop, 4000);
+          ['wheel', 'touchstart', 'keydown'].forEach(function (evt) {
+            window.addEventListener(evt, stop, { once: true, passive: true });
+          });
+        });
+        </script>
     page-layout: full
     # link-external-icon: true
     anchor-sections: false

@@ -22,7 +22,7 @@ aliases:
 ```
 :::
 
-::: {.callout-important icon="false" collapse="true" title="Download data"}
+::: {#download-data .callout-important icon="false" collapse="true" title="Download data"}
 ##### Datasets used
 
 -   [CPI by State & Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_state)

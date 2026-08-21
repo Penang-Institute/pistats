@@ -148,8 +148,7 @@ title-block-banner-color: 'white'
 // `.glance-views:empty { display: none }` degrades to nothing visible instead.
 (function () {
   function label(n) {
-    return n.toLocaleString('en-MY') +
-      ' dashboard views <span class="glance-src">Tableau Public</span>';
+    return n.toLocaleString('en-MY') + ' dashboard views';
   }
 
   function stemOf(href) {

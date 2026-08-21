@@ -22,7 +22,7 @@ aliases:
 ```
 :::
 
-::: {.callout-important icon="false" collapse="true" title="Download data"}
+::: {#download-data .callout-important icon="false" collapse="true" title="Download data"}
 ##### Prepared datasets
 
 {{< var data-disclaimer >}}

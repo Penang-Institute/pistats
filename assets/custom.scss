@@ -321,14 +321,5 @@ $pagination-active-border-color: #3A3E3B;
   .navbar .navbar-nav .nav-link { padding: 0.45rem 0.5rem; font-size: 0.85rem; }
   .navbar .navbar-nav .nav-link::after { left: 0.5rem; right: 0.5rem; }
 }
-// Source tag on live view counters
-.glance-src {
-  background: #e8e6ef;
-  color: #55595f;
-  font-size: 0.62rem;
-  font-weight: 700;
-  padding: 1px 6px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
+// The "Tableau Public" source tag that used to sit beside the view counters was
+// dropped in Aug 2026, so .glance-src has no markup behind it any more.
