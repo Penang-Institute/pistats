@@ -11,3 +11,6 @@
 
 # Local design mockups (not for production)
 /mock_design/
+
+# Generated at build time by scripts/build_datasets_index.py
+/_datasets_generated.md
