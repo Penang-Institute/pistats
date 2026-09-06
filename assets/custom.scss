@@ -119,14 +119,41 @@ $pagination-active-border-color: #3A3E3B;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.smart-city-placeholder {
+// Smart City section. The dashed "under construction" border and grey
+// heading went at the client's request (Sep 2026) — this block faces
+// stakeholders, so it should not read as unfinished. The six pillars stand in
+// until the Socioeconomics & Statistics Programme supplies indicators.
+.smart-city {
   margin-top: 3rem;
-  border: 2px dashed #e3e1e8;
+  border: 1px solid #e3e1e8;
   border-radius: 12px;
   padding: 34px;
   text-align: center;
-  color: #6a6f6c;
-  h2 { border: none; margin-top: 0; }
+  h2 { border: none; margin-top: 0; color: #1a1a1a; }
+}
+
+.smart-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+// Card fill (#F0EFF4) matches .glance-card so the pillars read as part of the
+// same family, per the client's "match the colour of the card" note.
+// ponytail: static tiles, no href — nothing to link to until the indicators exist
+.smart-pillar {
+  background: #F0EFF4;
+  border-left: 3px solid #c3353c;
+  border-radius: 4px;
+  padding: 12px 20px;
+  min-width: 132px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2b2e2c;
 }
 
 // ---- Revamp test: mock parity layer ----

@@ -23,7 +23,7 @@ aliases:
 :::
 
 ::: {#download-data .callout-important icon="false" collapse="true" title="Download data"}
-##### Datasets used
+##### Raw Data
 
 -   [CPI by State & Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_state)
 -   [MCOICOP (data.gov.my)](https://data.gov.my/data-catalogue/mcoicop)
@@ -31,7 +31,7 @@ aliases:
 -   [CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_headline)
 -   [Core CPI by Division (2-digit) (data.gov.my)](https://data.gov.my/data-catalogue/cpi_core)
 
-##### Prepared datasets
+##### Tableau Dataset
 
 {{< var data-disclaimer >}}
 

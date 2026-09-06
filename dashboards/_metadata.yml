@@ -1,6 +1,8 @@
 format:
   html:
     css: ../assets/dashboard.css
+    # Relative to this _metadata.yml, i.e. the project-root assets/ folder.
+    include-before-body: ../assets/dashboard-back.html
     grid:
       body-width: 950px
       sidebar-width: 0px      

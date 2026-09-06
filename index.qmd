@@ -253,11 +253,19 @@ title-block-banner-color: 'white'
 
 ------------------------------------------------------------------------
 
-::: {.smart-city-placeholder}
+::: {.smart-city}
 ## Penang as a Smart City
 
-Placeholder section for the proposed revamp. Indicators and narrative to be
-defined by the Socioeconomics & Statistics Programme.
+```{=html}
+<div class="smart-pillars">
+  <span class="smart-pillar">People</span>
+  <span class="smart-pillar">Economy</span>
+  <span class="smart-pillar">Governance</span>
+  <span class="smart-pillar">Infrastructure</span>
+  <span class="smart-pillar">Environment</span>
+  <span class="smart-pillar">Mobility</span>
+</div>
+```
 :::
 
 ```{=html}

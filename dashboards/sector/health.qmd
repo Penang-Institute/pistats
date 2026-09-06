@@ -25,14 +25,14 @@ aliases:
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
 
-##### Datasets used
+##### Raw Data
 -   [Population Table: States (data.gov.my)](https://data.gov.my/data-catalogue/population_state)
 -   Location data (PeGIS)
     - [KESIHATAN](https://pegis.penang.gov.my/arcgis/rest/services/OPEN_DATA/KESIHATAN/MapServer)
     - [KESSWASTA](https://pegis.penang.gov.my/arcgis/rest/services/OPEN_DATA/KESSWASTA/MapServer)
     - [HOSPITAL](https://pegis.penang.gov.my/arcgis/rest/services/OPEN_DATA/HOSPITAL/MapServer)
 
-##### Prepared datasets
+##### Tableau Dataset
 
 {{< var data-disclaimer >}}
 

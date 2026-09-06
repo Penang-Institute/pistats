@@ -38,14 +38,14 @@ You're currently viewing this dashboard in **mobile mode**. For a better experie
 :::
 
 ::: {#download-data .callout-important icon="false" collapse="true" title="Download data"}
-##### Datasets used
+##### Raw Data
 
 -   [Annual Live Births by State (data.gov.my)](https://data.gov.my/data-catalogue/births_annual_state)
 -   [Annual Deaths by State (data.gov.my)](https://data.gov.my/data-catalogue/deaths_state)
 -   [TFR and ASFR by State (data.gov.my)](https://data.gov.my/data-catalogue/fertility_state)
 -   [TFR and ASFR (data.gov.my)](https://data.gov.my/data-catalogue/fertility)
 
-##### Prepared datasets
+##### Tableau Dataset
 
 {{< var data-disclaimer >}}
 

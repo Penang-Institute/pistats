@@ -23,7 +23,7 @@ aliases:
 :::
 
 ::: {.callout-important icon="false" collapse="true" title="Download data"}
-##### Prepared datasets
+##### Tableau Dataset
 
 {{< var data-disclaimer >}}
 
