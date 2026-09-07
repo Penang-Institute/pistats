@@ -31,6 +31,18 @@ jobs:
       - name: Generate the Datasets index
         run: python3 scripts/build_datasets_index.py
 
+      # Tableau Public view counts for the "Penang at a glance" cards.
+      # This lived only in update-submodules.yml, so a publish triggered by a
+      # push to main (rather than by the weekly cron) rendered the cards with
+      # no counts and left view_counts.json 404 on the live site. Both publish
+      # paths now fetch it.
+      #
+      # continue-on-error: Tableau's profile API is undocumented. If it changes
+      # shape, the cards lose their counts but the site still publishes.
+      - name: Fetch Tableau view counts
+        continue-on-error: true
+        run: python3 scripts/fetch_view_counts.py
+
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
       - name: Publish to GitHub Pages (and render) 
         uses: quarto-dev/quarto-actions/publish@v2
