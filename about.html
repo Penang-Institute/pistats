@@ -31,8 +31,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<link href=".//img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href=".//img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,10 +45,22 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7c9c0c162f96ca8fca2a44623339850e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-490cd56462f729c838e102792d47b9a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -67,6 +83,34 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-WTRQJLDY3E', { 'anonymize_ip': true});
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap">
+<script>
+// The "Dataset" link on each "Penang at a glance" card points at
+// <dashboard>.html#download-data. That callout ships collapsed, so a bare
+// anchor would land on a hidden element and the visitor would see nothing.
+// Expand it by clicking the header rather than toggling classes directly,
+// so Bootstrap's own collapse state stays consistent.
+document.addEventListener('DOMContentLoaded', function () {
+  if (location.hash !== '#download-data') return;
+  var el = document.getElementById('download-data');
+  if (!el) return;
+  var header = el.querySelector('[data-bs-toggle="collapse"]');
+  if (header && header.classList.contains('collapsed')) header.click();
+
+  // The Tableau embed above this callout renders asynchronously and grows
+  // the page by thousands of pixels, so a single scroll lands nowhere near
+  // the target. Re-assert the position until the layout settles, give up
+  // after 4s, and bail out the moment the reader scrolls for themselves.
+  var timer = setInterval(function () { el.scrollIntoView({ block: 'start' }); }, 250);
+  var stop = function () { clearInterval(timer); };
+  setTimeout(stop, 4000);
+  ['wheel', 'touchstart', 'keydown'].forEach(function (evt) {
+    window.addEventListener(evt, stop, { once: true, passive: true });
+  });
+});
 </script>
 
 
@@ -98,44 +142,82 @@ gtag('config', 'G-WTRQJLDY3E', { 'anonymize_ip': true});
     <img src="./img/cropped-penang-institute-logo.webp" alt="Penang Institute logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Statistics</span>
+    <span class="navbar-title">Key Penang Statistics</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./#penang-at-a-glance"> <i class="bi bi-speedometer" role="img">
-</i> 
-<span class="menu-text">Penang at a glance</span></a>
+    <a class="nav-link" href="./datasets.html"> 
+<span class="menu-text">Datasets</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dashboards" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-file-bar-graph-fill" role="img">
-</i> 
  <span class="menu-text">Dashboards</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-dashboards">    
+        <li class="dropdown-header">Economic</li>
         <li>
-    <a class="dropdown-item" href="./#economic-indicators">
- <span class="dropdown-text">Economic indicators</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/cpi.html">
+ <span class="dropdown-text">Consumer Price Index</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./#sector-specific">
- <span class="dropdown-text">Sector-specific</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/trade.html">
+ <span class="dropdown-text">External Trade</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./#social-indicators">
- <span class="dropdown-text">Social indicators</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/gdp.html">
+ <span class="dropdown-text">Gross Domestic Product</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/econ/labour.html">
+ <span class="dropdown-text">Labour Force</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Sector-specific</li>
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/manf.html">
+ <span class="dropdown-text">Approved Manufacturing Investments</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/grad.html">
+ <span class="dropdown-text">Graduate Employability</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/health.html">
+ <span class="dropdown-text">Healthcare</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/finance.html">
+ <span class="dropdown-text">Penang State Finance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/prop.html">
+ <span class="dropdown-text">Residential Property</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Social</li>
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/gender.html">
+ <span class="dropdown-text">Gender</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/hhinc.html">
+ <span class="dropdown-text">Household Income</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/pop.html">
+ <span class="dropdown-text">Population and Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./#new-in-penang-monthly"> <i class="bi bi-book" role="img">
-</i> 
-<span class="menu-text">New in Penang Monthly</span></a>
+    <a class="nav-link" href="mailto:enquiry@penanginstitute.org"> 
+<span class="menu-text">Enquiries</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -615,11 +697,6 @@ gtag('config', 'G-WTRQJLDY3E', { 'anonymize_ip': true});
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
-<p>About</p>
-</a>
-  </li>  
     <li class="nav-item">
     <a class="nav-link" href="./resources">
 <p>Resources</p>

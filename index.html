@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Key Penang Statistics is a set of dashboards that visualise key socioeconomic data about Penang. Developed by Penang Institute’s Socioeconomics &amp; Statistics Programme, it provides insights into Penang’s cost of living, trade performance, gender landscape, graduate employability, economic trajectory, income disparities, labour force statistics, state finance, and population trends from official government sources.">
+<meta name="description" content="Dashboards and datasets on Penang’s economy and society, maintained by Penang Institute’s Socioeconomics &amp; Statistics Programme from official government sources.">
 
 <title>Key Penang Statistics by Penang Institute</title>
 <style>
@@ -32,10 +32,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <link href=".//img/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -44,10 +48,22 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7c9c0c162f96ca8fca2a44623339850e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-490cd56462f729c838e102792d47b9a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -72,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-description','listing-subtitle','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-description','listing-subtitle','listing-title',{ data: ['index'] },{ data: ['categories'] }],
       
       searchColumns: ["listing-description","listing-subtitle","listing-title"],
     };
@@ -129,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -157,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -185,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -230,17 +246,45 @@ gtag('config', 'G-WTRQJLDY3E', { 'anonymize_ip': true});
 background: #c3353c;
       }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap">
+<script>
+// The "Dataset" link on each "Penang at a glance" card points at
+// <dashboard>.html#download-data. That callout ships collapsed, so a bare
+// anchor would land on a hidden element and the visitor would see nothing.
+// Expand it by clicking the header rather than toggling classes directly,
+// so Bootstrap's own collapse state stays consistent.
+document.addEventListener('DOMContentLoaded', function () {
+  if (location.hash !== '#download-data') return;
+  var el = document.getElementById('download-data');
+  if (!el) return;
+  var header = el.querySelector('[data-bs-toggle="collapse"]');
+  if (header && header.classList.contains('collapsed')) header.click();
+
+  // The Tableau embed above this callout renders asynchronously and grows
+  // the page by thousands of pixels, so a single scroll lands nowhere near
+  // the target. Re-assert the position until the layout settles, give up
+  // after 4s, and bail out the moment the reader scrolls for themselves.
+  var timer = setInterval(function () { el.scrollIntoView({ block: 'start' }); }, 250);
+  var stop = function () { clearInterval(timer); };
+  setTimeout(stop, 4000);
+  ['wheel', 'touchstart', 'keydown'].forEach(function (evt) {
+    window.addEventListener(evt, stop, { once: true, passive: true });
+  });
+});
+</script>
 
 
 <link rel="stylesheet" href="assets/styles.css">
 <meta property="og:title" content="Key Penang Statistics by Penang Institute">
-<meta property="og:description" content="Key Penang Statistics is a set of dashboards that visualise key socioeconomic data about Penang. Developed by Penang Institute’s Socioeconomics &amp; Statistics Programme, it provides insights into Penang’s cost of living, trade performance, gender landscape, graduate employability, economic trajectory, income disparities, labour force statistics, state finance, and population trends from official government sources.">
+<meta property="og:description" content="Dashboards and datasets on Penang’s economy and society, maintained by Penang Institute’s Socioeconomics &amp; Statistics Programme from official government sources.">
 <meta property="og:image" content="https://statistics.penanginstitute.org/img/general.png">
 <meta property="og:site_name" content="Key Penang Statistics: Penang Institute">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
 <meta name="twitter:title" content="Key Penang Statistics by Penang Institute">
-<meta name="twitter:description" content="Key Penang Statistics is a set of dashboards that visualise key socioeconomic data about Penang. Developed by Penang Institute’s Socioeconomics &amp; Statistics Programme, it provides insights into Penang’s cost of living, trade performance, gender landscape, graduate employability, economic trajectory, income disparities, labour force statistics, state finance, and population trends from official government sources.">
+<meta name="twitter:description" content="Dashboards and datasets on Penang’s economy and society, maintained by Penang Institute’s Socioeconomics &amp; Statistics Programme from official government sources.">
 <meta name="twitter:image" content="https://statistics.penanginstitute.org/img/general.png">
 <meta name="twitter:site" content="@penanginstitute">
 <meta name="twitter:image-height" content="630">
@@ -260,44 +304,82 @@ background: #c3353c;
     <img src="./img/cropped-penang-institute-logo.webp" alt="Penang Institute logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Statistics</span>
+    <span class="navbar-title">Key Penang Statistics</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./#penang-at-a-glance"> <i class="bi bi-speedometer" role="img">
-</i> 
-<span class="menu-text">Penang at a glance</span></a>
+    <a class="nav-link" href="./datasets.html"> 
+<span class="menu-text">Datasets</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dashboards" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-file-bar-graph-fill" role="img">
-</i> 
  <span class="menu-text">Dashboards</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-dashboards">    
+        <li class="dropdown-header">Economic</li>
         <li>
-    <a class="dropdown-item" href="./#economic-indicators">
- <span class="dropdown-text">Economic indicators</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/cpi.html">
+ <span class="dropdown-text">Consumer Price Index</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./#sector-specific">
- <span class="dropdown-text">Sector-specific</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/trade.html">
+ <span class="dropdown-text">External Trade</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./#social-indicators">
- <span class="dropdown-text">Social indicators</span></a>
+    <a class="dropdown-item" href="./dashboards/econ/gdp.html">
+ <span class="dropdown-text">Gross Domestic Product</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/econ/labour.html">
+ <span class="dropdown-text">Labour Force</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Sector-specific</li>
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/manf.html">
+ <span class="dropdown-text">Approved Manufacturing Investments</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/grad.html">
+ <span class="dropdown-text">Graduate Employability</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/health.html">
+ <span class="dropdown-text">Healthcare</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/finance.html">
+ <span class="dropdown-text">Penang State Finance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/sector/prop.html">
+ <span class="dropdown-text">Residential Property</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Social</li>
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/gender.html">
+ <span class="dropdown-text">Gender</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/hhinc.html">
+ <span class="dropdown-text">Household Income</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dashboards/social/pop.html">
+ <span class="dropdown-text">Population and Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./#new-in-penang-monthly"> <i class="bi bi-book" role="img">
-</i> 
-<span class="menu-text">New in Penang Monthly</span></a>
+    <a class="nav-link" href="mailto:enquiry@penanginstitute.org"> 
+<span class="menu-text">Enquiries</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -320,7 +402,7 @@ background: #c3353c;
       <h1 class="title">Key Penang Statistics</h1>
                   <div>
         <div class="description">
-          <p>Key Penang Statistics is a set of dashboards that visualise key socioeconomic data about Penang. Developed by Penang Institute’s Socioeconomics &amp; Statistics Programme, it provides insights into Penang’s cost of living, trade performance, gender landscape, graduate employability, economic trajectory, income disparities, labour force statistics, state finance, and population trends from official government sources.</p>
+          <p>Dashboards and datasets on Penang’s economy and society, maintained by Penang Institute’s Socioeconomics &amp; Statistics Programme from official government sources.</p>
         </div>
       </div>
                 </div>
@@ -346,90 +428,260 @@ background: #c3353c;
 
 
 
+<div class="revamp-search-wrap" role="search">
+  <div class="revamp-search">
+    <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.8-3.8"></path></svg>
+    <input id="revamp-search-input" type="search" autocomplete="off" placeholder="Search dashboards and datasets — e.g. inflation, household income" aria-label="Search dashboards and datasets">
+  </div>
+  <ul id="revamp-search-results" hidden=""></ul>
+</div>
+<script>
+(function () {
+  var input = document.getElementById('revamp-search-input');
+  var list = document.getElementById('revamp-search-results');
+  var docs = null;
+
+  function load() {
+    if (docs) return Promise.resolve(docs);
+    // Dashboard cards carry curated descriptions that the page-text index
+    // lacks (dashboard pages are mostly embedded Tableau frames), so fold
+    // them in as first-priority documents.
+    var cards = Array.prototype.map.call(
+      document.querySelectorAll('a.quarto-grid-link'),
+      function (a) {
+        var title = a.querySelector('.card-title');
+        var desc = a.querySelector('.listing-description');
+        if (!title) return null;
+        return { href: a.getAttribute('href'),
+                 title: title.textContent.trim(),
+                 section: '',
+                 text: desc ? desc.textContent.trim() : '' };
+      }).filter(Boolean);
+    return fetch('search.json').then(function (r) { return r.json(); })
+      .then(function (json) { docs = cards.concat(json); return docs; });
+  }
+
+  function snippet(text, q) {
+    var i = text.toLowerCase().indexOf(q);
+    if (i < 0) return text.slice(0, 90);
+    var start = Math.max(0, i - 30);
+    return (start ? '…' : '') + text.slice(start, i + q.length + 60) + '…';
+  }
+
+  function render(hits, q) {
+    list.innerHTML = '';
+    if (!hits.length) {
+      list.innerHTML = '<li class="rs-empty">No matches for “' + q + '”</li>';
+    } else {
+      hits.forEach(function (h) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = h.href;
+        a.innerHTML = '<strong>' + h.title + '</strong>' +
+          (h.section ? ' <span class="rs-section">' + h.section + '</span>' : '') +
+          '<span class="rs-snippet">' + snippet(h.text || '', q) + '</span>';
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    }
+    list.hidden = false;
+  }
+
+  function search(q) {
+    q = q.trim().toLowerCase();
+    if (q.length < 2) { list.hidden = true; return; }
+    load().then(function (docs) {
+      var seen = {};
+      var hits = docs
+        .map(function (d) {
+          var t = (d.title || '').toLowerCase();
+          var body = (d.text || '').toLowerCase();
+          var page = (d.href || '').replace(location.origin, '').replace(/^\.?\//, '').split('#')[0];
+          var score = t.indexOf(q) === 0 ? 4 : t.includes(q) ? 3 : body.includes(q) ? 1 : 0;
+          if (score && page.indexOf('dashboards/') === 0) score += 1;
+          return { d: d, page: page, score: score };
+        })
+        .filter(function (x) { return x.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; })
+        .filter(function (x) {
+          if (seen[x.page]) return false;
+          seen[x.page] = true;
+          return true;
+        })
+        .slice(0, 8)
+        .map(function (x) { return x.d; });
+      render(hits, q);
+    });
+  }
+
+  input.addEventListener('input', function () { search(input.value); });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      var first = list.querySelector('a');
+      if (first) window.location.href = first.href;
+    }
+    if (e.key === 'Escape') { list.hidden = true; input.blur(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.revamp-search-wrap')) list.hidden = true;
+  });
+})();
+
+// Fill the glance-card view counters from Tableau Public counts fetched at
+// build time by scripts/fetch_view_counts.py (a step in update-submodules.yml).
+//
+// .glance-views ships EMPTY from glance.ejs and is filled in here. It used to
+// ship as "views counter to add", which meant any run where view_counts.json
+// was missing published that scaffolding text to the live homepage. Empty +
+// `.glance-views:empty { display: none }` degrades to nothing visible instead.
+(function () {
+  function label(n) {
+    return n.toLocaleString('en-MY') + ' dashboard views';
+  }
+
+  function stemOf(href) {
+    return (href || '').split('/').pop().replace('.html', '');
+  }
+
+  // "Penang at a glance" cards (custom glance.ejs template).
+  function fillGlanceCards(counts) {
+    document.querySelectorAll('.glance-card').forEach(function (card) {
+      var link = card.querySelector('.glance-links a');
+      var el = card.querySelector('.glance-views');
+      if (!link || !el) return;
+      var n = counts[stemOf(link.getAttribute('href'))];
+      if (n == null) return;
+      el.innerHTML = label(n);
+    });
+  }
+
+  // Dashboard listing cards (Quarto's stock grid template, so there is no
+  // markup hook to fill: the line is created here and appended to .card-body).
+  //
+  // Scoped to the three dashboard listings on purpose. The Penang Monthly
+  // listing renders .quarto-grid-item too, and those are articles with no
+  // workbook behind them.
+  function fillDashboardCards(counts) {
+    var sel = ['econ', 'sector', 'social'].map(function (s) {
+      return '#listing-dashboards-' + s + ' .quarto-grid-item';
+    }).join(', ');
+
+    document.querySelectorAll(sel).forEach(function (card) {
+      if (card.querySelector('.listing-views')) return;      // don't double-insert
+      var wrapper = card.closest('a');                        // grid item is anchor-wrapped
+      if (!wrapper) return;
+      var n = counts[stemOf(wrapper.getAttribute('href'))];
+      if (n == null) return;                                  // e.g. archived dashboards
+      var body = card.querySelector('.card-body') || card;
+      var el = document.createElement('div');
+      el.className = 'listing-views';
+      el.innerHTML = label(n);
+      body.appendChild(el);
+    });
+  }
+
+  fetch('keyPenangMetrics/output/view_counts.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    })
+    .then(function (counts) {
+      fillGlanceCards(counts);
+      fillDashboardCards(counts);
+    })
+    .catch(function () { /* no counts file: both card types simply show none */ });
+})();
+</script>
 <section id="penang-at-a-glance" class="level2">
 <h2 data-anchor-id="penang-at-a-glance">Penang at a glance</h2>
+<p><span class="glance-sub">Each card links to the full story, the source dataset, and the interactive dashboard.</span></p>
 <div class="metrics">
-<div id="listing-metrics" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-5">
-<div class="g-col-1" data-index="0">
-<a href="dashboards/pop.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div id="listing-metrics" class="quarto-listing quarto-listing-container-custom">
+<div class="glance-grid">
+<div class="glance-card">
+<div class="glance-period">
 2026
-</h5>
-<div class="card-subtitle listing-subtitle">
+</div>
+<div class="glance-value">
 1.81mil
 </div>
-<div class="card-text listing-description delink">
-<p>Population</p>
+<div class="glance-label">
+Population
+</div>
+<div class="glance-links">
+<p><a href="dashboards/pop.html">Dashboard</a> <a href="dashboards/pop.html#download-data">Dataset</a></p>
+</div>
+<div class="glance-views">
+
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1">
-<a href="dashboards/gdp.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="glance-card">
+<div class="glance-period">
 2025
-</h5>
-<div class="card-subtitle listing-subtitle">
+</div>
+<div class="glance-value">
 7.30%
 </div>
-<div class="card-text listing-description delink">
-<p>GDP growth</p>
+<div class="glance-label">
+GDP growth
+</div>
+<div class="glance-links">
+<p><a href="dashboards/gdp.html">Dashboard</a> <a href="dashboards/gdp.html#download-data">Dataset</a></p>
+</div>
+<div class="glance-views">
+
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2">
-<a href="dashboards/hhinc.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="glance-card">
+<div class="glance-period">
 2024
-</h5>
-<div class="card-subtitle listing-subtitle">
+</div>
+<div class="glance-value">
 RM7,386
 </div>
-<div class="card-text listing-description delink">
-<p>Median gross household income</p>
+<div class="glance-label">
+Median gross household income
+</div>
+<div class="glance-links">
+<p><a href="dashboards/hhinc.html">Dashboard</a> <a href="dashboards/hhinc.html#download-data">Dataset</a></p>
+</div>
+<div class="glance-views">
+
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3">
-<a href="dashboards/cpi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="glance-card">
+<div class="glance-period">
 Jul 2026
-</h5>
-<div class="card-subtitle listing-subtitle">
+</div>
+<div class="glance-value">
 1.60%
 </div>
-<div class="card-text listing-description delink">
-<p>CPI inflation, year-on-year</p>
+<div class="glance-label">
+CPI inflation, year-on-year
+</div>
+<div class="glance-links">
+<p><a href="dashboards/cpi.html">Dashboard</a> <a href="dashboards/cpi.html#download-data">Dataset</a></p>
+</div>
+<div class="glance-views">
+
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4">
-<a href="dashboards/labour.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="glance-card">
+<div class="glance-period">
 Q1 2026
-</h5>
-<div class="card-subtitle listing-subtitle">
+</div>
+<div class="glance-value">
 2.70%
 </div>
-<div class="card-text listing-description delink">
-<p>Unemployment rate</p>
+<div class="glance-label">
+Unemployment rate
 </div>
+<div class="glance-links">
+<p><a href="dashboards/labour.html">Dashboard</a> <a href="dashboards/labour.html#download-data">Dataset</a></p>
 </div>
-</div></a>
+<div class="glance-views">
+
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
@@ -444,12 +696,9 @@ Q1 2026
 <div class="dashboards">
 <div id="listing-dashboards-econ" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788760505011" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./dashboards/econ/cpi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Co/ConsumerPriceIndex_16506163722350/ConsumerPriceIndex/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Consumer Price Index dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Consumer Price Index
@@ -457,20 +706,12 @@ Consumer Price Index
 <div class="card-text listing-description delink">
 <p>Track Penang’s cost of living with visualizations of inflation trends across food, housing, and more</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788760505011" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="./dashboards/econ/trade.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsTradeStatistics/Externaltradebystate/1.png" class="thumbnail-image card-img" style="height: 5;" alt="External Trade dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 External Trade
@@ -478,20 +719,12 @@ External Trade
 <div class="card-text listing-description delink">
 <p>Gauge Penang’s trade performance at a glance, exploring export and import trends by product and partner nation</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788760505011" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
 <a href="./dashboards/econ/gdp.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsGrossDomesticProduct/GDPbyeconomicsector/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Gross Domestic Product dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Gross Domestic Product
@@ -499,31 +732,18 @@ Gross Domestic Product
 <div class="card-text listing-description delink">
 <p>Chart Penang’s economic trajectory with GDP insights, revealing sector contributions and key trends</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788760505011" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
 <a href="./dashboards/econ/labour.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsLabourForce/Principalstatistics/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Labour Force dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Labour Force
 </h5>
 <div class="card-text listing-description delink">
 <p>Visualise principal labour force statistics and distribution of the workforce across key demographics, sectors and occupations</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
 </div>
 </div>
 </div></a>
@@ -539,12 +759,9 @@ Labour Force
 <div class="dashboards">
 <div id="listing-dashboards-sector" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <a href="./dashboards/sector/manf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/Penangsapprovedmanufacturinginvestment/InvestmentbyState/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Approved Manufacturing Investments dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Approved Manufacturing Investments
@@ -552,20 +769,12 @@ Approved Manufacturing Investments
 <div class="card-text listing-description delink">
 <p>Explore the landscape and composition of manufacturing investment in Penang</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="./dashboards/sector/grad.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsGraduateEmployability/Graduatedistribution/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Graduate Employability dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Graduate Employability
@@ -573,20 +782,12 @@ Graduate Employability
 <div class="card-text listing-description delink">
 <p>Analyze employment rates for Penang’s graduates, field of study trends, and career paths by field with Graduate Tracer Study data</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <a href="./dashboards/sector/health.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsHealthStatistics/Facilities/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Healthcare dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Healthcare
@@ -594,20 +795,12 @@ Healthcare
 <div class="card-text listing-description delink">
 <p>Uncover trends in healthcare access, utilisation and disease prevalence in Penang</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <a href="./dashboards/sector/finance.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/PenangsStateFinance/Overallfinancialposition/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Penang State Finance dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Penang State Finance
@@ -615,31 +808,18 @@ Penang State Finance
 <div class="card-text listing-description delink">
 <p>Explore the state’s development and operating balances, revenue streams, and detailed expenditure breakdowns</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="./dashboards/sector/prop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/Penangsresidentialproperty/Supply-demand/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Residential Property dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Residential Property
 </h5>
 <div class="card-text listing-description delink">
 <p>Track transaction trends in Penang’s housing market, gauge unsold inventory, monitor new launches, and assess affordability with the price-to-income ratio</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
 </div>
 </div>
 </div></a>
@@ -655,12 +835,9 @@ Residential Property
 <div class="dashboards">
 <div id="listing-dashboards-social" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
 <a href="./dashboards/social/gender.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Ge/Genderstatistics_16161467959570/Labourforceparticipation/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Gender dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Gender
@@ -668,20 +845,12 @@ Gender
 <div class="card-text listing-description delink">
 <p>Explore Penang’s gender landscape, including education, employment and leadership disparities</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <a href="./dashboards/social/hhinc.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/Penangshouseholdincome/Householdincome/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Household Income dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Household Income
@@ -689,31 +858,18 @@ Household Income
 <div class="card-text listing-description delink">
 <p>Unmask Penang’s economic disparities: explore household income trends and analyze inequality patterns</p>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788449552247" data-listing-reading-time-sort="1" data-listing-word-count-sort="121">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1788760505012" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
 <a href="./dashboards/social/pop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://public.tableau.com/static/images/Pe/Penangspopulationanddemographics/Overalltrend/1.png" class="thumbnail-image card-img" style="height: 5;" alt="Population and Demographics dashboard">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Population and Demographics
 </h5>
 <div class="card-text listing-description delink">
 <p>Explore population and migration trends, ethnic composition, and age distribution of Penang’s people</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
 </div>
 </div>
 </div></a>
@@ -1020,6 +1176,19 @@ October 2023
   <ul class="pagination"></ul>
 </nav>
 </div>
+<hr>
+</section>
+<section id="penang-as-a-smart-city" class="level2 smart-city">
+<h2 data-anchor-id="penang-as-a-smart-city">Penang as a Smart City</h2>
+<div class="smart-pillars">
+  <span class="smart-pillar">People</span>
+  <span class="smart-pillar">Economy</span>
+  <span class="smart-pillar">Governance</span>
+  <span class="smart-pillar">Infrastructure</span>
+  <span class="smart-pillar">Environment</span>
+  <span class="smart-pillar">Mobility</span>
+</div>
+</section>
 <script>
   // Append "Data as of <period>" and "Updated <date>" footers to each
   // "Penang at a glance" card.
@@ -1032,12 +1201,17 @@ October 2023
   //
   // Both footers are appended inside .card-body so Bootstrap's flex layout
   // pushes them to the bottom of the card without overflow.
+  //
+  // The Option A revamp renders these as .glance-card divs (assets/glance.ejs),
+  // NOT Bootstrap .card elements, and puts the period in .glance-period rather
+  // than .card-title. Both shapes are matched below so the badge keeps working
+  // whichever layout is in use; matching only .card silently attached nothing.
   (function addCardFooters() {
     function addDataAsOf(cards) {
       cards.forEach(function (card) {
         if (card.querySelector('.data-as-of')) return;
         var body = card.querySelector('.card-body') || card;
-        var titleEl = body.querySelector('.card-title');
+        var titleEl = body.querySelector('.card-title, .glance-period');
         var period = titleEl && titleEl.textContent.trim();
         if (!period) return;
         var el = document.createElement('div');
@@ -1059,7 +1233,7 @@ October 2023
     }
 
     function run() {
-      var cards = document.querySelectorAll('.metrics .card');
+      var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
 
       fetch('keyPenangMetrics/output/metrics_grid.json')
@@ -1081,7 +1255,6 @@ October 2023
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1490,11 +1663,6 @@ October 2023
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="./about.html">
-<p>About</p>
-</a>
-  </li>  
     <li class="nav-item">
     <a class="nav-link" href="./resources">
 <p>Resources</p>

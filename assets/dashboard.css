@@ -16,3 +16,25 @@ main.column-page#quarto-document-content{
       display: none;
     }
   }
+/* Back link to the stats page, injected on every dashboard by
+   dashboards/_metadata.yml. Placed above the dashboard title so it reads as
+   "out of here", not as part of the content. */
+.dashboard-back {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 6px;
+    padding: 6px 10px 6px 2px;
+    border-radius: 4px;
+    color: #c3353c;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.dashboard-back:hover,
+.dashboard-back:focus-visible {
+    background: #faeff0;
+    text-decoration: none;
+}
