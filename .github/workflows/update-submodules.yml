@@ -55,6 +55,16 @@ jobs:
 
       # A push made with GITHUB_TOKEN does not trigger the Render and Publish
       # workflow, so render and publish here in the same job.
+      # datasets.qmd pulls in _datasets_generated.md with an include shortcode.
+      # Quarto resolves includes while building the project context, which
+      # happens BEFORE the pre-render step declared in _quarto.yml runs. On a
+      # clean checkout that file does not exist yet (it is gitignored build
+      # output), so the render dies with "Include directive failed". Generating
+      # it here, before Quarto starts, is what makes a from-scratch build work.
+      # The pre-render entry stays as well, so local re-renders keep it fresh.
+      - name: Generate the Datasets index
+        run: python3 scripts/build_datasets_index.py
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
