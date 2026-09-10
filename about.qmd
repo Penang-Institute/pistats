@@ -5,5 +5,3 @@ title: "About Key Penang Statistics"
 Key Penang Statistics is Penang Institute's central data platform providing accessible, reliable and up-to-date statistics on Penang's economy, society and development. It brings together data from authoritative sources through interactive dashboards and concise insights.
 
 The platform serves as a trusted reference for evidence-based policymaking, research and strategic planning, supporting a deeper understanding of Penang's socio-economic landscape, development trends and emerging priorities.
-
-The dashboards are powered by [Tableau](https://public.tableau.com/app/profile/penang.institute). Graphics can be downloaded as images, PDFs or PowerPoint slides, and the underlying data is available for download from each dashboard.
