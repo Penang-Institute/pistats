@@ -1,20 +1,9 @@
 ---
-title: "About"
+title: "About Key Penang Statistics"
 ---
 
-Penang Institute is proud to present Key Penang Statistics, a portal dedicated to socioeconomic statistics about the state of Penang. What’s more, it comes in interactive format, powered by [Tableau](https://public.tableau.com/app/profile/penang.institute).
+Key Penang Statistics is Penang Institute's central data platform providing accessible, reliable and up-to-date statistics on Penang's economy, society and development. It brings together data from authoritative sources through interactive dashboards and concise insights.
 
-These dashboards illustrate trends and patterns in an easily comprehensible form, which will hopefully inspire users to communicate with the data in effective and cogent ways.
+The platform serves as a trusted reference for evidence-based policymaking, research and strategic planning, supporting a deeper understanding of Penang's socio-economic landscape, development trends and emerging priorities.
 
-Users may download graphics as images, PDFs or PowerPoint presentation. The data is also provided for download.
-
-::: {.callout-note title="Archive" collapse="true" icon="false"}
-The following dashboards may not be regularly maintained/updated and are provided for reference only. 
-
-- [Air transport](/dashboards/archive/air.html)
-- [Maritime cargo](/dashboards/archive/maritime.html)
-- [Covid-19 Data Snapshots for Malaysia](https://public.tableau.com/app/profile/penang.institute/viz/Covid-19StatisticsMalaysia/Covid-19statistics)
-- [Subdivision-level statistics](https://public.tableau.com/app/profile/penang.institute/viz/PenangMukimsandTowns/Dashboard1)
-- [Life tables](https://public.tableau.com/app/profile/penang.institute/viz/PenangLifeTables/Dashboard1)
-- [Public housing](https://public.tableau.com/app/profile/penang.institute/viz/PublichousinginPenang/Dashboard1)
-:::
+The dashboards are powered by [Tableau](https://public.tableau.com/app/profile/penang.institute). Graphics can be downloaded as images, PDFs or PowerPoint slides, and the underlying data is available for download from each dashboard.
