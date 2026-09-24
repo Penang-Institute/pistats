@@ -36,6 +36,15 @@ format:
         document.addEventListener('DOMContentLoaded', function () {
           var title = document.querySelector('.quarto-title-banner .quarto-title');
           if (!title || title.querySelector('.pi-banner-logo')) return;
+
+          // Quarto emits the heading and the description as siblings. Wrap them
+          // so the banner becomes exactly two flex children, logo then text,
+          // which is what lets the text sit to the right of the logo and the
+          // logo scale to the height of the text beside it.
+          var text = document.createElement('div');
+          text.className = 'pi-banner-text';
+          while (title.firstChild) text.appendChild(title.firstChild);
+
           var a = document.createElement('a');
           a.className = 'pi-banner-logo';
           a.href = '/';
@@ -44,7 +53,9 @@ format:
           img.src = '/img/cropped-penang-institute-logo.webp';
           img.alt = 'Penang Institute';
           a.appendChild(img);
-          title.insertBefore(a, title.firstChild);
+
+          title.appendChild(a);
+          title.appendChild(text);
         });
         </script>
         <script>

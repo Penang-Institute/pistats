@@ -197,14 +197,39 @@ $pagination-active-border-color: #3A3E3B;
 // on nothing. A reversed/white version of the logo from the client would let
 // this drop straight onto the red and the chip could go.
 .quarto-title-banner {
+  // Logo left, heading and description stacked to its right, as one row.
+  .quarto-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;          // stacks again on narrow screens
+  }
+
+  .pi-banner-text {
+    flex: 1 1 320px;
+    min-width: 0;             // lets the description wrap instead of overflowing
+    h1.title { margin-bottom: 4px; }
+    .description { margin-bottom: 0; }
+    p:last-child { margin-bottom: 0; }
+  }
+
+  // Fixed height rather than stretching to the text. Stretching looks like the
+  // tidier idea but feeds back on itself: a taller logo is also a wider one,
+  // which narrows the text column, which wraps the description onto another
+  // line, which makes the row taller, which grows the logo again. 76px sits
+  // level with the heading plus a two-line description at desktop widths.
   .pi-banner-logo {
-    display: inline-block;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
     background: #fff;
     border-radius: 4px;
-    padding: 7px 11px;
-    margin-bottom: 14px;
-    line-height: 0;
-    img { height: 34px; width: auto; display: block; }
+    padding: 9px 13px;
+    img {
+      height: 76px;
+      width: auto;
+      display: block;
+    }
   }
   // The logo is the only route back to this site's own homepage now that the
   // navbar wordmark is gone, so make it read as clickable.
