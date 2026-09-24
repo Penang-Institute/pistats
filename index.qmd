@@ -10,11 +10,6 @@ listing:
   - id: metrics
     contents: keyPenangMetrics/output/metrics_grid.yaml
     template: assets/glance.ejs
-  - id: penang-monthly
-    contents: keyPenangMetrics/output/penang-monthly-stats.yaml
-    date-format: "MMMM YYYY"
-    type: grid
-    page-size: 3
   - id: dashboards-econ
     contents:
     - dashboards/econ/*.qmd
@@ -170,9 +165,9 @@ title-block-banner-color: 'white'
   // Dashboard listing cards (Quarto's stock grid template, so there is no
   // markup hook to fill: the line is created here and appended to .card-body).
   //
-  // Scoped to the three dashboard listings on purpose. The Penang Monthly
-  // listing renders .quarto-grid-item too, and those are articles with no
-  // workbook behind them.
+  // Scoped to the three dashboard listings by id rather than matching
+  // .quarto-grid-item globally, so a listing added later cannot silently
+  // start receiving view counts it has no workbook for.
   function fillDashboardCards(counts) {
     var sel = ['econ', 'sector', 'social'].map(function (s) {
       return '#listing-dashboards-' + s + ' .quarto-grid-item';
@@ -246,13 +241,6 @@ title-block-banner-color: 'white'
 
 ------------------------------------------------------------------------
 
-## New in Penang Monthly
-
-::: {#penang-monthly}
-:::
-
-------------------------------------------------------------------------
-
 ::: {.smart-city}
 ## Penang as a Smart City
 
@@ -312,15 +300,70 @@ title-block-banner-color: 'white'
       });
     }
 
+    // Dashboard listing cards asked for the same two footers (client, Sep 2026).
+    //
+    // Periods are read back off the glance cards already rendered on this page
+    // rather than fetched again: each glance card links to its dashboard and
+    // carries the period, which is exactly the mapping needed, and it cannot
+    // drift out of step with what the visitor is looking at.
+    //
+    // Only 5 of the 14 dashboards appear in metrics_grid, so only those 5 get
+    // dates. The rest are left blank rather than shown a borrowed one:
+    // "Updated" is the metrics pipeline's run date, and asserting it for a
+    // dashboard the pipeline does not feed would be a claim we cannot support.
+    // Same shape as the stemOf in the view-counts block above: takes an href
+    // string, returns the file stem. "dashboards/social/pop.html" -> "pop",
+    // which is what makes a glance card and a dashboard card comparable even
+    // though the two link at different depths.
+    function stemOf(href) {
+      return (href || '').split('/').pop().replace(/\.html.*$/, '');
+    }
+
+    function dashboardPeriods() {
+      var map = {};
+      document.querySelectorAll('.metrics .card, .metrics .glance-card').forEach(function (card) {
+        var periodEl = card.querySelector('.card-title, .glance-period');
+        var link = card.querySelector('a[href*="dashboards/"]');
+        if (!periodEl || !link) return;
+        var stem = stemOf(link.getAttribute('href'));
+        if (stem) map[stem] = periodEl.textContent.trim();
+      });
+      return map;
+    }
+
+    function dashboardCards() {
+      var sel = ['econ', 'sector', 'social'].map(function (s) {
+        return '#listing-dashboards-' + s + ' .quarto-grid-item';
+      }).join(', ');
+      return Array.prototype.slice.call(document.querySelectorAll(sel));
+    }
+
     function run() {
       var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
+
+      var periods = dashboardPeriods();
+      var dated = dashboardCards().filter(function (card) {
+        if (card.querySelector('.data-as-of')) return true;
+        var wrapper = card.closest('a');            // grid item is anchor-wrapped
+        if (!wrapper) return false;
+        var period = periods[stemOf(wrapper.getAttribute('href'))];
+        if (!period) return false;
+        var body = card.querySelector('.card-body') || card;
+        var el = document.createElement('div');
+        el.className = 'data-as-of';
+        el.textContent = 'Data as of ' + period;
+        body.appendChild(el);
+        return true;
+      });
 
       fetch('keyPenangMetrics/output/metrics_grid.json')
         .then(function (r) { return r.json(); })
         .then(function (data) {
           var updated = data[0] && data[0].last_updated;
-          if (updated) addUpdatedAt(cards, updated);
+          if (!updated) return;
+          addUpdatedAt(cards, updated);
+          addUpdatedAt(dated, updated);
         })
         .catch(function () { /* graceful: Option A still shows */ });
     }

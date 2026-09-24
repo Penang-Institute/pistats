@@ -4,56 +4,29 @@ website:
   image: /img/general.png
   favicon: /img/favicon.png
   navbar:
-    title: Key Penang Statistics
-    logo: img/cropped-penang-institute-logo.webp
-    logo-alt: Penang Institute logo
+    # Restructured at the client's request (Sep 2026):
+    #  - the logo and the "Key Penang Statistics" wordmark moved out of here;
+    #    the wordmark repeated the banner heading, and the logo now sits in the
+    #    banner itself (see .quarto-title-banner in assets/custom.scss).
+    #  - the Dashboards dropdown was dropped as repeating the homepage listing.
+    #  - Homepage moved to the left, Who We Are and Enquiries to the right.
+    #
+    # Note: removing the wordmark also removed the navbar's only link back to
+    # this site's own homepage ("Homepage" points at penanginstitute.org, a
+    # different site). The banner logo is linked to index.qmd to keep that route.
+    title: false
     pinned: true
     left:
+    - text: Homepage
+      icon: house
+      href: https://www.penanginstitute.org
     - text: Datasets
       href: datasets.qmd
-    - text: Dashboards
-      menu:
-      - text: Economic
-      - text: Consumer Price Index
-        href: dashboards/econ/cpi.qmd
-      - text: External Trade
-        href: dashboards/econ/trade.qmd
-      - text: Gross Domestic Product
-        href: dashboards/econ/gdp.qmd
-      - text: Labour Force
-        href: dashboards/econ/labour.qmd
-      - text: '---'
-      - text: Sector-specific
-      - text: Approved Manufacturing Investments
-        href: dashboards/sector/manf.qmd
-      - text: Graduate Employability
-        href: dashboards/sector/grad.qmd
-      - text: Healthcare
-        href: dashboards/sector/health.qmd
-      - text: Penang State Finance
-        href: dashboards/sector/finance.qmd
-      - text: Residential Property
-        href: dashboards/sector/prop.qmd
-      - text: '---'
-      - text: Social
-      - text: Gender
-        href: dashboards/social/gender.qmd
-      - text: Household Income
-        href: dashboards/social/hhinc.qmd
-      - text: Population and Demographics
-        href: dashboards/social/pop.qmd
+    right:
     - text: Who We Are
       href: about.qmd
     - text: Enquiries
       href: mailto:enquiry@penanginstitute.org
-          # - text: Metadata
-          #   href: https://hollow-locket-922.notion.site/552c1b91696141d48e9103522dc8ea01?v=fbeb4d0307514e1b9a7d12d2b284a436&pvs=4
-          # - text: Data sources
-          #   href: https://hollow-locket-922.notion.site/4079047156cf441398595107f688a30f?v=75577be15da545219fcaff695b4d7c96&pvs=4
-    right:
-    - text: Homepage
-      icon: house
-      href: https://www.penanginstitute.org
   page-footer:
     left: >-
      Copyright © {{< now year >}} Penang Institute</br>  

@@ -13,9 +13,13 @@ $font-family-sans-serif: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, "
 // $font-size-base * $line-height-base + $nav-link-padding-y, and a px value
 // there fails the theme compile ("21px and 1.8rem have incompatible units").
 // simplex sets $font-size-root to 17px, so plain 0.875rem would render
-// 14.875px. 14/17 = 0.823529 gives the client's 14px exactly, and leaves every
+// 14.875px. Dividing the target px by 17 hits it exactly and leaves every
 // other rem-sized element on the page untouched.
-$font-size-base: 0.823529rem; // = 14px at simplex's 17px root
+//
+// Was 14px (0.823529rem), specified by the client in Aug 2026. Raised to 16px
+// in Sep 2026 when they asked to "increase font size on webpage for better
+// visibility". One number to change if 16 is too large or too small.
+$font-size-base: 0.941176rem; // = 16px at simplex's 17px root
 $font-size-lg: $font-size-base * 1.25 !default;
 $navbar-brand-font-size: $font-size-lg * 1 !default;
 $navbar-brand-padding-y: $spacer * 1.5 !default;
@@ -154,6 +158,31 @@ $pagination-active-border-color: #3A3E3B;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #2b2e2c;
+}
+
+// ---- PI logo inside the red title banner (client request, Sep 2026) ----
+// The logo left the navbar, so the banner carries the institutional mark.
+//
+// It sits on a white chip rather than directly on the red: the asset is black
+// wordmark plus a RED "making ideas work" strapline block, and that red block
+// disappears into the #c3353c banner, leaving the white strapline text floating
+// on nothing. A reversed/white version of the logo from the client would let
+// this drop straight onto the red and the chip could go.
+.quarto-title-banner {
+  .pi-banner-logo {
+    display: inline-block;
+    background: #fff;
+    border-radius: 4px;
+    padding: 7px 11px;
+    margin-bottom: 14px;
+    line-height: 0;
+    img { height: 34px; width: auto; display: block; }
+  }
+  // The logo is the only route back to this site's own homepage now that the
+  // navbar wordmark is gone, so make it read as clickable.
+  a.pi-banner-logo:hover, a.pi-banner-logo:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+  }
 }
 
 // ---- Revamp test: mock parity layer ----
