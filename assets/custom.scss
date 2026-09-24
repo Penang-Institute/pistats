@@ -160,6 +160,34 @@ $pagination-active-border-color: #3A3E3B;
   color: #2b2e2c;
 }
 
+// ---- "Back to Key Penang Statistics" link ----
+// Lived in assets/dashboard.css while only dashboards used it. Now the
+// Datasets page includes the same partial, so the styles belong site-wide.
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 6px;
+  padding: 6px 10px 6px 2px;
+  border-radius: 4px;
+  color: #c3353c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+
+  &:hover, &:focus-visible { background: #faeff0; text-decoration: none; }
+}
+
+// Quarto pushes the left-hand nav with `.navbar .navbar-nav.me-auto {
+// margin-left: auto !important }`, which assumes a brand sits to its left.
+// With the brand removed the nav centred itself instead of starting where the
+// logo used to be, so the client's "Homepage at the top left corner" was not
+// actually at the corner. Higher specificity so it wins regardless of order.
+.navbar .navbar-collapse .navbar-nav.me-auto {
+  margin-left: 0 !important;
+}
+
 // ---- PI logo inside the red title banner (client request, Sep 2026) ----
 // The logo left the navbar, so the banner carries the institutional mark.
 //

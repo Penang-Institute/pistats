@@ -1,0 +1,16 @@
+<!--
+  "Back to Key Penang Statistics" link, shown above the title on pages a
+  visitor can get stuck inside.
+
+  Wired in from dashboards/_metadata.yml (all dashboards) and from
+  datasets.qmd. Adding a dashboard picks it up with no extra work.
+
+  Added at the client's request: first for dashboards (Sep 2026), where a
+  visitor scrolled into a Tableau embed had no obvious way out, then for the
+  Datasets page. Styles live in assets/custom.scss so every page that includes
+  this gets them, rather than only the ones loading dashboard.css.
+
+  Quarto rewrites this href to the correct relative depth per page, so it
+  survives both the live domain and a local `http.server -d _site` preview.
+-->
+<a class="back-link" href="/">&#8592;&nbsp;Back to Key Penang Statistics</a>
