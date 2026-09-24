@@ -102,7 +102,16 @@ $pagination-active-border-color: #3A3E3B;
 #listing-dashboards-sector,
 #listing-dashboards-social {
   .quarto-grid-item .card-body { display: flex; flex-direction: column; }
-  .listing-views { margin-top: auto; }
+
+  // The three footer lines are appended by different callbacks: the view count
+  // and "Updated" both wait on a fetch, "Data as of" does not, so DOM order
+  // depends on which promise settles first and came out as
+  // "Data as of / views / Updated" with the divider stranded in the middle.
+  // Ordering them here fixes the sequence regardless of arrival, and matches
+  // the "Penang at a glance" cards: count first, then the two dates.
+  .listing-views { margin-top: auto; order: 1; }
+  .data-as-of    { order: 2; }
+  .updated-at    { order: 3; }
 }
 
 .glance-views {
