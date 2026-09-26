@@ -338,10 +338,20 @@ title-block-banner-color: 'white'
       return Array.prototype.slice.call(document.querySelectorAll(sel));
     }
 
+    function stamp(card, cls, text) {
+      if (card.querySelector('.' + cls)) return;
+      var body = card.querySelector('.card-body') || card;
+      var el = document.createElement('div');
+      el.className = cls;
+      el.textContent = text;
+      body.appendChild(el);
+    }
+
     function run() {
       var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
 
+      // Periods for the five headline dashboards come off the glance cards.
       var periods = dashboardPeriods();
       var dated = dashboardCards().filter(function (card) {
         if (card.querySelector('.data-as-of')) return true;
@@ -349,11 +359,7 @@ title-block-banner-color: 'white'
         if (!wrapper) return false;
         var period = periods[stemOf(wrapper.getAttribute('href'))];
         if (!period) return false;
-        var body = card.querySelector('.card-body') || card;
-        var el = document.createElement('div');
-        el.className = 'data-as-of';
-        el.textContent = 'Data as of ' + period;
-        body.appendChild(el);
+        stamp(card, 'data-as-of', 'Data as of ' + period);
         return true;
       });
 
@@ -366,6 +372,26 @@ title-block-banner-color: 'white'
           addUpdatedAt(dated, updated);
         })
         .catch(function () { /* graceful: Option A still shows */ });
+
+      // Dashboards outside the headline five carry their own dates, each read
+      // from the sheet the pipeline writes (see assets/dashboard_dates.json).
+      // A dashboard is listed there only when its transform actually produced
+      // rows; the ones whose transform silently writes nothing are left blank
+      // on purpose, because a date would assert freshness we cannot support.
+      fetch('assets/dashboard_dates.json')
+        .then(function (r) { return r.json(); })
+        .then(function (cfg) {
+          var byStem = (cfg && cfg.dashboards) || {};
+          dashboardCards().forEach(function (card) {
+            var wrapper = card.closest('a');
+            if (!wrapper) return;
+            var entry = byStem[stemOf(wrapper.getAttribute('href'))];
+            if (!entry) return;
+            if (entry.dataAsOf) stamp(card, 'data-as-of', 'Data as of ' + entry.dataAsOf);
+            if (entry.updated)  stamp(card, 'updated-at', 'Updated ' + entry.updated);
+          });
+        })
+        .catch(function () { /* graceful: the other cards still show */ });
     }
 
     if (document.readyState === 'loading') {

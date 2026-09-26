@@ -95,5 +95,6 @@ resources:
 # Referenced only from JS (the banner logo), so Quarto cannot discover it by
 # scanning the source and would otherwise leave it out of _site.
 - "img/cropped-penang-institute-logo.webp"
+- "assets/dashboard_dates.json"
 - "keyPenangMetrics/output/*.yaml"
 - "keyPenangMetrics/output/*.json"

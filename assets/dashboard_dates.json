@@ -1,0 +1,31 @@
+{
+  "_comment": [
+    "Data periods for dashboards the metrics pipeline does not describe.",
+    "",
+    "The five headline dashboards (CPI, GDP, Labour Force, Household Income,",
+    "Population) get their period automatically from keyPenangMetrics via the",
+    "'Penang at a glance' cards. This file covers dashboards outside that set.",
+    "",
+    "Every value here was read from the live Google Sheet the pipeline writes,",
+    "not typed from memory. 'source' records where, so the next person can",
+    "re-check it rather than trust it. Re-read them when they look stale.",
+    "",
+    "Deliberately ABSENT, because their transform produced no rows in the",
+    "2026-09-20 pipeline run and a date would therefore be a claim we cannot",
+    "support: gender, property, graduates. Also absent: manf and finance,",
+    "which no transform touches at all (MIDA and the State Government send",
+    "those by hand)."
+  ],
+  "dashboards": {
+    "trade": {
+      "dataAsOf": "Jun 2026",
+      "updated": "20 Sep 2026",
+      "source": "trade sheet 1zw1vHUE…Q2lc, tab 'data', max(Date) = 2026-06-01"
+    },
+    "health": {
+      "dataAsOf": "May 2025",
+      "updated": "20 Sep 2026",
+      "source": "main workbook, tab 'utilisation_opendosm', max(date) = 2025-05-31; the facilities half only reaches 2023"
+    }
+  }
+}
