@@ -10,10 +10,10 @@
     "typed from memory. 'source' records where, so the next person can re-check",
     "it rather than trust it.",
     "",
-    "Still absent on purpose, because their transform produces no rows at all:",
-    "gender (local xlsx missing AND its Drive source 404s) and graduates (source",
-    "file absent, and .gitignore excludes *.xls so it can never be in CI). Also",
-    "absent: manf and finance, which no transform touches (sent in by hand)."
+    "Still absent on purpose: gender and graduates. Their output sheets return",
+    "403 to penang-data-pipeline@penang-data-pipeline.iam.gserviceaccount.com,",
+    "the same problem property had. Share those two sheets and their dates can",
+    "be read the same way."
   ],
   "dashboards": {
     "trade": {
@@ -29,6 +29,14 @@
     "prop": {
       "dataAsOf": "Mar 2021",
       "source": "all four property sheets, max Date = 2021-03-01 (house_prices only reaches 2019). They were 403 to the pipeline until access was restored 2026-09-30, and no run has written them since, so there is no 'updated' value yet."
+    },
+    "manf": {
+      "dataAsOf": "Jun 2026",
+      "source": "published CSV behind the dashboard (MIDA), max(Date) = 2026-06-01, same for the Penang rows. Not pipeline-fed, so no 'updated'."
+    },
+    "finance": {
+      "dataAsOf": "2026",
+      "source": "published CSVs behind the dashboard, fiscal position max(Year) = 2026 (marked Actual); the revenue-items CSV only reaches 2025. Not pipeline-fed, so no 'updated'."
     }
   }
 }
