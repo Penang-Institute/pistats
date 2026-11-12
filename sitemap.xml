@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://statistics.penanginstitute.org/datasets.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
     <loc>https://statistics.penanginstitute.org/index.html</loc>
-    <lastmod>2026-11-05T19:16:45.731Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/econ/labour.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/econ/cpi.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/social/hhinc.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.368Z</lastmod>
   </url>
   <url>
     <loc>https://statistics.penanginstitute.org/dashboards/sector/grad.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
   </url>
   <url>
     <loc>https://statistics.penanginstitute.org/dashboards/sector/manf.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
   </url>
   <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/sector/prop.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/archive/air.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/resources/index.html</loc>
-    <lastmod>2026-11-05T19:16:45.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/README-DEMO.html</loc>
-    <lastmod>2026-11-05T19:16:45.719Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/datasets.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/resources/quarterly_penang_statistics.html</loc>
-    <lastmod>2026-11-05T19:16:45.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/about.html</loc>
-    <lastmod>2026-11-05T19:16:45.727Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/archive/maritime.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/sector/finance.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/sector/health.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://statistics.penanginstitute.org/dashboards/social/pop.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <loc>https://statistics.penanginstitute.org/dashboards/social/hhinc.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
   </url>
   <url>
     <loc>https://statistics.penanginstitute.org/dashboards/social/gender.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/econ/labour.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
   </url>
   <url>
     <loc>https://statistics.penanginstitute.org/dashboards/econ/trade.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/archive/maritime.html</loc>
+    <lastmod>2026-11-12T19:22:05.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/resources/index.html</loc>
+    <lastmod>2026-11-12T19:22:05.369Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/README-DEMO.html</loc>
+    <lastmod>2026-11-12T19:22:05.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/resources/quarterly_penang_statistics.html</loc>
+    <lastmod>2026-11-12T19:22:05.369Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/archive/air.html</loc>
+    <lastmod>2026-11-12T19:22:05.363Z</lastmod>
   </url>
   <url>
     <loc>https://statistics.penanginstitute.org/dashboards/econ/gdp.html</loc>
-    <lastmod>2026-11-05T19:16:45.728Z</lastmod>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/econ/cpi.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/social/pop.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/sector/prop.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/sector/finance.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/dashboards/sector/health.html</loc>
+    <lastmod>2026-11-12T19:22:05.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://statistics.penanginstitute.org/about.html</loc>
+    <lastmod>2026-11-12T19:22:05.362Z</lastmod>
   </url>
 </urlset>

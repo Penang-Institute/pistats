@@ -1,14 +1,14 @@
 {
- "prop": 6672,
- "finance": 4374,
- "manf": 4728,
- "health": 4094,
- "grad": 3275,
- "hhinc": 7224,
- "gender": 2519,
- "cpi": 3987,
- "trade": 4095,
- "labour": 11142,
- "gdp": 9216,
- "pop": 33562
+ "trade": 4105,
+ "gdp": 9238,
+ "labour": 11170,
+ "cpi": 3997,
+ "gender": 2521,
+ "hhinc": 7236,
+ "prop": 6686,
+ "manf": 4733,
+ "finance": 4379,
+ "grad": 3276,
+ "health": 4102,
+ "pop": 33658
 }
