@@ -10,6 +10,18 @@ listing:
   - id: metrics
     contents: keyPenangMetrics/output/metrics_grid.yaml
     template: assets/glance.ejs
+  - id: penang-monthly
+    contents: keyPenangMetrics/output/penang-monthly-stats.yaml
+    date-format: "MMMM YYYY"
+    type: grid
+    page-size: 3
+    # Client chose the "image, date and standfirst" card (Oct 2026), so the
+    # cards carry an image and the feed's own summary. Every article in an
+    # issue shares one pubDate, so the default date sort has nothing to
+    # separate them; `order` is the feed's running order, written by
+    # metrics.py, and pins the cards to the magazine's own sequence.
+    sort: "order"
+    fields: [image, date, title, description, author]
   - id: dashboards-econ
     contents:
     - dashboards/econ/*.qmd
@@ -166,8 +178,9 @@ title-block-banner-color: 'white'
   // markup hook to fill: the line is created here and appended to .card-body).
   //
   // Scoped to the three dashboard listings by id rather than matching
-  // .quarto-grid-item globally, so a listing added later cannot silently
-  // start receiving view counts it has no workbook for.
+  // .quarto-grid-item globally. The Penang Monthly listing renders
+  // .quarto-grid-item too, and those are articles with no workbook behind
+  // them, so a global match would hang a view count on every one of them.
   function fillDashboardCards(counts) {
     var sel = ['econ', 'sector', 'social'].map(function (s) {
       return '#listing-dashboards-' + s + ' .quarto-grid-item';
@@ -241,19 +254,9 @@ title-block-banner-color: 'white'
 
 ------------------------------------------------------------------------
 
-::: {.smart-city}
-## Penang as a Smart City
+## New in Penang Monthly
 
-```{=html}
-<div class="smart-pillars">
-  <span class="smart-pillar">People</span>
-  <span class="smart-pillar">Economy</span>
-  <span class="smart-pillar">Governance</span>
-  <span class="smart-pillar">Infrastructure</span>
-  <span class="smart-pillar">Environment</span>
-  <span class="smart-pillar">Mobility</span>
-</div>
-```
+::: {#penang-monthly}
 :::
 
 ```{=html}

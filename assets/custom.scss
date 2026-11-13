@@ -96,8 +96,8 @@ $pagination-active-border-color: #3A3E3B;
 // Descriptions vary in length, so without this the counter floats at a
 // different height in every card and the row looks ragged. Making the body a
 // flex column and pushing the counter down with `auto` lines them all up along
-// the bottom of the row. Scoped to the dashboard listings so the Penang
-// Monthly grid keeps Quarto's default layout.
+// the bottom of the row. Scoped to the dashboard listings; the Penang
+// Monthly grid has its own card layout, below.
 #listing-dashboards-econ,
 #listing-dashboards-sector,
 #listing-dashboards-social {
@@ -112,6 +112,42 @@ $pagination-active-border-color: #3A3E3B;
   .listing-views { margin-top: auto; order: 1; }
   .data-as-of    { order: 2; }
   .updated-at    { order: 3; }
+}
+
+// ---- "New in Penang Monthly" cards (Option C, approved Oct 2026) ----
+// The approved card reads image, date, title, standfirst, byline. Quarto emits
+// the date inside .card-attribution next to the author, after the description,
+// so `order` alone cannot lift it: order only sorts among siblings.
+// `display: contents` removes the wrapper's own box and promotes the date and
+// author to flex children of the card body, putting all four in one scope.
+// Values copied from mock_design/penang_monthly_cards.html so the built page
+// matches the screenshot the client signed off.
+#listing-penang-monthly {
+  .quarto-grid-item .card-body { display: flex; flex-direction: column; }
+  .card-attribution { display: contents; }
+
+  .listing-date {
+    order: -1;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    color: #c3353c;
+    margin-bottom: 5px;
+  }
+
+  .listing-title       { order: 0; }
+
+  // flex: 1 keeps the byline on one baseline across a row of cards whose
+  // standfirsts differ in length, the same raggedness the dashboard cards
+  // above solve with margin-top: auto.
+  .listing-description { order: 1; flex: 1; }
+
+  .listing-author {
+    order: 2;
+    margin-top: 12px;
+    padding-top: 9px;
+    border-top: 1px solid #dcd9e3;
+  }
 }
 
 .glance-views {
@@ -132,43 +168,6 @@ $pagination-active-border-color: #3A3E3B;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-// Smart City section. The dashed "under construction" border and grey
-// heading went at the client's request (Sep 2026) — this block faces
-// stakeholders, so it should not read as unfinished. The six pillars stand in
-// until the Socioeconomics & Statistics Programme supplies indicators.
-.smart-city {
-  margin-top: 3rem;
-  border: 1px solid #e3e1e8;
-  border-radius: 12px;
-  padding: 34px;
-  text-align: center;
-  h2 { border: none; margin-top: 0; color: #1a1a1a; }
-}
-
-.smart-pillars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 22px;
-}
-
-// Card fill (#F0EFF4) matches .glance-card so the pillars read as part of the
-// same family, per the client's "match the colour of the card" note.
-// ponytail: static tiles, no href — nothing to link to until the indicators exist
-.smart-pillar {
-  background: #F0EFF4;
-  border-left: 3px solid #c3353c;
-  border-radius: 4px;
-  padding: 12px 20px;
-  min-width: 132px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #2b2e2c;
-}
-
 // ---- "Back to Key Penang Statistics" link ----
 // Lived in assets/dashboard.css while only dashboards used it. Now the
 // Datasets page includes the same partial, so the styles belong site-wide.
