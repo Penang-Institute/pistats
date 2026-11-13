@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 3,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-author","listing-date","listing-image","listing-title"],
+      searchColumns: ["listing-author","listing-date","listing-description","listing-image","listing-order","listing-title"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -636,7 +636,7 @@ Unemployment rate
 <div class="dashboards">
 <div id="listing-dashboards-econ" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./dashboards/econ/cpi.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -649,7 +649,7 @@ Consumer Price Index
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="./dashboards/econ/trade.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -662,7 +662,7 @@ External Trade
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
 <a href="./dashboards/econ/gdp.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -675,7 +675,7 @@ Gross Domestic Product
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
 <a href="./dashboards/econ/labour.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -699,7 +699,7 @@ Labour Force
 <div class="dashboards">
 <div id="listing-dashboards-sector" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <a href="./dashboards/sector/manf.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -712,7 +712,7 @@ Approved Manufacturing Investments
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="./dashboards/sector/grad.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -725,7 +725,7 @@ Graduate Employability
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <a href="./dashboards/sector/health.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -738,7 +738,7 @@ Healthcare
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <a href="./dashboards/sector/finance.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -751,7 +751,7 @@ Penang State Finance
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1794551631855" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="./dashboards/sector/prop.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -775,7 +775,7 @@ Residential Property
 <div class="dashboards">
 <div id="listing-dashboards-social" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1794551631856" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
 <a href="./dashboards/social/gender.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -788,7 +788,7 @@ Gender
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794551631856" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <a href="./dashboards/social/hhinc.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -801,7 +801,7 @@ Household Income
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794551631856" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
 <a href="./dashboards/social/pop.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -825,286 +825,361 @@ Population and Demographics
 <h2 data-anchor-id="new-in-penang-monthly">New in Penang Monthly</h2>
 <div id="listing-penang-monthly" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1777593600000">
-<a href="https://www.penangmonthly.com/sustainable-tourism-in-numbers/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/a-delightful-stay-at-rimbun-dahan-a-sidestep-rather-than-a-retreat/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_40_Image_0003.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Sustainable Tourism In Numbers
+A Delightful Stay At Rimbun Dahan: A Sidestep Rather Than A Retreat
 </h5>
+<div class="card-text listing-description">
+<p>A green lotus seed pod on the grounds. FOR WORKAHOLICS TO drop everything and go on a retreat is as crazy as asking a…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Dato’ Dr.&nbsp;Ooi Kee Beng
 </div>
 <div class="listing-date">
-May 2026
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1772323200000">
-<a href="https://www.penangmonthly.com/an-ageing-penang-what-the-numbers-show/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/highlighting-the-chauvinism-paradox-through-a-history-of-multiculturalism/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_06_Image_0001-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-An Ageing Penang: What The Numbers Show
+Highlighting The Chauvinism Paradox Through a History of Multiculturalism
 </h5>
+<div class="card-text listing-description">
+<p>ONE OF THE deepest legacies of colonisation worldwide is the nation-state. Having learned that every inch on earth has…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Dato’ Dr.&nbsp;Ooi Kee Beng
 </div>
 <div class="listing-date">
-March 2026
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1767225600000">
-<a href="https://www.penangmonthly.com/the-growth-of-artificial-intelligence/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/how-long-have-you-been-here-the-art-of-migratory-pregrenations-from-bengal/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_56_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-The Growth of Artificial Intelligence
+How Long Have You Been Here? The Art of Migratory Peregrinations From Bengal
 </h5>
+<div class="card-text listing-description">
+<p>NIGHT: At the Hu Yew Seah school, a mural featuring the polymath Rabindranath Tag-ore, who laid its foundation stone,…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Ong Siou Woon
+William Tham
 </div>
 <div class="listing-date">
-January 2026
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1756684800000">
-<a href="https://www.penangmonthly.com/getting-to-know-seberang-perai-selatan/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="3" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/teochew-puppetry-do-the-deities-approve/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_54_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Getting to Know Seberang Perai Selatan
+Teochew Puppetry: Do the Deities Approve?
 </h5>
+<div class="card-text listing-description">
+<p>THE FRONT OF the Hor Kai Kong Temple in Pulau Tikus filled with young students and neighbourhood worshippers, as a…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Penang Monthly
 </div>
 <div class="listing-date">
-September 2025
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1743465600000">
-<a href="https://www.penangmonthly.com/how-much-energy-are-we-consuming-2/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="4" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/mirrored-migration-finding-the-way-home/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/SUARA-NADI-WEBSITE-BANNER-1500X844--2-.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-How Much Energy Are We Consuming?
+Mirrored Migration: Finding The Way Home
 </h5>
+<div class="card-text listing-description">
+<p>COMING HOME SHOULD be easy, or so I thought. After four years of living in the UK, I imagined that returning to Penang…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Joel Teh
 </div>
 <div class="listing-date">
-April 2025
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1730419200000">
-<a href="https://www.penangmonthly.com/water-in-penang-2/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="5" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/penangs-parking-attendance-sheme-smart-move-in-difficult-times/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_48_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Water in Penang
+Penang’s Parking Attendant Scheme: Smart Move In Difficult Times
 </h5>
+<div class="card-text listing-description">
+<p>BEFORE COUPONS PROLIFERATED , only to be replaced by digital parking applications, parking attendants were ubiquitous…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Koay Su Lyn
 </div>
 <div class="listing-date">
-November 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1722470400000">
-<a href="https://www.penangmonthly.com/penangs-evolving-schooling-preferences/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="6" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/weaving-patience-basketry-at-st-nicholas-home/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_47_Image_0001-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Penang’s Evolving Schooling Preferences
+Weaving Patience: Basketry At St.&nbsp;Nicholas’ Home
 </h5>
+<div class="card-text listing-description">
+<p>THE FIRST THING that greeted me was silence. Not the uncomfortable kind; instead, it settled gently over the basketry…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Philip Khor
+Aqilla Latif
 </div>
 <div class="listing-date">
-August 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1717200000000">
-<a href="https://www.penangmonthly.com/non-profit-organisations-in-penang/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="7" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/between-islands-text-translation-and-contestation/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_43_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Non-Profit Organisations In Penang
+Between Islands: Text, Translation And Contestation
 </h5>
+<div class="card-text listing-description">
+<p>“MY MEMORY BEGINS, as always,” opens When Memory Dies, “with the rain.” A. Sivanandan’s 1997 novel follows Ceylon’s…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Philip Khor
+Fathima Cader
 </div>
 <div class="listing-date">
-June 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1711929600000">
-<a href="https://www.penangmonthly.com/our-worsening-climate/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="8" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/learning-to-learn-why-literature-still-belongs-in-school/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_38_Image_0001-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Our Worsening Climate
+Learning To Learn: Why Literature Still Belongs In School
 </h5>
+<div class="card-text listing-description">
+<p>A cover image for a presentation of Semester 1 poems. BEYOND BOOKS AND EXAMINATIONS PFS (est. 1816) is Southeast Asia’s…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Shenna Tham
 </div>
 <div class="listing-date">
-April 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1709251200000">
-<a href="https://www.penangmonthly.com/gender-equality-in-malaysia/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="9" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/making-an-investment-of-hope-an-interview-with-amelie-skoda/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_36_Image_0001-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Gender Equality in Malaysia
+Making An “Investment of Hope”: An Interview With Amelié Skoda
 </h5>
+<div class="card-text listing-description">
+<p>OPENING WITH AN enigmatic arrival in 1970s’ London, Amelié Skoda’s novel, Beth-nal Green, follows a young woman’s…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Yeong Pey Jung
+William Tham
 </div>
 <div class="listing-date">
-March 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-date-sort="1706745600000">
-<a href="https://www.penangmonthly.com/creative-hub/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="10" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/restoring-communal-history-the-remarkable-revival-of-wadda-gurdawa-sahib/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/SUARA-NADI-WEBSITE-BANNER-1500X844--1-.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Creative Hubs
+Restoring Communal History: The Remarkable Revival of Wadda Gurdwara Sahib
 </h5>
+<div class="card-text listing-description">
+
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Hajar Ariff
+Samuel Gopal
 </div>
 <div class="listing-date">
-February 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-listing-date-sort="1704067200000">
-<a href="https://www.penangmonthly.com/year-in-review-penang-key-economic-statistics/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="11" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/changing-money-changing-times/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_26_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Year in Review: Penang Key Economic Statistics
+Changing Money, Changing Times
 </h5>
+<div class="card-text listing-description">
+
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Doris Liew
+Carolyn Khor
 </div>
 <div class="listing-date">
-January 2024
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-listing-date-sort="1701388800000">
-<a href="https://www.penangmonthly.com/how-food-price-increases-are-affecting-malaysians/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="12" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/the-indian-heritage-gallery-cultural-centre-opens-its-doors/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_23_Image_0001-2-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-How Food Price Increases Are Affecting Malaysians
+The Indian Heritage Gallery &amp; Cultural Centre Opens Its Doors
 </h5>
+<div class="card-text listing-description">
+<p>Heritage café located in the front portion of the building. IF THE WALLS, windows and doors of Penang’s “Little India”…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Doris Liew
+Dr.&nbsp;Khoo Suet Leng
 </div>
 <div class="listing-date">
-December 2023
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-listing-date-sort="1698796800000">
-<a href="https://www.penangmonthly.com/artificial-intelligence-in-numbers/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="13" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/a-smellscape-of-little-india/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/__260917_PM_2611_Digital_FA_Page_20_Image_0001.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Artificial Intelligence In Numbers
+A Smellscape of Little India
 </h5>
+<div class="card-text listing-description">
+<p>JUST PAST 8.30AM, I am hit by oppressive fumes of exhaust as the 101 pulls away from the “Little India” bus stop. The…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Philip Khor
+Miriam Devaprasana
 </div>
 <div class="listing-date">
-November 2023
+November 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="14" data-listing-date-sort="1696118400000">
-<a href="https://www.penangmonthly.com/the-state-of-penangs-modes-of-transport/" class="quarto-grid-link no-external-icon">
+<div class="g-col-1" data-index="14" data-listing-date-sort="1793491200000">
+<a href="https://www.penangmonthly.com/behind-the-counter-can-penangs-ottu-kadai-survive-another-generation/" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" data-src="https://www.penangmonthly.com/content/images/size/w600/2026/10/SUARA-NADI-WEBSITE-BANNER-1500X844.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-The State of Penang’s Modes of Transport
+Behind the Counter: Can Penang’s Ottu Kadai Survive Another Generation?
 </h5>
+<div class="card-text listing-description">
+<p>IN ANTHONY CHEAH’S watercolour painting, “Ottu Kadai Penang”, the small shop being depicted occupies hardly any space,…</p>
+</div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
-Yeong Pey Jung
+Kenneth Wong See Huat
 </div>
 <div class="listing-date">
-October 2023
+November 2026
 </div>
 </div>
 </div>
