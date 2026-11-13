@@ -15,6 +15,13 @@ listing:
     date-format: "MMMM YYYY"
     type: grid
     page-size: 3
+    # Client chose the "image, date and standfirst" card (Oct 2026), so the
+    # cards carry an image and the feed's own summary. Every article in an
+    # issue shares one pubDate, so the default date sort has nothing to
+    # separate them; `order` is the feed's running order, written by
+    # metrics.py, and pins the cards to the magazine's own sequence.
+    sort: "order"
+    fields: [image, date, title, description, author]
   - id: dashboards-econ
     contents:
     - dashboards/econ/*.qmd
@@ -170,9 +177,10 @@ title-block-banner-color: 'white'
   // Dashboard listing cards (Quarto's stock grid template, so there is no
   // markup hook to fill: the line is created here and appended to .card-body).
   //
-  // Scoped to the three dashboard listings on purpose. The Penang Monthly
-  // listing renders .quarto-grid-item too, and those are articles with no
-  // workbook behind them.
+  // Scoped to the three dashboard listings by id rather than matching
+  // .quarto-grid-item globally. The Penang Monthly listing renders
+  // .quarto-grid-item too, and those are articles with no workbook behind
+  // them, so a global match would hang a view count on every one of them.
   function fillDashboardCards(counts) {
     var sel = ['econ', 'sector', 'social'].map(function (s) {
       return '#listing-dashboards-' + s + ' .quarto-grid-item';
@@ -251,23 +259,6 @@ title-block-banner-color: 'white'
 ::: {#penang-monthly}
 :::
 
-------------------------------------------------------------------------
-
-::: {.smart-city}
-## Penang as a Smart City
-
-```{=html}
-<div class="smart-pillars">
-  <span class="smart-pillar">People</span>
-  <span class="smart-pillar">Economy</span>
-  <span class="smart-pillar">Governance</span>
-  <span class="smart-pillar">Infrastructure</span>
-  <span class="smart-pillar">Environment</span>
-  <span class="smart-pillar">Mobility</span>
-</div>
-```
-:::
-
 ```{=html}
 <script>
   // Append "Data as of <period>" and "Updated <date>" footers to each
@@ -312,17 +303,98 @@ title-block-banner-color: 'white'
       });
     }
 
+    // Dashboard listing cards asked for the same two footers (client, Sep 2026).
+    //
+    // Periods are read back off the glance cards already rendered on this page
+    // rather than fetched again: each glance card links to its dashboard and
+    // carries the period, which is exactly the mapping needed, and it cannot
+    // drift out of step with what the visitor is looking at.
+    //
+    // Only 5 of the 14 dashboards appear in metrics_grid, so only those 5 get
+    // dates. The rest are left blank rather than shown a borrowed one:
+    // "Updated" is the metrics pipeline's run date, and asserting it for a
+    // dashboard the pipeline does not feed would be a claim we cannot support.
+    // Same shape as the stemOf in the view-counts block above: takes an href
+    // string, returns the file stem. "dashboards/social/pop.html" -> "pop",
+    // which is what makes a glance card and a dashboard card comparable even
+    // though the two link at different depths.
+    function stemOf(href) {
+      return (href || '').split('/').pop().replace(/\.html.*$/, '');
+    }
+
+    function dashboardPeriods() {
+      var map = {};
+      document.querySelectorAll('.metrics .card, .metrics .glance-card').forEach(function (card) {
+        var periodEl = card.querySelector('.card-title, .glance-period');
+        var link = card.querySelector('a[href*="dashboards/"]');
+        if (!periodEl || !link) return;
+        var stem = stemOf(link.getAttribute('href'));
+        if (stem) map[stem] = periodEl.textContent.trim();
+      });
+      return map;
+    }
+
+    function dashboardCards() {
+      var sel = ['econ', 'sector', 'social'].map(function (s) {
+        return '#listing-dashboards-' + s + ' .quarto-grid-item';
+      }).join(', ');
+      return Array.prototype.slice.call(document.querySelectorAll(sel));
+    }
+
+    function stamp(card, cls, text) {
+      if (card.querySelector('.' + cls)) return;
+      var body = card.querySelector('.card-body') || card;
+      var el = document.createElement('div');
+      el.className = cls;
+      el.textContent = text;
+      body.appendChild(el);
+    }
+
     function run() {
       var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
+
+      // Periods for the five headline dashboards come off the glance cards.
+      var periods = dashboardPeriods();
+      var dated = dashboardCards().filter(function (card) {
+        if (card.querySelector('.data-as-of')) return true;
+        var wrapper = card.closest('a');            // grid item is anchor-wrapped
+        if (!wrapper) return false;
+        var period = periods[stemOf(wrapper.getAttribute('href'))];
+        if (!period) return false;
+        stamp(card, 'data-as-of', 'Data as of ' + period);
+        return true;
+      });
 
       fetch('keyPenangMetrics/output/metrics_grid.json')
         .then(function (r) { return r.json(); })
         .then(function (data) {
           var updated = data[0] && data[0].last_updated;
-          if (updated) addUpdatedAt(cards, updated);
+          if (!updated) return;
+          addUpdatedAt(cards, updated);
+          addUpdatedAt(dated, updated);
         })
         .catch(function () { /* graceful: Option A still shows */ });
+
+      // Dashboards outside the headline five carry their own dates, each read
+      // from the sheet the pipeline writes (see assets/dashboard_dates.json).
+      // A dashboard is listed there only when its transform actually produced
+      // rows; the ones whose transform silently writes nothing are left blank
+      // on purpose, because a date would assert freshness we cannot support.
+      fetch('assets/dashboard_dates.json')
+        .then(function (r) { return r.json(); })
+        .then(function (cfg) {
+          var byStem = (cfg && cfg.dashboards) || {};
+          dashboardCards().forEach(function (card) {
+            var wrapper = card.closest('a');
+            if (!wrapper) return;
+            var entry = byStem[stemOf(wrapper.getAttribute('href'))];
+            if (!entry) return;
+            if (entry.dataAsOf) stamp(card, 'data-as-of', 'Data as of ' + entry.dataAsOf);
+            if (entry.updated)  stamp(card, 'updated-at', 'Updated ' + entry.updated);
+          });
+        })
+        .catch(function () { /* graceful: the other cards still show */ });
     }
 
     if (document.readyState === 'loading') {

@@ -4,6 +4,10 @@ description: |
   Source datasets behind the Key Penang Statistics dashboards.
 title-block-banner: '#c3353c'
 title-block-banner-color: 'white'
+format:
+  html:
+    # Same back link the dashboards carry, at the client's request (Sep 2026).
+    include-before-body: assets/back-link.html
 ---
 
 {{< include _datasets_generated.md >}}

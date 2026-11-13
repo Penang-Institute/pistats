@@ -24,6 +24,41 @@ format:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
         <script>
+        // Put the Penang Institute logo inside the red title banner.
+        //
+        // The client asked for it to move out of the navbar and into the
+        // banner (Sep 2026). Quarto builds the banner itself, so there is no
+        // markup hook in the .qmd to hang it on; this injects one on load.
+        //
+        // It is a link to this site's homepage on purpose. Removing the navbar
+        // wordmark removed the only nav route back here, and "Homepage" in the
+        // navbar points at penanginstitute.org, which is a different site.
+        document.addEventListener('DOMContentLoaded', function () {
+          var title = document.querySelector('.quarto-title-banner .quarto-title');
+          if (!title || title.querySelector('.pi-banner-logo')) return;
+
+          // Quarto emits the heading and the description as siblings. Wrap them
+          // so the banner becomes exactly two flex children, logo then text,
+          // which is what lets the text sit to the right of the logo and the
+          // logo scale to the height of the text beside it.
+          var text = document.createElement('div');
+          text.className = 'pi-banner-text';
+          while (title.firstChild) text.appendChild(title.firstChild);
+
+          var a = document.createElement('a');
+          a.className = 'pi-banner-logo';
+          a.href = '/';
+          a.setAttribute('aria-label', 'Key Penang Statistics home');
+          var img = document.createElement('img');
+          img.src = '/img/cropped-penang-institute-logo.webp';
+          img.alt = 'Penang Institute';
+          a.appendChild(img);
+
+          title.appendChild(a);
+          title.appendChild(text);
+        });
+        </script>
+        <script>
         // The "Dataset" link on each "Penang at a glance" card points at
         // <dashboard>.html#download-data. That callout ships collapsed, so a bare
         // anchor would land on a hidden element and the visitor would see nothing.
@@ -57,5 +92,9 @@ format:
 editor: visual
 
 resources:
+# Referenced only from JS (the banner logo), so Quarto cannot discover it by
+# scanning the source and would otherwise leave it out of _site.
+- "img/cropped-penang-institute-logo.webp"
+- "assets/dashboard_dates.json"
 - "keyPenangMetrics/output/*.yaml"
 - "keyPenangMetrics/output/*.json"
