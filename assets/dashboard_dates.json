@@ -1,0 +1,50 @@
+{
+  "_comment": [
+    "Data periods for dashboards the metrics pipeline does not describe.",
+    "",
+    "The five headline dashboards (CPI, GDP, Labour Force, Household Income,",
+    "Population) get their period automatically from keyPenangMetrics via the",
+    "'Penang at a glance' cards. This file covers dashboards outside that set.",
+    "",
+    "Every value was read from the live Google Sheet the pipeline writes, not",
+    "typed from memory. 'source' records where, so the next person can re-check",
+    "it rather than trust it.",
+    "",
+    "Every dashboard now carries a date. Five come from keyPenangMetrics; the",
+    "rest are listed here. Entries without an 'updated' value are ones no",
+    "pipeline run writes: their numbers are maintained by hand, so there is no",
+    "run date to quote."
+  ],
+  "dashboards": {
+    "trade": {
+      "dataAsOf": "Jun 2026",
+      "updated": "20 Sep 2026",
+      "source": "trade sheet 1zw1vHUE\u2026Q2lc, tab 'data', max(Date) = 2026-06-01"
+    },
+    "health": {
+      "dataAsOf": "May 2025",
+      "updated": "20 Sep 2026",
+      "source": "main workbook, tab 'utilisation_opendosm', max(date) = 2025-05-31; the facilities half only reaches 2023"
+    },
+    "prop": {
+      "dataAsOf": "Mar 2021",
+      "source": "all four property sheets, max Date = 2021-03-01 (house_prices only reaches 2019). They were 403 to the pipeline until access was restored 2026-09-30, and no run has written them since, so there is no 'updated' value yet."
+    },
+    "manf": {
+      "dataAsOf": "Jun 2026",
+      "source": "published CSV behind the dashboard (MIDA), max(Date) = 2026-06-01, same for the Penang rows. Not pipeline-fed, so no 'updated'."
+    },
+    "finance": {
+      "dataAsOf": "2026",
+      "source": "published CSVs behind the dashboard, fiscal position max(Year) = 2026 (marked Actual); the revenue-items CSV only reaches 2025. Not pipeline-fed, so no 'updated'."
+    },
+    "gender": {
+      "dataAsOf": "2024",
+      "source": "women_stats sheet, tabs Education / Decision-making / stateDM / federalDM all max(Year) = 2024. Output sheet only; its transform still produces nothing, so no 'updated'."
+    },
+    "grad": {
+      "dataAsOf": "2024",
+      "source": "graduates output sheet, sektor_ekonomi and status_pekerjaan max(tahun) = 2024 (graduate_status only 2023). Output sheet only; its transform still produces nothing, so no 'updated'."
+    }
+  }
+}

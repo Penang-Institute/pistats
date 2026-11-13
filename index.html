@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0a4648b7a5740b1822f22240e300ab11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ad436b8ebd758f54f9cc6eb4566e4cf3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-author','listing-date','listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       page: 3,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-author","listing-date","listing-image","listing-title"],
@@ -221,6 +221,41 @@ background: #c3353c;
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap">
 <script>
+// Put the Penang Institute logo inside the red title banner.
+//
+// The client asked for it to move out of the navbar and into the
+// banner (Sep 2026). Quarto builds the banner itself, so there is no
+// markup hook in the .qmd to hang it on; this injects one on load.
+//
+// It is a link to this site's homepage on purpose. Removing the navbar
+// wordmark removed the only nav route back here, and "Homepage" in the
+// navbar points at penanginstitute.org, which is a different site.
+document.addEventListener('DOMContentLoaded', function () {
+  var title = document.querySelector('.quarto-title-banner .quarto-title');
+  if (!title || title.querySelector('.pi-banner-logo')) return;
+
+  // Quarto emits the heading and the description as siblings. Wrap them
+  // so the banner becomes exactly two flex children, logo then text,
+  // which is what lets the text sit to the right of the logo and the
+  // logo scale to the height of the text beside it.
+  var text = document.createElement('div');
+  text.className = 'pi-banner-text';
+  while (title.firstChild) text.appendChild(title.firstChild);
+
+  var a = document.createElement('a');
+  a.className = 'pi-banner-logo';
+  a.href = '/';
+  a.setAttribute('aria-label', 'Key Penang Statistics home');
+  var img = document.createElement('img');
+  img.src = '/img/cropped-penang-institute-logo.webp';
+  img.alt = 'Penang Institute';
+  a.appendChild(img);
+
+  title.appendChild(a);
+  title.appendChild(text);
+});
+</script>
+<script>
 // The "Dataset" link on each "Penang at a glance" card points at
 // <dashboard>.html#download-data. That callout ships collapsed, so a bare
 // anchor would land on a hidden element and the visitor would see nothing.
@@ -267,84 +302,22 @@ document.addEventListener('DOMContentLoaded', function () {
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/cropped-penang-institute-logo.webp" alt="Penang Institute logo" class="navbar-logo light-content">
-    <img src="./img/cropped-penang-institute-logo.webp" alt="Penang Institute logo" class="navbar-logo dark-content">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Key Penang Statistics</span>
-    </a>
-  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="https://www.penanginstitute.org"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Homepage</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./datasets.html"> 
 <span class="menu-text">Datasets</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dashboards" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Dashboards</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-dashboards">    
-        <li class="dropdown-header">Economic</li>
-        <li>
-    <a class="dropdown-item" href="./dashboards/econ/cpi.html">
- <span class="dropdown-text">Consumer Price Index</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/econ/trade.html">
- <span class="dropdown-text">External Trade</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/econ/gdp.html">
- <span class="dropdown-text">Gross Domestic Product</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/econ/labour.html">
- <span class="dropdown-text">Labour Force</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li class="dropdown-header">Sector-specific</li>
-        <li>
-    <a class="dropdown-item" href="./dashboards/sector/manf.html">
- <span class="dropdown-text">Approved Manufacturing Investments</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/sector/grad.html">
- <span class="dropdown-text">Graduate Employability</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/sector/health.html">
- <span class="dropdown-text">Healthcare</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/sector/finance.html">
- <span class="dropdown-text">Penang State Finance</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/sector/prop.html">
- <span class="dropdown-text">Residential Property</span></a>
-  </li>  
-        <li><hr class="dropdown-divider"></li>
-        <li class="dropdown-header">Social</li>
-        <li>
-    <a class="dropdown-item" href="./dashboards/social/gender.html">
- <span class="dropdown-text">Gender</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/social/hhinc.html">
- <span class="dropdown-text">Household Income</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./dashboards/social/pop.html">
- <span class="dropdown-text">Population and Demographics</span></a>
-  </li>  
-    </ul>
-  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Who We Are</span></a>
@@ -352,13 +325,6 @@ document.addEventListener('DOMContentLoaded', function () {
   <li class="nav-item">
     <a class="nav-link" href="mailto:enquiry@penanginstitute.org"> 
 <span class="menu-text">Enquiries</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.penanginstitute.org"> <i class="bi bi-house" role="img">
-</i> 
-<span class="menu-text">Homepage</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -531,9 +497,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Dashboard listing cards (Quarto's stock grid template, so there is no
   // markup hook to fill: the line is created here and appended to .card-body).
   //
-  // Scoped to the three dashboard listings on purpose. The Penang Monthly
-  // listing renders .quarto-grid-item too, and those are articles with no
-  // workbook behind them.
+  // Scoped to the three dashboard listings by id rather than matching
+  // .quarto-grid-item globally. The Penang Monthly listing renders
+  // .quarto-grid-item too, and those are articles with no workbook behind
+  // them, so a global match would hang a view count on every one of them.
   function fillDashboardCards(counts) {
     var sel = ['econ', 'sector', 'social'].map(function (s) {
       return '#listing-dashboards-' + s + ' .quarto-grid-item';
@@ -669,7 +636,7 @@ Unemployment rate
 <div class="dashboards">
 <div id="listing-dashboards-econ" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <a href="./dashboards/econ/cpi.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -682,7 +649,7 @@ Consumer Price Index
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="./dashboards/econ/trade.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -695,7 +662,7 @@ External Trade
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
 <a href="./dashboards/econ/gdp.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -708,7 +675,7 @@ Gross Domestic Product
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
 <a href="./dashboards/econ/labour.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -732,7 +699,7 @@ Labour Force
 <div class="dashboards">
 <div id="listing-dashboards-sector" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <a href="./dashboards/sector/manf.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -745,7 +712,7 @@ Approved Manufacturing Investments
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <a href="./dashboards/sector/grad.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -758,7 +725,7 @@ Graduate Employability
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
 <a href="./dashboards/sector/health.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -771,7 +738,7 @@ Healthcare
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <a href="./dashboards/sector/finance.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -784,7 +751,7 @@ Penang State Finance
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="./dashboards/sector/prop.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -808,7 +775,7 @@ Residential Property
 <div class="dashboards">
 <div id="listing-dashboards-social" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="g-col-1" data-index="0" data-categories="R2VuZGVyJTJDSW5lcXVhbGl0eQ==" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
 <a href="./dashboards/social/gender.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -821,7 +788,7 @@ Gender
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
 <a href="./dashboards/social/hhinc.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -834,7 +801,7 @@ Household Income
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794511325364" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1794550550660" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
 <a href="./dashboards/social/pop.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -1149,19 +1116,6 @@ October 2023
   <ul class="pagination"></ul>
 </nav>
 </div>
-<hr>
-</section>
-<section id="penang-as-a-smart-city" class="level2 smart-city">
-<h2 data-anchor-id="penang-as-a-smart-city">Penang as a Smart City</h2>
-<div class="smart-pillars">
-  <span class="smart-pillar">People</span>
-  <span class="smart-pillar">Economy</span>
-  <span class="smart-pillar">Governance</span>
-  <span class="smart-pillar">Infrastructure</span>
-  <span class="smart-pillar">Environment</span>
-  <span class="smart-pillar">Mobility</span>
-</div>
-</section>
 <script>
   // Append "Data as of <period>" and "Updated <date>" footers to each
   // "Penang at a glance" card.
@@ -1205,17 +1159,98 @@ October 2023
       });
     }
 
+    // Dashboard listing cards asked for the same two footers (client, Sep 2026).
+    //
+    // Periods are read back off the glance cards already rendered on this page
+    // rather than fetched again: each glance card links to its dashboard and
+    // carries the period, which is exactly the mapping needed, and it cannot
+    // drift out of step with what the visitor is looking at.
+    //
+    // Only 5 of the 14 dashboards appear in metrics_grid, so only those 5 get
+    // dates. The rest are left blank rather than shown a borrowed one:
+    // "Updated" is the metrics pipeline's run date, and asserting it for a
+    // dashboard the pipeline does not feed would be a claim we cannot support.
+    // Same shape as the stemOf in the view-counts block above: takes an href
+    // string, returns the file stem. "dashboards/social/pop.html" -> "pop",
+    // which is what makes a glance card and a dashboard card comparable even
+    // though the two link at different depths.
+    function stemOf(href) {
+      return (href || '').split('/').pop().replace(/\.html.*$/, '');
+    }
+
+    function dashboardPeriods() {
+      var map = {};
+      document.querySelectorAll('.metrics .card, .metrics .glance-card').forEach(function (card) {
+        var periodEl = card.querySelector('.card-title, .glance-period');
+        var link = card.querySelector('a[href*="dashboards/"]');
+        if (!periodEl || !link) return;
+        var stem = stemOf(link.getAttribute('href'));
+        if (stem) map[stem] = periodEl.textContent.trim();
+      });
+      return map;
+    }
+
+    function dashboardCards() {
+      var sel = ['econ', 'sector', 'social'].map(function (s) {
+        return '#listing-dashboards-' + s + ' .quarto-grid-item';
+      }).join(', ');
+      return Array.prototype.slice.call(document.querySelectorAll(sel));
+    }
+
+    function stamp(card, cls, text) {
+      if (card.querySelector('.' + cls)) return;
+      var body = card.querySelector('.card-body') || card;
+      var el = document.createElement('div');
+      el.className = cls;
+      el.textContent = text;
+      body.appendChild(el);
+    }
+
     function run() {
       var cards = document.querySelectorAll('.metrics .card, .metrics .glance-card');
       addDataAsOf(cards);
+
+      // Periods for the five headline dashboards come off the glance cards.
+      var periods = dashboardPeriods();
+      var dated = dashboardCards().filter(function (card) {
+        if (card.querySelector('.data-as-of')) return true;
+        var wrapper = card.closest('a');            // grid item is anchor-wrapped
+        if (!wrapper) return false;
+        var period = periods[stemOf(wrapper.getAttribute('href'))];
+        if (!period) return false;
+        stamp(card, 'data-as-of', 'Data as of ' + period);
+        return true;
+      });
 
       fetch('keyPenangMetrics/output/metrics_grid.json')
         .then(function (r) { return r.json(); })
         .then(function (data) {
           var updated = data[0] && data[0].last_updated;
-          if (updated) addUpdatedAt(cards, updated);
+          if (!updated) return;
+          addUpdatedAt(cards, updated);
+          addUpdatedAt(dated, updated);
         })
         .catch(function () { /* graceful: Option A still shows */ });
+
+      // Dashboards outside the headline five carry their own dates, each read
+      // from the sheet the pipeline writes (see assets/dashboard_dates.json).
+      // A dashboard is listed there only when its transform actually produced
+      // rows; the ones whose transform silently writes nothing are left blank
+      // on purpose, because a date would assert freshness we cannot support.
+      fetch('assets/dashboard_dates.json')
+        .then(function (r) { return r.json(); })
+        .then(function (cfg) {
+          var byStem = (cfg && cfg.dashboards) || {};
+          dashboardCards().forEach(function (card) {
+            var wrapper = card.closest('a');
+            if (!wrapper) return;
+            var entry = byStem[stemOf(wrapper.getAttribute('href'))];
+            if (!entry) return;
+            if (entry.dataAsOf) stamp(card, 'data-as-of', 'Data as of ' + entry.dataAsOf);
+            if (entry.updated)  stamp(card, 'updated-at', 'Updated ' + entry.updated);
+          });
+        })
+        .catch(function () { /* graceful: the other cards still show */ });
     }
 
     if (document.readyState === 'loading') {
@@ -1228,6 +1263,7 @@ October 2023
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
